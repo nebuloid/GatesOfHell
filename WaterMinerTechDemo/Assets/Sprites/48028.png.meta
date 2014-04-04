@@ -1,0 +1,2461 @@
+fileFormatVersion: 2
+guid: 5d7e251900c361f4388dfab89ff38308
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: 48028_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 632
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 632
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 632
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 632
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 632
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 632
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_6
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 632
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 632
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_8
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 632
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_9
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 632
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_10
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 632
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_11
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 592
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 592
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 592
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 592
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 592
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_16
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 592
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_17
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 592
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_18
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 592
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_19
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 592
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_20
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 592
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_21
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 592
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 555
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_23
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 555
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_24
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 555
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_25
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 555
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_26
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 555
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 555
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_28
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 555
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_29
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 555
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_30
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 555
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_31
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 555
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_32
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 555
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_33
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 555
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_34
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 555
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_35
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 555
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_36
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 555
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 516
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_38
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 516
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_39
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 516
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_40
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 516
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_41
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 516
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_42
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 516
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_43
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 516
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_44
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 516
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_45
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 517
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_46
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 516
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_47
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 516
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_48
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 516
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_49
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 516
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_50
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 483
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_51
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 475
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_52
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 475
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_53
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 475
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_54
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 475
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_55
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 475
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_56
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 475
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_57
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 475
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_58
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 476
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_59
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 470
+        width: 56
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_60
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 476
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_61
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 476
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_62
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 475
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_63
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 476
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_64
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 476
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_65
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 476
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_66
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 476
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_67
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 437
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_68
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 437
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_69
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 437
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_70
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 437
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_71
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 437
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_72
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 445
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_73
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 437
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_74
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 444
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_75
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 442
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_76
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 442
+        width: 76
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_77
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 437
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_78
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 437
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_79
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 398
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_80
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 398
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_81
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 398
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_82
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 398
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_83
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 398
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_84
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 398
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_85
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 353
+        width: 20
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_86
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 372
+        width: 14
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_87
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 419
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_88
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 398
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_89
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 398
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_90
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 413
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_91
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 407
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_92
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 396
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_93
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 361
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_94
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 361
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_95
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 361
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_96
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 361
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_97
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 390
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_98
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 361
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_99
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 361
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_100
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 361
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_101
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 361
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_102
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 361
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_103
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 361
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_104
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 353
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_105
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 375
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_106
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 323
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_107
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 326
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_108
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 329
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_109
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 324
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_110
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 322
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_111
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 325
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_112
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 322
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_113
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 325
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_114
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 323
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_115
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 326
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_116
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 325
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_117
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 325
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_118
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 281
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_119
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 285
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_120
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 288
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_121
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 284
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_122
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 282
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_123
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 285
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_124
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 285
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_125
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 283
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_126
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 286
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_127
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 285
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_128
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 285
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_129
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 285
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_130
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 241
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_131
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 241
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_132
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 241
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_133
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 241
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_134
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 241
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_135
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 241
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_136
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 241
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_137
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 241
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_138
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 202
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_139
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 202
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_140
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 202
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_141
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 202
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_142
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 202
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_143
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 202
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_144
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 202
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_145
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 202
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_146
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 202
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_147
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 203
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_148
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 202
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_149
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 202
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_150
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 165
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_151
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 165
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_152
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 165
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_153
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 165
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_154
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 165
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_155
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 165
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_156
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 165
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_157
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 165
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_158
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 165
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_159
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 165
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_160
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 165
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_161
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 165
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_162
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 165
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_163
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 174
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_164
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 130
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_165
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 132
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_166
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 129
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_167
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 133
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_168
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 83
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_169
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 83
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_170
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 83
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_171
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 83
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_172
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 83
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_173
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 83
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_174
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 86
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_175
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 84
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_176
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 83
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_177
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 83
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_178
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 68
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_179
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 68
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_180
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 68
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_181
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 68
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_182
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 68
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_183
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 68
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_184
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 68
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_185
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 68
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_186
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 68
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_187
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 68
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_188
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 68
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_189
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 66
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_190
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 68
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_191
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 68
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_192
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 68
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_193
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_194
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 52
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_195
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 54
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_196
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_197
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_198
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 54
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_199
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 54
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_200
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 54
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_201
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_202
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 52
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_203
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 54
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_204
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 54
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_205
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 54
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_206
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 54
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_207
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 54
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_208
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 54
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_209
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 54
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_210
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 54
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_211
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 54
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_212
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_213
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_214
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 54
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_215
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_216
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 54
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_217
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_218
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_219
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 54
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_220
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 52
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_221
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_222
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 54
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_223
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_224
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_225
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 54
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_226
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 54
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_227
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_228
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 52
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_229
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_230
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_231
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 38
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_232
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 40
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_233
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_234
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 40
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_235
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 40
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_236
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 38
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_237
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 40
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_238
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_239
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 40
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_240
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_241
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_242
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 38
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_243
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_244
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 40
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_245
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 40
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_246
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 38
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_247
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 40
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_248
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 40
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_249
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 40
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_250
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 40
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_251
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_252
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 40
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_253
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_254
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_255
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 38
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_256
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_257
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 40
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_258
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 40
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_259
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 40
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_260
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_261
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_262
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_263
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_264
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_265
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_266
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: 48028_267
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
