@@ -1,25 +1,39 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Diagnostics;
 
 public class GrassController : MonoBehaviour {
 
-	private Animator animator;
+	public Sprite[] sprites;
+	public float framesPerSecond;
+	
+	private SpriteRenderer spriteRenderer;
+	private bool touched;
+	private Stopwatch timer;
 	
 	// Use this for initialization
 	void Start () {
-		animator = this.GetComponent<Animator>();
+		touched = false;
+		timer = new Stopwatch ();
+		spriteRenderer = renderer as SpriteRenderer;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (touched) {
+			int index = (int)(0.01f * timer.ElapsedMilliseconds);
+			UnityEngine.Debug.Log(index);
+			if(index == sprites.Length){
+				Destroy(gameObject);
+			}else{
+				spriteRenderer.sprite = sprites [index];
+			}
+		}
 	}
 	
 	void OnMouseDown()
 	{
-		animator.SetInteger("Dig", 1);
-		//animator.speed = 1.0f;
-		//animator.Play();
-		Destroy(gameObject);
+		touched = true;
+		timer.Start();
 	}
 }

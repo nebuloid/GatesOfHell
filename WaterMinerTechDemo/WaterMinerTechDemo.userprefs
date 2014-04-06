@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GrassController.cs">
     <Files>
       <File FileName="Assets\Scripts\YoshiControllerScript.cs" Line="36" Column="36" />
-      <File FileName="Assets\Scripts\GrassController.cs" Line="23" Column="3" />
+      <File FileName="Assets\Scripts\GrassController.cs" Line="31" Column="4" />
+      <File FileName="..\..\zombies\game\Assets\Scripts\ZombieAnimator.cs" Line="18" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
