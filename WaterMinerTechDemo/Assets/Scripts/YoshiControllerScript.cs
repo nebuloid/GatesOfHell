@@ -14,9 +14,20 @@ public class YoshiControllerScript : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 700f;
 
+	//move with click
+	private Vector3 moveDirection;
+	private float moveLocationX;
+	private bool moving;
+
 	// Use this for initialization
 	void Start () {
+
 		anim = GetComponent<Animator> ();
+
+		//move with click
+		moveDirection = Vector3.right;
+		moveLocationX = transform.position.x;
+		moving = false;
 	}
 	
 	// Update is called once per frame
@@ -42,6 +53,31 @@ public class YoshiControllerScript : MonoBehaviour {
 		if (grounded && Input.GetKeyDown (KeyCode.Space)) {
 			anim.SetBool ("Ground",false);
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
+		}
+
+		//move with click
+	
+		Vector3 currentPosition = transform.position;
+
+		if( Input.GetButton("Fire1") ) {
+
+			Vector3 moveToward = Camera.main.ScreenToWorldPoint( Input.mousePosition );
+			//Debug.Log (Input.mousePosition);
+			moveDirection = moveToward - currentPosition;
+			moveDirection.z = 0; 
+			moveDirection.y = 0;
+			moveLocationX = moveToward.x;
+			moveDirection.Normalize();
+			moving = true;
+		}
+
+		if (moving) {
+			Vector3 target = moveDirection * maxSpeed + currentPosition;
+			transform.position = Vector3.Lerp (currentPosition, target, Time.deltaTime);
+			Debug.Log ("currentPosition.x = " + currentPosition.x + ", moveLocationX = " + moveLocationX);
+			if(currentPosition.x < moveLocationX + 0.1f && currentPosition.x > moveLocationX - 0.1f){
+				moving = false;
+			}
 		}
 	}
 
