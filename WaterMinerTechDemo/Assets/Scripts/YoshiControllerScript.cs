@@ -69,12 +69,16 @@ public class YoshiControllerScript : MonoBehaviour {
 			moveLocationX = moveToward.x;
 			moveDirection.Normalize();
 			moving = true;
+			if (moveToward.x > currentPosition.x && !facingRight)
+				Flip ();
+			else if (moveToward.x < currentPosition.x && facingRight)
+				Flip ();
 		}
 
 		if (moving) {
 			Vector3 target = moveDirection * maxSpeed + currentPosition;
 			transform.position = Vector3.Lerp (currentPosition, target, Time.deltaTime);
-			Debug.Log ("currentPosition.x = " + currentPosition.x + ", moveLocationX = " + moveLocationX);
+			//Debug.Log ("currentPosition.x = " + currentPosition.x + ", moveLocationX = " + moveLocationX);
 			if(currentPosition.x < moveLocationX + 0.1f && currentPosition.x > moveLocationX - 0.1f){
 				moving = false;
 			}

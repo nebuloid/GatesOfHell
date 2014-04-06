@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
 	public GameObject cameraTarget; // object to look at or follow
-	public GameObject player; // player object for moving
+	//public GameObject player; // player object for moving
 	
 	public float smoothTime = 0.1f;    // time for dampen
 	public bool cameraFollowX = true; // camera follows on horizontal
@@ -13,12 +13,12 @@ public class CameraController : MonoBehaviour {
 	public float cameraHeight = 2.5f; // height of camera adjustable
 	public Vector2 velocity; // speed of camera movement
 	
-	private Transform thisTransform; // camera Transform
+	private Transform cameraTransform; // camera Transform
 	
 	// Use this for initialization
 	void Start()
 	{
-		thisTransform = transform;
+		cameraTransform = transform;
 	}
 	
 	// Update is called once per frame
@@ -26,7 +26,7 @@ public class CameraController : MonoBehaviour {
 	{
 		if (cameraFollowX)
 		{
-			thisTransform.position = new Vector3(Mathf.SmoothDamp(thisTransform.position.x, cameraTarget.transform.position.x, ref velocity.x, smoothTime), thisTransform.position.y, thisTransform.position.z);
+			cameraTransform.position = new Vector3(Mathf.SmoothDamp(cameraTransform.position.x, cameraTarget.transform.position.x, ref velocity.x, smoothTime), cameraTransform.position.y, cameraTransform.position.z);
 		}
 		if (cameraFollowY)
 		{
