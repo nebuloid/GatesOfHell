@@ -7,17 +7,18 @@ public class GrassController : MonoBehaviour {
 	public Sprite[] sprites;
 	public float framesPerSecond;
 
-	private SpriteRenderer spriteRenderer;
-	private bool touched;
-	private Stopwatch timer;
 
+	private SpriteRenderer spriteRenderer;
+	private bool touched = false;
+	private bool grounded = false;
+	private Stopwatch timer;
+	//private float groundRadius = 0.2f;
 	private GameObject player; // player object for moving 
 	
 	// Use this for initialization
 	void Start () {
 
 		player = GameObject.FindWithTag("Player");
-		touched = false;
 		timer = new Stopwatch ();
 		spriteRenderer = renderer as SpriteRenderer;
 		UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x);
@@ -26,8 +27,7 @@ public class GrassController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () { 
 
-		if(player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
-		   && player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x)){
+		if(grounded){
 			if (touched) {
 				int index = (int)(0.01f * timer.ElapsedMilliseconds);
 				//UnityEngine.Debug.Log(boxCol);
@@ -39,12 +39,21 @@ public class GrassController : MonoBehaviour {
 			}
 		}
 	}
+
+	void FixedUpdate () {
+		if (player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
+		&& player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x)
+		    && player.transform.position.y < transform.position.y + spriteRenderer.bounds.extents.y * 2) {
+			grounded = true;
+		} else {
+			grounded = false;		
+		}
+	}
 	
 	void OnMouseDown()
 	{
 		touched = true;
-		if (player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
-		&& player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x)) {
+		if(grounded){
 			timer.Start();
 		}
 	}
