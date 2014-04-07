@@ -21,11 +21,30 @@ public class GrassController : MonoBehaviour {
 		player = GameObject.FindWithTag("Player");
 		timer = new Stopwatch ();
 		spriteRenderer = renderer as SpriteRenderer;
-		UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x);
+		//UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x);
 	}
 	
 	// Update is called once per frame
 	void Update () { 
+
+
+	}
+
+	// FixedUpdate is run at specific time intervals.
+	void FixedUpdate () {
+		if (player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
+		&& player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x)
+		    && player.transform.position.y < transform.position.y + spriteRenderer.bounds.extents.y * 2) {
+			grounded = true;
+		} else {
+			grounded = false;
+			touched = false;
+			if(timer.IsRunning){
+				timer.Stop();
+				timer.Reset();
+				spriteRenderer.sprite = sprites [0];
+			}
+		}
 
 		if(grounded){
 			if (touched) {
@@ -33,20 +52,10 @@ public class GrassController : MonoBehaviour {
 				//UnityEngine.Debug.Log(boxCol);
 				if(index == sprites.Length){
 					Destroy(gameObject);
-				}else{
+				}else if(index < sprites.Length){
 					spriteRenderer.sprite = sprites [index];
 				}
 			}
-		}
-	}
-
-	void FixedUpdate () {
-		if (player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
-		&& player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x)
-		    && player.transform.position.y < transform.position.y + spriteRenderer.bounds.extents.y * 2) {
-			grounded = true;
-		} else {
-			grounded = false;		
 		}
 	}
 	
