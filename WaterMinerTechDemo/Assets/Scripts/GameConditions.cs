@@ -4,18 +4,18 @@ using System.Collections;
 public class GameConditions : MonoBehaviour {
 
 	public float winDepth;
+	public GUIText winGuiText;
+	public GUIText restartGuiText;
+	public string winText;
+	public string restartText;
+	public string level;
 
-	private Vector3 originalPosition;
-	private Quaternion originalRotation;
+	private bool won = false;
 
 	// Use this for initialization
 	void Start () {
-		originalPosition = transform.position;
-		originalRotation = transform.rotation;
-		foreach (Transform child in transform)
-		{
-			Debug.Log("Found a child");
-		}
+		winGuiText.text = "";
+		restartGuiText.text = "";
 	}
 	
 	// Update is called once per frame
@@ -24,19 +24,18 @@ public class GameConditions : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		if (transform.position.y < winDepth) {
-			Reset();
+		if (transform.position.y < winDepth && !won) {
+			Victory ();
+		}
+
+		if (Input.GetButton ("Fire1") && won) {
+			Application.LoadLevel (level);
 		}
 	}
 
-	void Reset() {
-		Application.LoadLevel (0);
-		//transform.position = originalPosition;
-		//transform.rotation = originalRotation;
-		/*
-		if (rigidbody != null) {
-			rigidbody.velocity = Vector3.zero;
-			rigidbody.angularVelocity = Vector3.zero;
-		}*/
+	void Victory() {
+		winGuiText.text = winText;
+		restartGuiText.text = restartText;
+		won = true;
 	}
 }
