@@ -3,18 +3,18 @@ using System.Collections;
 using System.Diagnostics;
 
 public class GrassController : MonoBehaviour {
-
 	private Animator playerAnimator;
 	public Sprite[] sprites;
 	public float framesPerSecond;
-	
-	
+
 	private SpriteRenderer spriteRenderer;
 	private bool touched = false;
 	private bool grounded = false;
 	private Stopwatch timer;
 	//private float groundRadius = 0.2f;
 	private GameObject player; // player object for moving 
+
+	//private float groundRadius = 0.2f;
 
 	// Use this for initialization
 	void Start () {
@@ -68,7 +68,8 @@ public class GrassController : MonoBehaviour {
 			playerAnimator.Play("Swing");
 			touched = true;
 			if(grounded){
-			timer.Start();
+				timer.Start();
+			}
 		}
 	}
 }
