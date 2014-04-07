@@ -14,8 +14,6 @@ public class GrassController : MonoBehaviour {
 	//private float groundRadius = 0.2f;
 	private GameObject player; // player object for moving 
 
-	//private float groundRadius = 0.2f;
-
 	// Use this for initialization
 	void Start () {
 
@@ -63,8 +61,8 @@ public class GrassController : MonoBehaviour {
 	
 	void OnMouseDown()
 	{
-		if (Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - character.rigidbody2D.transform.position.x) < 100 ||
-		    Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - character.rigidbody2D.transform.position.y) < 100) {
+		if (Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - player.rigidbody2D.transform.position.x) < 100 ||
+		    Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - player.rigidbody2D.transform.position.y) < 100) {
 			playerAnimator.Play("Swing");
 			touched = true;
 			if(grounded){
