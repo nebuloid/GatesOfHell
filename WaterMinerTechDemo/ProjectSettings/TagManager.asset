@@ -3,6 +3,12 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - grass_1
+  - grass_2
+  - grass_3
+  - grass_4
+  - grass_5
+  - grass_6
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
