@@ -24,17 +24,12 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
-		if (cameraFollowX)
-		{
-			cameraTransform.position = new Vector3(Mathf.SmoothDamp(cameraTransform.position.x, cameraTarget.transform.position.x, ref velocity.x, smoothTime), cameraTransform.position.y, cameraTransform.position.z);
-		}
-		if (cameraFollowY)
-		{
-			// to do  
-		}
-		if (!cameraFollowX & cameraFollowHeight)
-		{
-			// to do
-		}
+
+	}
+
+	void FixedUpdate () {
+		cameraTransform.position = new Vector3(Mathf.SmoothDamp(cameraTransform.position.x, cameraTarget.transform.position.x, ref velocity.x, smoothTime), 
+		                                       Mathf.SmoothDamp(cameraTransform.position.y, cameraTarget.transform.position.y, ref velocity.y, smoothTime), 
+																cameraTransform.position.z);
 	}
 }
