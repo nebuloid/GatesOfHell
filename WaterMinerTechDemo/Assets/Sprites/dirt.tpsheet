@@ -1,0 +1,13 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: dirt.png (320 x 108)
+# $TexturePacker:SmartUpdate:80ad77049b6d852ae77e036774e7f8e5:d0bf370684a446b053b1dbd809d43226:974cc7ce67df8d113b3e08987486b644$
+#
+
+dirtBlock1;212;2;106;106;0.5;0.5
+dirtBlock2;106;2;106;106;0.5;0.5
+dirtBlock3;0;2;106;106;0.5;0.5

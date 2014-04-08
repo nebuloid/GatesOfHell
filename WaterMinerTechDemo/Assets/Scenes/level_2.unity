@@ -224,7 +224,7 @@ MonoBehaviour:
   restartGuiText: {fileID: 160235480}
   winText: You Win!
   restartText: Click to Restart
-  level: level_1
+  level: level_3
 --- !u!114 &109778439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2618,7 +2618,7 @@ Prefab:
       objectReference: {fileID: 1937637988}
     - target: {fileID: 11400002, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
       propertyPath: level
-      value: level_1
+      value: level_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
