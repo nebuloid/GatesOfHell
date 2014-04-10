@@ -4,6 +4,7 @@ using System.Collections;
 public class YoshiControllerScript : MonoBehaviour {
 
 	public float maxSpeed = 10f;
+
 	bool facingRight = true;
 
 	Animator anim;
@@ -59,15 +60,15 @@ public class YoshiControllerScript : MonoBehaviour {
 	
 		Vector3 currentPosition = transform.position;
 
-		if( Input.GetButton("Fire1") ) {
+		if (Input.GetButton ("Fire1")) {
 
-			Vector3 moveToward = Camera.main.ScreenToWorldPoint( Input.mousePosition );
+			Vector3 moveToward = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			//Debug.Log (Input.mousePosition);
 			moveDirection = moveToward - currentPosition;
 			moveDirection.z = 0; 
 			moveDirection.y = 0;
 			moveLocationX = moveToward.x;
-			moveDirection.Normalize();
+			moveDirection.Normalize ();
 			moving = true;
 			if (moveToward.x > currentPosition.x && !facingRight)
 				Flip ();
@@ -75,14 +76,16 @@ public class YoshiControllerScript : MonoBehaviour {
 				Flip ();
 		}
 
-		if (moving) {
-			Vector3 target = moveDirection * maxSpeed + currentPosition;
-			transform.position = Vector3.Lerp (currentPosition, target, Time.deltaTime);
-			//Debug.Log ("currentPosition.x = " + currentPosition.x + ", moveLocationX = " + moveLocationX);
-			if(currentPosition.x < moveLocationX + 0.1f && currentPosition.x > moveLocationX - 0.1f){
-				moving = false;
-			}
-		}
+		//if (! anim.GetFloat) {
+				if (moving) {
+						Vector3 target = moveDirection * maxSpeed + currentPosition;
+						transform.position = Vector3.Lerp (currentPosition, target, Time.deltaTime);
+						//Debug.Log ("currentPosition.x = " + currentPosition.x + ", moveLocationX = " + moveLocationX);
+						if (currentPosition.x < moveLocationX + 0.1f && currentPosition.x > moveLocationX - 0.1f) {
+								moving = false;
+						}
+				}
+			//}
 	}
 
 	void Flip()

@@ -63,15 +63,14 @@ public class GrassController : MonoBehaviour {
 	{	
 		if (player == null)
 			return;
-		if (Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - player.rigidbody2D.transform.position.x) < 100 ||
-		    Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - player.rigidbody2D.transform.position.y) < 100) {
+		if (player.transform.position.x < transform.position.x + spriteRenderer.bounds.extents.x && grounded){
 			if (playerAnimator != null)
 				playerAnimator.Play("Swing");
+
+			if (timer != null)
+				timer.Start();
+
 			touched = true;
-			if(grounded) {
-				if (timer != null)
-					timer.Start();
-			}
 		}
 	}
 }
