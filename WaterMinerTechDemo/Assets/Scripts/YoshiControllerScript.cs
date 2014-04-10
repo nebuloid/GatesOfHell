@@ -20,6 +20,14 @@ public class YoshiControllerScript : MonoBehaviour {
 	private float moveLocationX;
 	private bool moving;
 
+	//toobee shots
+	public GameObject shot;
+	public Transform shotSpawn;
+	public float fireRate;
+	public Vector2 direction;
+
+	private float nextFire;
+
 	// Use this for initialization
 	void Start () {
 
@@ -29,6 +37,9 @@ public class YoshiControllerScript : MonoBehaviour {
 		moveDirection = Vector3.right;
 		moveLocationX = transform.position.x;
 		moving = false;
+
+		//toobee shots
+		direction = new Vector2 (0.0f, 0.0f);
 	}
 	
 	// Update is called once per frame
@@ -56,10 +67,22 @@ public class YoshiControllerScript : MonoBehaviour {
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
 
-		//move with click
-	
-		Vector3 currentPosition = transform.position;
+		//shoot toobee
+		if (Input.GetButton ("Fire1") && Time.time > nextFire) {
+			Vector3 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			direction = new Vector2 (mousePosition.x - transform.position.x, mousePosition.y - transform.position.y).normalized;
+			nextFire = Time.time + fireRate;
+			Vector3 spotPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, 0.0f);
+			
+			Instantiate(shot, spotPosition, shotSpawn.rotation);
+			
+			//audio.Play();
+		}
 
+		//move with click
+		
+		Vector3 currentPosition = transform.position;
+		/*
 		if (Input.GetButton ("Fire1")) {
 
 			Vector3 moveToward = Camera.main.ScreenToWorldPoint (Input.mousePosition);
@@ -75,7 +98,7 @@ public class YoshiControllerScript : MonoBehaviour {
 			else if (moveToward.x < currentPosition.x && facingRight)
 				Flip ();
 		}
-
+		*/
 		//if (! anim.GetFloat) {
 				if (moving) {
 						Vector3 target = moveDirection * maxSpeed + currentPosition;
@@ -94,5 +117,11 @@ public class YoshiControllerScript : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	public Vector2 Direction
+	{
+		get { return direction; }
+		set { direction = value; }
 	}
 }

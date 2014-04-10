@@ -566,6 +566,32 @@ Prefab:
   m_RootGameObject: {fileID: 215398886}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &325187708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 325187709}
+  m_Layer: 0
+  m_Name: ShotSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &325187709
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 325187708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .00999999978, y: -.0199999996, z: -.552001953}
+  m_LocalScale: {x: .100000001, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1958923550}
 --- !u!1001 &474253252
 Prefab:
   m_ObjectHideFlags: 0
@@ -916,11 +942,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.70641708
+      value: -8.64842033
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.89013433
+      value: -4.21183348
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -953,6 +979,22 @@ Prefab:
     - target: {fileID: 11400002, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
       propertyPath: level
       value: level_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
+      propertyPath: shot
+      value: 
+      objectReference: {fileID: 100000, guid: 5dca94f1436b4064ebb605a4eaa9cd5d, type: 2}
+    - target: {fileID: 11400000, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
+      propertyPath: shotSpawn
+      value: 
+      objectReference: {fileID: 325187709}
+    - target: {fileID: 11400000, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
+      propertyPath: fireRate
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
+      propertyPath: maxSpeed
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
@@ -1276,7 +1318,7 @@ Transform:
   m_PrefabInternal: {fileID: 1764864842}
   m_GameObject: {fileID: 1100838806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.64819217, y: -3.98989725, z: 0}
+  m_LocalPosition: {x: 1.7056576, y: -4.44962025, z: 0}
   m_LocalScale: {x: 12, y: 12, z: 1}
   m_Children:
   - {fileID: 2069931293}
@@ -1953,11 +1995,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 7a151032320ed1d498d69eb6387fb29f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.64819217
+      value: 1.7056576
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a151032320ed1d498d69eb6387fb29f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.98989725
+      value: -4.44962025
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a151032320ed1d498d69eb6387fb29f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2304,10 +2346,11 @@ Transform:
   m_PrefabInternal: {fileID: 980481178}
   m_GameObject: {fileID: 1958923547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.70641708, y: -2.89013433, z: 0}
+  m_LocalPosition: {x: -8.64842033, y: -4.21183348, z: 0}
   m_LocalScale: {x: 8.022089, y: 8.02209759, z: 1}
   m_Children:
   - {fileID: 933504283}
+  - {fileID: 325187709}
   m_Father: {fileID: 0}
 --- !u!61 &1958923551
 BoxCollider2D:
@@ -2360,13 +2403,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f88af9e4c6091409c70408a0747b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxSpeed: 100
   grounded: 0
   groundCheck: {fileID: 933504283}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294967039
   jumpForce: 700
+  shot: {fileID: 100000, guid: 5dca94f1436b4064ebb605a4eaa9cd5d, type: 2}
+  shotSpawn: {fileID: 325187709}
+  fireRate: .25
+  direction: {x: 0, y: 0}
 --- !u!114 &1958923555
 MonoBehaviour:
   m_ObjectHideFlags: 0

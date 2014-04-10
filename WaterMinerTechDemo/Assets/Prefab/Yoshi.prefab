@@ -129,6 +129,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967039
   jumpForce: 700
+  shot: {fileID: 100000, guid: 5dca94f1436b4064ebb605a4eaa9cd5d, type: 2}
+  shotSpawn: {fileID: 0}
+  fireRate: 0
+  direction: {x: 0, y: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,6 +149,7 @@ MonoBehaviour:
   restartGuiText: {fileID: 0}
   winText: You Win!
   restartText: Click to Restart
+  level: 
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
