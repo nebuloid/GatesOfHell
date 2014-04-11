@@ -11,9 +11,11 @@ public class YoshiControllerScript : MonoBehaviour {
 
 	public bool grounded = false;
 	public Transform groundCheck;
-	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
 	public float jumpForce = 700f;
+	
+	private float groundRadius = 0.2f;
+	private SpriteRenderer spriteRenderer;
 
 	//move with click
 	private Vector3 moveDirection;
@@ -28,10 +30,18 @@ public class YoshiControllerScript : MonoBehaviour {
 
 	private float nextFire;
 
+	//change stance
+	public int waitTime;
+	private int stance = 1;
+	private int numStances = 2;
+	private bool mouseOver;
+	
 	// Use this for initialization
 	void Start () {
 
 		anim = GetComponent<Animator> ();
+		spriteRenderer = renderer as SpriteRenderer;
+		mouseOver = false;
 
 		//move with click
 		moveDirection = Vector3.right;
@@ -40,24 +50,45 @@ public class YoshiControllerScript : MonoBehaviour {
 
 		//toobee shots
 		direction = new Vector2 (0.0f, 0.0f);
+
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-		anim.SetBool ("Ground", grounded);
+		
+			grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+			anim.SetBool ("Ground", grounded);
+			
+			anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+		
+		if (! mouseOver ) {
+			float move = Input.GetAxis ("Horizontal");
 
-		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+			anim.SetFloat ("Speed", Mathf.Abs (move));
+			rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 
-		float move = Input.GetAxis ("Horizontal");
+			if (move > 0 && !facingRight)
+					Flip ();
+			else if (move < 0 && facingRight)
+					Flip ();
 
-		anim.SetFloat ("Speed", Mathf.Abs (move));
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+			//shoot and move
 
-		if (move > 0 && !facingRight)
-			Flip ();
-		else if (move < 0 && facingRight)
-			Flip ();
+			switch (stance) {
+				case 1:
+				//moving
+					MoveMe ();
+					break;
+				case 2:
+				//toobee
+					Shoot ();
+					break;
+				default:
+				//moving
+					MoveMe ();
+					break;
+			}
+		} 
 	}
 
 	void Update()
@@ -67,24 +98,28 @@ public class YoshiControllerScript : MonoBehaviour {
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
 
-		//shoot toobee
+	}
+
+	void Shoot(){
 		if (Input.GetButton ("Fire1") && Time.time > nextFire) {
 			Vector3 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			//make sure mouse is not over player...this wont work for touch
+
 			direction = new Vector2 (mousePosition.x - transform.position.x, mousePosition.y - transform.position.y).normalized;
 			nextFire = Time.time + fireRate;
 			Vector3 spotPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, 0.0f);
 			
 			Instantiate(shot, spotPosition, shotSpawn.rotation);
-			
+				
 			//audio.Play();
+			
 		}
+	}
 
-		//move with click
-		
+	void MoveMe(){
 		Vector3 currentPosition = transform.position;
-		/*
-		if (Input.GetButton ("Fire1")) {
 
+		if (Input.GetButton ("Fire1") ) {
 			Vector3 moveToward = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			//Debug.Log (Input.mousePosition);
 			moveDirection = moveToward - currentPosition;
@@ -98,17 +133,15 @@ public class YoshiControllerScript : MonoBehaviour {
 			else if (moveToward.x < currentPosition.x && facingRight)
 				Flip ();
 		}
-		*/
-		//if (! anim.GetFloat) {
-				if (moving) {
-						Vector3 target = moveDirection * maxSpeed + currentPosition;
-						transform.position = Vector3.Lerp (currentPosition, target, Time.deltaTime);
-						//Debug.Log ("currentPosition.x = " + currentPosition.x + ", moveLocationX = " + moveLocationX);
-						if (currentPosition.x < moveLocationX + 0.1f && currentPosition.x > moveLocationX - 0.1f) {
-								moving = false;
-						}
-				}
-			//}
+
+		if (moving) {
+			Vector3 target = moveDirection * maxSpeed + currentPosition;
+			transform.position = Vector3.Lerp (currentPosition, target, Time.deltaTime);
+			//Debug.Log ("currentPosition.x = " + currentPosition.x + ", moveLocationX = " + moveLocationX);
+			if (currentPosition.x < moveLocationX + 0.1f && currentPosition.x > moveLocationX - 0.1f) {
+				moving = false;
+			}
+		}
 	}
 
 	void Flip()
@@ -123,5 +156,23 @@ public class YoshiControllerScript : MonoBehaviour {
 	{
 		get { return direction; }
 		set { direction = value; }
+	}
+
+	void OnMouseOver() {
+		mouseOver = true;
+	}	
+
+	void OnMouseExit() {
+		mouseOver = false;
+	}
+
+	void OnMouseDown()
+	{	
+		//change stance
+		if(stance == numStances){
+			stance = 1;
+		}else{
+			stance++;
+		}
 	}
 }
