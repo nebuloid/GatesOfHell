@@ -85,7 +85,7 @@ public class ToadControllerScript : MonoBehaviour {
 	{	
 		if (player == null)
 			return;
-		UnityEngine.Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition).x - player.rigidbody2D.transform.position.x);
+		//UnityEngine.Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition).x - player.rigidbody2D.transform.position.x);
 		if (Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - player.rigidbody2D.transform.position.x) < 2 &&
 		    Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - player.rigidbody2D.transform.position.y) < 2) {
 			if (playerAnimator != null)

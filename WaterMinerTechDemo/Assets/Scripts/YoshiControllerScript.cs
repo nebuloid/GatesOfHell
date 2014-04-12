@@ -15,7 +15,7 @@ public class YoshiControllerScript : MonoBehaviour {
 	public float jumpForce = 700f;
 	
 	private float groundRadius = 0.2f;
-	private SpriteRenderer spriteRenderer;
+	//private SpriteRenderer spriteRenderer;
 
 	//move with click
 	private Vector3 moveDirection;
@@ -27,11 +27,10 @@ public class YoshiControllerScript : MonoBehaviour {
 	public Transform shotSpawn;
 	public float fireRate;
 	public Vector2 direction;
-
-	private float nextFire;
+	public float nextFire;
 
 	//change stance
-	public int waitTime;
+	
 	private int stance = 1;
 	private int numStances = 2;
 	private bool mouseOver;
@@ -40,7 +39,7 @@ public class YoshiControllerScript : MonoBehaviour {
 	void Start () {
 
 		anim = GetComponent<Animator> ();
-		spriteRenderer = renderer as SpriteRenderer;
+		//spriteRenderer = renderer as SpriteRenderer;
 		mouseOver = false;
 
 		//move with click
@@ -156,6 +155,12 @@ public class YoshiControllerScript : MonoBehaviour {
 	{
 		get { return direction; }
 		set { direction = value; }
+	}
+
+	public int Stance
+	{
+		get { return stance; }
+		set { stance = value; }
 	}
 
 	void OnMouseOver() {
