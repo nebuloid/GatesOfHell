@@ -115,7 +115,7 @@ Prefab:
       objectReference: {fileID: 1958923547}
     - target: {fileID: 2000000, guid: 4770f5c8d7cac6a45a215e8ba5a0898b, type: 2}
       propertyPath: orthographic size
-      value: 17.1613979
+      value: 8.41586113
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4770f5c8d7cac6a45a215e8ba5a0898b, type: 2}
@@ -198,7 +198,6 @@ GameObject:
   - 212: {fileID: 151630189}
   - 95: {fileID: 151630188}
   - 61: {fileID: 151630187}
-  - 114: {fileID: 151630186}
   m_Layer: 0
   m_Name: bounds
   m_TagString: Untagged
@@ -217,24 +216,6 @@ Transform:
   m_LocalScale: {x: 5.5, y: 5.5, z: 1}
   m_Children: []
   m_Father: {fileID: 746838293}
---- !u!114 &151630186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: e37ab7a10631b6948ba5fb7659725019,
-    type: 2}
-  m_PrefabInternal: {fileID: 474253252}
-  m_GameObject: {fileID: 151630184}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d848f442651560648ac99821807313e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300002, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300004, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300006, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  framesPerSecond: 4
 --- !u!61 &151630187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -297,7 +278,6 @@ GameObject:
   - 212: {fileID: 201432678}
   - 95: {fileID: 201432677}
   - 61: {fileID: 201432676}
-  - 114: {fileID: 201432675}
   m_Layer: 0
   m_Name: bounds
   m_TagString: Untagged
@@ -316,24 +296,6 @@ Transform:
   m_LocalScale: {x: 5.5, y: 5.5, z: 1}
   m_Children: []
   m_Father: {fileID: 746838293}
---- !u!114 &201432675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: e37ab7a10631b6948ba5fb7659725019,
-    type: 2}
-  m_PrefabInternal: {fileID: 474253252}
-  m_GameObject: {fileID: 201432673}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d848f442651560648ac99821807313e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300002, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300004, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300006, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  framesPerSecond: 4
 --- !u!61 &201432676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -766,7 +728,6 @@ GameObject:
   - 212: {fileID: 565642406}
   - 95: {fileID: 565642405}
   - 61: {fileID: 565642404}
-  - 114: {fileID: 565642403}
   m_Layer: 0
   m_Name: bounds
   m_TagString: Untagged
@@ -774,24 +735,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!114 &565642403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: e37ab7a10631b6948ba5fb7659725019,
-    type: 2}
-  m_PrefabInternal: {fileID: 474253252}
-  m_GameObject: {fileID: 565642402}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d848f442651560648ac99821807313e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300002, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300004, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300006, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  framesPerSecond: 4
 --- !u!61 &565642404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -939,6 +882,32 @@ Prefab:
   m_RootGameObject: {fileID: 974193976}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &871150946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 871150947}
+  m_Layer: 0
+  m_Name: Toad Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &871150947
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 871150946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0530557632, y: -.137049198, z: 1.20431709}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &933504282
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +945,6 @@ GameObject:
   - 212: {fileID: 974060705}
   - 95: {fileID: 974060704}
   - 61: {fileID: 974060703}
-  - 114: {fileID: 974060702}
   m_Layer: 0
   m_Name: bounds
   m_TagString: Untagged
@@ -995,24 +963,6 @@ Transform:
   m_LocalScale: {x: 5.5, y: 5.5, z: 1}
   m_Children: []
   m_Father: {fileID: 746838293}
---- !u!114 &974060702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400006, guid: e37ab7a10631b6948ba5fb7659725019,
-    type: 2}
-  m_PrefabInternal: {fileID: 474253252}
-  m_GameObject: {fileID: 974060700}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d848f442651560648ac99821807313e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300002, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300004, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300006, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  framesPerSecond: 4
 --- !u!61 &974060703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1073,6 +1023,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 974193978}
   - 114: {fileID: 974193977}
+  - 82: {fileID: 974193979}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: GameController
@@ -1110,6 +1061,64 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!82 &974193979
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974193976}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 7b04c59dd84f14039b601e1abbe7b884, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &993307639
 Prefab:
   m_ObjectHideFlags: 0
@@ -1224,7 +1233,6 @@ GameObject:
   - 212: {fileID: 1056484753}
   - 95: {fileID: 1056484752}
   - 61: {fileID: 1056484751}
-  - 114: {fileID: 1056484750}
   m_Layer: 0
   m_Name: bounds
   m_TagString: Untagged
@@ -1243,24 +1251,6 @@ Transform:
   m_LocalScale: {x: 5.5, y: 5.5, z: 1}
   m_Children: []
   m_Father: {fileID: 746838293}
---- !u!114 &1056484750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: e37ab7a10631b6948ba5fb7659725019,
-    type: 2}
-  m_PrefabInternal: {fileID: 474253252}
-  m_GameObject: {fileID: 1056484748}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d848f442651560648ac99821807313e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300002, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300004, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300006, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  framesPerSecond: 4
 --- !u!61 &1056484751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1456,7 +1446,6 @@ GameObject:
   - 212: {fileID: 1101422810}
   - 95: {fileID: 1101422809}
   - 61: {fileID: 1101422808}
-  - 114: {fileID: 1101422807}
   m_Layer: 0
   m_Name: bounds
   m_TagString: Untagged
@@ -1475,24 +1464,6 @@ Transform:
   m_LocalScale: {x: 5.5, y: 5.5, z: 1}
   m_Children: []
   m_Father: {fileID: 746838293}
---- !u!114 &1101422807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400010, guid: e37ab7a10631b6948ba5fb7659725019,
-    type: 2}
-  m_PrefabInternal: {fileID: 474253252}
-  m_GameObject: {fileID: 1101422805}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d848f442651560648ac99821807313e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300002, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300004, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300006, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  framesPerSecond: 4
 --- !u!61 &1101422808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1839,7 +1810,6 @@ GameObject:
   - 212: {fileID: 1487797627}
   - 95: {fileID: 1487797626}
   - 61: {fileID: 1487797625}
-  - 114: {fileID: 1487797624}
   m_Layer: 0
   m_Name: bounds
   m_TagString: Untagged
@@ -1858,24 +1828,6 @@ Transform:
   m_LocalScale: {x: 5.5, y: 5.5, z: 1}
   m_Children: []
   m_Father: {fileID: 746838293}
---- !u!114 &1487797624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400012, guid: e37ab7a10631b6948ba5fb7659725019,
-    type: 2}
-  m_PrefabInternal: {fileID: 474253252}
-  m_GameObject: {fileID: 1487797622}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d848f442651560648ac99821807313e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300002, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300004, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  - {fileID: 21300006, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
-  framesPerSecond: 4
 --- !u!61 &1487797625
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2314,7 +2266,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 17.1613979
+  orthographic size: 8.41586113
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

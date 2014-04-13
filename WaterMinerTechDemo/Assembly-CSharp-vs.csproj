@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\GrassController.cs" />
      <Compile Include="Assets\Scripts\Mover.cs" />
+     <Compile Include="Assets\Scripts\StartButton.cs" />
      <Compile Include="Assets\Scripts\ToadControllerScript.cs" />
      <Compile Include="Assets\Scripts\YoshiControllerScript.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
