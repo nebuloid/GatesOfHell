@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Mover.cs" />
      <Compile Include="Assets\Scripts\StartButton.cs" />
      <Compile Include="Assets\Scripts\ToadControllerScript.cs" />
+     <Compile Include="Assets\Scripts\ToadSpawner.cs" />
      <Compile Include="Assets\Scripts\YoshiControllerScript.cs" />
   </ItemGroup>
   <ItemGroup>
