@@ -192,6 +192,7 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 02ee948f29a2a004dac1837d8b8815b7, type: 2}
   m_RootGameObject: {fileID: 1958923547}
   m_IsPrefabParent: 0
@@ -2903,8 +2904,7 @@ GameObject:
   - 61: {fileID: 1958923551}
   - 95: {fileID: 1958923553}
   - 114: {fileID: 1958923554}
-  - 114: {fileID: 1958923556}
-  - 82: {fileID: 1958923555}
+  - 82: {fileID: 1958923556}
   m_Layer: 8
   m_Name: Yoshi
   m_TagString: Player
@@ -3029,16 +3029,17 @@ MonoBehaviour:
   direction: {x: 0, y: 0}
   nextFire: 2
   shotSound: {fileID: 8300000, guid: bf75b984df8a84987bcf3a8bf6e2862d, type: 3}
---- !u!82 &1958923555
+--- !u!82 &1958923556
 AudioSource:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 8200000, guid: 02ee948f29a2a004dac1837d8b8815b7,
+    type: 2}
+  m_PrefabInternal: {fileID: 118446505}
   m_GameObject: {fileID: 1958923547}
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3087,24 +3088,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1958923556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 02ee948f29a2a004dac1837d8b8815b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 118446505}
-  m_GameObject: {fileID: 1958923547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fba54219a15cec41aaced02e5194b2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  winDepth: -15
-  winGuiText: {fileID: 0}
-  restartGuiText: {fileID: 0}
-  winText: You Win!
-  restartText: Click to Restart
-  level: level_2
 --- !u!1 &1963124303
 GameObject:
   m_ObjectHideFlags: 0
