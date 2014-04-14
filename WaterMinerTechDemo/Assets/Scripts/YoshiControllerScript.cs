@@ -14,7 +14,9 @@ public class YoshiControllerScript : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 700f;
 	
+	
 	private float groundRadius = 0.2f;
+	private bool dead = false;
 	//private SpriteRenderer spriteRenderer;
 
 	//move with click
@@ -28,9 +30,9 @@ public class YoshiControllerScript : MonoBehaviour {
 	public float fireRate;
 	public Vector2 direction;
 	public float nextFire;
+	public AudioClip shotSound;
 
 	//change stance
-	
 	private int stance = 1;
 	private int numStances = 2;
 	private bool mouseOver;
@@ -109,8 +111,8 @@ public class YoshiControllerScript : MonoBehaviour {
 			Vector3 spotPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, 0.0f);
 			
 			Instantiate(shot, spotPosition, shotSpawn.rotation);
-				
-			//audio.Play();
+			audio.clip = shotSound;
+			audio.Play();
 			
 		}
 	}
@@ -179,5 +181,16 @@ public class YoshiControllerScript : MonoBehaviour {
 		}else{
 			stance++;
 		}
+	}
+
+	public bool Dead
+	{
+		get { return dead; }
+		set { dead = value; }
+	}
+
+	public void Die(){
+		dead = true;
+		//Debug.Log("Yoshi Died!!!!!!");
 	}
 }

@@ -14,9 +14,18 @@ public class GrassController : MonoBehaviour {
 	//private float groundRadius = 0.2f;
 	private GameObject player; // player object for moving 
 	private YoshiControllerScript playerController;
+	private GameController gameController;
 
 	// Use this for initialization
 	void Start () {
+
+		GameObject gameControlObject = GameObject.FindWithTag ("GameController");
+		if (gameControlObject != null) {
+			gameController = gameControlObject.GetComponent <GameController>(); //get this instance's own game controller connection
+		}
+		if (gameController == null) {
+			UnityEngine.Debug.Log("Cannot find 'GameController' script"); //logging in case unable to find gamecontroller
+		}
 
 		player = GameObject.FindWithTag ("Player");
 		if (player != null) {
@@ -37,28 +46,32 @@ public class GrassController : MonoBehaviour {
 
 	// FixedUpdate is run at specific time intervals.
 	void FixedUpdate () {
-		if (player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
-		&& player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x)
-		    && player.transform.position.y < transform.position.y + spriteRenderer.bounds.extents.y * 2) {
-			grounded = true;
-		} else {
-			grounded = false;
-			touched = false;
-			if(timer.IsRunning){
-				timer.Stop();
-				timer.Reset();
-				spriteRenderer.sprite = sprites [0];
+		bool dead = gameController.GameOverBool;
+		if(! dead){
+			if (player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
+			&& player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x)
+			    && player.transform.position.y < transform.position.y + spriteRenderer.bounds.extents.y * 2) {
+				grounded = true;
+			} else {
+				grounded = false;
+				touched = false;
+				if(timer.IsRunning){
+					timer.Stop();
+					timer.Reset();
+					spriteRenderer.sprite = sprites [0];
+				}
 			}
-		}
+		
 
-		if(grounded){
-			if (touched) {
-				int index = (int)(0.01f * timer.ElapsedMilliseconds);
-				//UnityEngine.Debug.Log(boxCol);
-				if(index == sprites.Length){
-					Destroy(gameObject);
-				}else if(index < sprites.Length){
-					spriteRenderer.sprite = sprites [index];
+			if(grounded){
+				if (touched) {
+					int index = (int)(0.01f * timer.ElapsedMilliseconds);
+					//UnityEngine.Debug.Log(boxCol);
+					if(index == sprites.Length){
+						Destroy(gameObject);
+					}else if(index < sprites.Length){
+						spriteRenderer.sprite = sprites [index];
+					}
 				}
 			}
 		}
@@ -66,11 +79,14 @@ public class GrassController : MonoBehaviour {
 	
 	void OnMouseDown()
 	{	
-		int stance = playerController.Stance;
-		UnityEngine.Debug.Log(stance);
-		if (player == null)
+		bool dead = gameController.GameOverBool;
+		
+		if (player == null || dead)
 			return;
-		if (player.transform.position.x < transform.position.x + spriteRenderer.bounds.extents.x && grounded && stance == 1){
+
+		int stance = playerController.Stance;
+		if (player.transform.position.x < transform.position.x + spriteRenderer.bounds.extents.x 
+		    && grounded && stance == 1){
 			if (playerAnimator != null)
 				playerAnimator.Play("Swing");
 

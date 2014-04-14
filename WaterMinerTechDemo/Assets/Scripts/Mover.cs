@@ -14,7 +14,7 @@ public class Mover : MonoBehaviour
 		player = GameObject.FindWithTag ("Player");
 		playerClass = player.GetComponent<YoshiControllerScript>();
 		rigidbody2D.velocity = playerClass.Direction * speed; 
-		Debug.Log (playerClass.Direction); 
+		//Debug.Log (playerClass.Direction); 
 		//rigidbody.velocity = transform.forward * speed;
 		//rigidbody2D.velocity = YoshiControllerScript.Direction.x * speed;
 	}

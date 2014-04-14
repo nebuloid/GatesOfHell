@@ -6,6 +6,7 @@ public class GameController : MonoBehaviour {
 	public GUIText scoreText;
 	public GUIText winText;
 	public GUIText gameOverText;
+	public AudioClip deathSound;
 
 	public GameObject player;
 	public float winDepth;
@@ -15,6 +16,7 @@ public class GameController : MonoBehaviour {
 	private bool gameOver;
 	private bool won;
 	private int score;
+	private YoshiControllerScript playerController;
 
 	void Start ()
 	{
@@ -23,20 +25,31 @@ public class GameController : MonoBehaviour {
 		winText.text = "";
 		gameOverText.text = "";
 		score = 0;
+
+		GameObject playerObject = GameObject.FindWithTag ("Player");
+		if (playerObject != null) {
+			playerController = playerObject.GetComponent <YoshiControllerScript>(); //get this instance's own game controller connection
+		}
+		if (playerController == null) {
+			Debug.Log("Cannot find 'GameController' script"); //logging in case unable to find gamecontroller
+		}
+
 		UpdateScore();
-		//StartCoroutine (SpawnWaves ());
 	}
 
 	void Update (){
-
+		if(gameOver && audio.loop){
+			audio.loop = false;
+		}	
 	}
 	
 	void FixedUpdate () {
-		if (player.transform.position.y < winDepth && !won) {
+		
+		if (player.transform.position.y < winDepth && ! won && ! gameOver) {
 			Victory ();
 		}
 		
-		if (Input.GetButton ("Fire1") && won) {
+		if (Input.GetButton ("Fire1") && (won || gameOver)) {
 			Application.LoadLevel (level);
 		}
 	}
@@ -55,9 +68,19 @@ public class GameController : MonoBehaviour {
 		UpdateScore();
 	}
 
+	public bool GameOverBool
+	{
+		get { return gameOver; }
+		set { gameOver = value; }
+	}
+
 	public void GameOver (){
-		gameOverText.text = "Game Over Man!";
 		gameOver = true;
+		audio.clip = deathSound;
+		audio.Play();
+		playerController.Die();
+		level = Application.loadedLevelName;
+		gameOverText.text = "Game Over Man!";
 	}
 
 }
