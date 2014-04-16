@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: toad_controller
+  m_Name: TooBeeController
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: Speed
@@ -287,7 +287,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: f07e2cab163efb64181ebf426708cb8a, type: 2}
+  - {fileID: 7400000, guid: b6676a23abdfb064cb8d63f64a29930b, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 504, y: -120, z: 0}
   m_IKOnFeet: 0
@@ -302,7 +302,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 1f1c7e708d0c2944ab93750fd222a48b, type: 2}
+  - {fileID: 7400000, guid: 42a88ffe7594910498f8d8686421dd62, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 240, y: -120, z: 0}
   m_IKOnFeet: 0
@@ -332,7 +332,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 1d1a8c04d71f17f4d99ac4979c00bdd2, type: 2}
+  - {fileID: 7400000, guid: 136f743ced9d85b4391b59408b684b86, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 360, y: -300, z: 0}
   m_IKOnFeet: 0
@@ -349,31 +349,34 @@ StateMachine:
   m_States:
   - {fileID: 110237937}
   - {fileID: 110200000}
+  - {fileID: 110280638}
   - {fileID: 110287237}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
       first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 110200000}
       second:
-      - {fileID: 110174635}
-      - {fileID: 110158947}
+      - {fileID: 110111701}
     data:
       first: {fileID: 110237937}
       second:
       - {fileID: 110100000}
       - {fileID: 110153696}
     data:
-      first: {fileID: 0}
-      second: []
+      first: {fileID: 110200000}
+      second:
+      - {fileID: 110174635}
+      - {fileID: 110158947}
+    data:
+      first: {fileID: 110280638}
+      second:
+      - {fileID: 110178527}
     data:
       first: {fileID: 110287237}
       second:
       - {fileID: 110173751}
       - {fileID: 110115394}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: 132, y: -216, z: 0}
+  m_AnyStatePosition: {x: 0, y: -120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

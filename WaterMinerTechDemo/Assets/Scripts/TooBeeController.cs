@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class YoshiControllerScript : MonoBehaviour {
+public class TooBeeController : MonoBehaviour {
 
 	public float maxSpeed = 10f;
 

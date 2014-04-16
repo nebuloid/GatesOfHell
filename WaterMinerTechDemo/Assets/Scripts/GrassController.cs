@@ -13,7 +13,7 @@ public class GrassController : MonoBehaviour {
 	private Stopwatch timer;
 	//private float groundRadius = 0.2f;
 	private GameObject player; // player object for moving 
-	private YoshiControllerScript playerController;
+	private TooBeeController playerController;
 	private GameController gameController;
 
 	// Use this for initialization
@@ -29,7 +29,7 @@ public class GrassController : MonoBehaviour {
 
 		player = GameObject.FindWithTag ("Player");
 		if (player != null) {
-			playerController = player.GetComponent <YoshiControllerScript>(); //get this instance's own game controller connection
+			playerController = player.GetComponent <TooBeeController>(); //get this instance's own game controller connection
 		}
 
 		playerAnimator = player.GetComponent<Animator>();

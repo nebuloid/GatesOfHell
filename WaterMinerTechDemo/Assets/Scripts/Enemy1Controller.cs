@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Diagnostics;
 
-public class ToadControllerScript : MonoBehaviour {
+public class Enemy1Controller : MonoBehaviour {
 
 	public float maxSpeed = 10f;
 	bool facingRight = false;
@@ -19,7 +19,7 @@ public class ToadControllerScript : MonoBehaviour {
 	private Stopwatch timer;
 	private Animator playerAnimator;
 	private float move = 1;
-	//private YoshiControllerScript playerController;
+	//private TooBeeController playerController;
 	private GameController gameController;
 
 	// Use this for initialization

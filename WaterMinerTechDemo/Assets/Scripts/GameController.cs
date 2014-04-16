@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour {
 	private bool gameOver;
 	private bool won;
 	private int score;
-	private YoshiControllerScript playerController;
+	private TooBeeController playerController;
 
 	void Start ()
 	{
@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour {
 
 		GameObject playerObject = GameObject.FindWithTag ("Player");
 		if (playerObject != null) {
-			playerController = playerObject.GetComponent <YoshiControllerScript>(); //get this instance's own game controller connection
+			playerController = playerObject.GetComponent <TooBeeController>(); //get this instance's own game controller connection
 		}
 		if (playerController == null) {
 			Debug.Log("Cannot find 'GameController' script"); //logging in case unable to find gamecontroller

@@ -6,13 +6,13 @@ public class Mover : MonoBehaviour
 	public float speed;
 
 	private GameObject player;
-	private YoshiControllerScript playerClass;
+	private TooBeeController playerClass;
 
 	void Start ()
 	{
 		//player = new GameObject ();
 		player = GameObject.FindWithTag ("Player");
-		playerClass = player.GetComponent<YoshiControllerScript>();
+		playerClass = player.GetComponent<TooBeeController>();
 		rigidbody2D.velocity = playerClass.Direction * speed; 
 		//Debug.Log (playerClass.Direction); 
 		//rigidbody.velocity = transform.forward * speed;
