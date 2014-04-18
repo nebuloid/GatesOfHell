@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Diagnostics;
 
-public class GrassController : MonoBehaviour {
+public class GroundController : MonoBehaviour {
 	private Animator playerAnimator;
 	public Sprite[] sprites;
 	public float framesPerSecond;
@@ -39,7 +39,7 @@ public class GrassController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () { 
+	void Update () {
 
 
 	}
@@ -48,9 +48,10 @@ public class GrassController : MonoBehaviour {
 	void FixedUpdate () {
 		bool dead = gameController.GameOverBool;
 		if(! dead){
-			if (player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
-			&& player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x)
-			    && player.transform.position.y < transform.position.y + spriteRenderer.bounds.extents.y * 2) {
+			if ((player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
+				&& player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x))
+			    || (player.transform.position.y < transform.position.y + (spriteRenderer.bounds.extents.y)
+			 	&& player.transform.position.y > transform.position.y - (spriteRenderer.bounds.extents.y))) {
 				grounded = true;
 			} else {
 				grounded = false;
