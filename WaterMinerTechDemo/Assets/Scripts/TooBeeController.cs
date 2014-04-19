@@ -14,10 +14,13 @@ public class TooBeeController : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 700f;
 	
-	
 	private float groundRadius = 0.2f;
 	private bool dead = false;
 	//private SpriteRenderer spriteRenderer;
+
+	//constants
+	private const int MOVE_STANCE = 1;
+	private const int SHOOT_STANCE = 2;
 
 	//move with click
 	private Vector3 moveDirection;
@@ -76,11 +79,11 @@ public class TooBeeController : MonoBehaviour {
 			//shoot and move
 
 			switch (stance) {
-				case 1:
+				case MOVE_STANCE:
 				//moving
 					MoveMe ();
 					break;
-				case 2:
+				case SHOOT_STANCE:
 				//toobee
 					Shoot ();
 					break;
@@ -92,8 +95,7 @@ public class TooBeeController : MonoBehaviour {
 		} 
 	}
 
-	void Update()
-	{
+	void Update(){
 		if (grounded && Input.GetKeyDown (KeyCode.Space)) {
 			anim.SetBool ("Ground",false);
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
@@ -145,8 +147,7 @@ public class TooBeeController : MonoBehaviour {
 		}
 	}
 
-	void Flip()
-	{
+	void Flip(){
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
@@ -173,11 +174,10 @@ public class TooBeeController : MonoBehaviour {
 		mouseOver = false;
 	}
 
-	void OnMouseDown()
-	{	
+	void OnMouseDown(){	
 		//change stance
 		if(stance == numStances){
-			stance = 1;
+			stance = MOVE_STANCE;
 		}else{
 			stance++;
 		}

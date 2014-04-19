@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Diagnostics;
 
-public class GrassController : MonoBehaviour {
+public class GroundController : MonoBehaviour {
 	private Animator playerAnimator;
 	public Sprite[] sprites;
 	public float framesPerSecond;
@@ -39,30 +39,18 @@ public class GrassController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () { 
-
-
+	void Update () {
+		if(PlayerDistance()){
+			grounded = true;
+		}else{
+			grounded = false;
+		}
 	}
 
 	// FixedUpdate is run at specific time intervals.
 	void FixedUpdate () {
 		bool dead = gameController.GameOverBool;
 		if(! dead){
-			if (player.transform.position.x < transform.position.x + (spriteRenderer.bounds.extents.x)
-			&& player.transform.position.x > transform.position.x - (spriteRenderer.bounds.extents.x)
-			    && player.transform.position.y < transform.position.y + spriteRenderer.bounds.extents.y * 2) {
-				grounded = true;
-			} else {
-				grounded = false;
-				touched = false;
-				if(timer.IsRunning){
-					timer.Stop();
-					timer.Reset();
-					spriteRenderer.sprite = sprites [0];
-				}
-			}
-		
-
 			if(grounded){
 				if (touched) {
 					int index = (int)(0.01f * timer.ElapsedMilliseconds);
@@ -73,20 +61,37 @@ public class GrassController : MonoBehaviour {
 						spriteRenderer.sprite = sprites [index];
 					}
 				}
+			}else{
+				touched = false;
+				if(timer.IsRunning){
+					timer.Stop();
+					timer.Reset();
+					spriteRenderer.sprite = sprites [0];
+				}
 			}
 		}
 	}
 	
-	void OnMouseDown()
-	{	
+	public bool PlayerDistance(){
+		if(Vector2.Distance(player.transform.position, transform.position) < 5.7f){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	void OnMouseDown(){
+		//UnityEngine.Debug.Log("player = "+ player.transform.position);
+		UnityEngine.Debug.Log(Vector2.Distance(player.transform.position, transform.position));
+		UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x * 2);
+
 		bool dead = gameController.GameOverBool;
 		
 		if (player == null || dead)
 			return;
 
 		int stance = playerController.Stance;
-		if (player.transform.position.x < transform.position.x + spriteRenderer.bounds.extents.x 
-		    && grounded && stance == 1){
+		if (grounded && stance == 1){
 			if (playerAnimator != null)
 				playerAnimator.Play("Swing");
 
