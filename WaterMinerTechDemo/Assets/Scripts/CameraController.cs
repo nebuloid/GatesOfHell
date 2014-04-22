@@ -11,6 +11,8 @@ public class CameraController : MonoBehaviour {
 	
 	private Transform cameraTransform; // camera Transform
 	private GameController gameController;
+	private double screenRatio;
+	private const double IDEAL_SCREEN_RATIO = 1.5;
 	
 	// Use this for initialization
 	void Start()
@@ -22,6 +24,15 @@ public class CameraController : MonoBehaviour {
 		}
 		if (gameController == null) {
 			UnityEngine.Debug.Log("Cannot find 'GameController' script"); //logging in case unable to find gamecontroller
+		}
+
+		screenRatio = (float) Screen.width / (float) Screen.height;
+		if (screenRatio > 1.6) {
+			ResizeScreenMore();
+		}
+
+		if (screenRatio < 1.4) {
+			ResizeScreenLess();
 		}
 	}
 	
@@ -36,7 +47,15 @@ public class CameraController : MonoBehaviour {
 		if(! dead){
 			cameraTransform.position = new Vector3(cameraTransform.position.x, 
 		                                      	   Mathf.SmoothDamp(cameraTransform.position.y, cameraTarget.transform.position.y, ref velocity.y, smoothTime), 
-																	cameraTransform.position.z);
+			                                       cameraTransform.position.z);
 		}
+	}
+
+	void ResizeScreenLess() {
+		Camera.main.orthographicSize *= (float) ((IDEAL_SCREEN_RATIO + Mathf.Abs ((float)(screenRatio - IDEAL_SCREEN_RATIO))) / IDEAL_SCREEN_RATIO);
+	}
+
+	void ResizeScreenMore() {
+		Camera.main.orthographicSize /= (float) ((IDEAL_SCREEN_RATIO + Mathf.Abs ((float)(screenRatio - IDEAL_SCREEN_RATIO))) / IDEAL_SCREEN_RATIO);
 	}
 }
