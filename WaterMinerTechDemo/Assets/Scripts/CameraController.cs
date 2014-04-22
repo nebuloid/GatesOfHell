@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour {
 	void FixedUpdate () {
 		bool dead = gameController.GameOverBool;
 		if(! dead){
-			cameraTransform.position = new Vector3(Mathf.SmoothDamp(cameraTransform.position.x, cameraTarget.transform.position.x, ref velocity.x, smoothTime), 
+			cameraTransform.position = new Vector3(cameraTransform.position.x, 
 		                                      	   Mathf.SmoothDamp(cameraTransform.position.y, cameraTarget.transform.position.y, ref velocity.y, smoothTime), 
 																	cameraTransform.position.z);
 		}
