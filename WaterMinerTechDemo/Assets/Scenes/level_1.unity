@@ -567,7 +567,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300004, guid: 020d73dbb1d6c434da38e8e91fcf8d8c, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &117827721
 Prefab:
@@ -937,6 +937,44 @@ Prefab:
       propertyPath: m_Size.y
       value: .239999995
       objectReference: {fileID: 0}
+    - target: {fileID: 21200002, guid: 6247ef5c6e2f7f741a2221036b838999, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300010, guid: 649e37dd156ebe94e86085ef710f0fe5,
+        type: 3}
+    - target: {fileID: 400004, guid: 6247ef5c6e2f7f741a2221036b838999, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .00818641018
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 6247ef5c6e2f7f741a2221036b838999, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.0893835276
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200028, guid: 6247ef5c6e2f7f741a2221036b838999, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: 649e37dd156ebe94e86085ef710f0fe5,
+        type: 3}
+    - target: {fileID: 21200000, guid: 6247ef5c6e2f7f741a2221036b838999, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: 649e37dd156ebe94e86085ef710f0fe5,
+        type: 3}
+    - target: {fileID: 21200022, guid: 6247ef5c6e2f7f741a2221036b838999, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300018, guid: 649e37dd156ebe94e86085ef710f0fe5,
+        type: 3}
+    - target: {fileID: 21200006, guid: 6247ef5c6e2f7f741a2221036b838999, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300022, guid: 649e37dd156ebe94e86085ef710f0fe5,
+        type: 3}
+    - target: {fileID: 21200020, guid: 6247ef5c6e2f7f741a2221036b838999, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300008, guid: 649e37dd156ebe94e86085ef710f0fe5,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6247ef5c6e2f7f741a2221036b838999, type: 2}
   m_RootGameObject: {fileID: 1958923547}
@@ -2623,7 +2661,7 @@ Transform:
   m_PrefabInternal: {fileID: 162390893}
   m_GameObject: {fileID: 512540894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0053129131, y: -.0893835202, z: .0218849182}
+  m_LocalPosition: {x: .00818641018, y: -.0893835276, z: .0218849182}
   m_LocalScale: {x: .124655813, y: .124655664, z: 1}
   m_Children: []
   m_Father: {fileID: 1958923550}
@@ -2649,7 +2687,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300016, guid: 020d73dbb1d6c434da38e8e91fcf8d8c, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &538894884
 GameObject:
@@ -3446,7 +3484,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 020d73dbb1d6c434da38e8e91fcf8d8c, type: 3}
+  m_Sprite: {fileID: 21300022, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &733676201
 GameObject:
@@ -7010,7 +7048,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300014, guid: 020d73dbb1d6c434da38e8e91fcf8d8c, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1495311761
 GameObject:
@@ -7702,7 +7740,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300008, guid: 020d73dbb1d6c434da38e8e91fcf8d8c, type: 3}
+  m_Sprite: {fileID: 21300018, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1578114552
 GameObject:
@@ -10240,7 +10278,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300004, guid: 020d73dbb1d6c434da38e8e91fcf8d8c, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2111602369
 GameObject:
