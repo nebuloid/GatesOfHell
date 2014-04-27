@@ -14,7 +14,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
   m_Layer: 0
-  m_Name: Toobe
+  m_Name: ToobeThrown
   m_TagString: TooBee
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
