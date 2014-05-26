@@ -12,7 +12,7 @@ public class TooBeeController : MonoBehaviour {
 	public bool grounded = false;
 	public Transform groundCheck;
 	public LayerMask whatIsGround;
-	public float jumpForce = 700f;
+	//public float jumpForce = 0f;
 	
 	private float groundRadius = 0.2f;
 	private bool dead = false;
@@ -96,11 +96,10 @@ public class TooBeeController : MonoBehaviour {
 	}
 
 	void Update(){
-		if (grounded && Input.GetKeyDown (KeyCode.Space)) {
-			anim.SetBool ("Ground",false);
-			rigidbody2D.AddForce(new Vector2(0, jumpForce));
-		}
-
+		//if (grounded && Input.GetKeyDown (KeyCode.Space)) {
+		//	anim.SetBool ("Ground",false);
+		//	rigidbody2D.AddForce(new Vector2(0, jumpForce));
+		//}
 	}
 
 	void Shoot(){
