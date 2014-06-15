@@ -110,7 +110,7 @@ public class TooBeeController : MonoBehaviour {
 			direction = new Vector2 (mousePosition.x - transform.position.x, mousePosition.y - transform.position.y).normalized;
 			nextFire = Time.time + fireRate;
 			Vector3 spotPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, 0.0f);
-			
+			anim.Play("ThrowToobee");
 			Instantiate(shot, spotPosition, shotSpawn.rotation);
 			audio.clip = shotSound;
 			audio.Play();
