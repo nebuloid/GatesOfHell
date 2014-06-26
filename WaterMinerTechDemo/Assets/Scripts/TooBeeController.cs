@@ -25,7 +25,9 @@ public class TooBeeController : MonoBehaviour {
 	//move with click
 	private Vector3 moveDirection;
 	private float moveLocationX;
+	private float moveLocationY;
 	private bool moving;
+	private Vector3 mTargetPoint;
 
 	//toobee shots
 	public GameObject shot;
@@ -118,29 +120,32 @@ public class TooBeeController : MonoBehaviour {
 		}
 	}
 
-	void MoveMe(){
-		Vector3 currentPosition = transform.position;
+	public void setTargetPoint(Vector3 point) {
+		mTargetPoint = point;
+		moving = true;
+	}
 
-		if (Input.GetButton ("Fire1") ) {
-			Vector3 moveToward = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			//Debug.Log (Input.mousePosition);
+	private void MoveMe(){
+		Vector3 currentPosition = transform.position;
+		if (moving) {
+			Vector3 moveToward = mTargetPoint;
+			Debug.Log (mTargetPoint);
 			moveDirection = moveToward - currentPosition;
 			moveDirection.z = 0; 
-			moveDirection.y = 0;
 			moveLocationX = moveToward.x;
+			moveLocationY = moveToward.y;
 			moveDirection.Normalize ();
-			moving = true;
+
 			if (moveToward.x > currentPosition.x && !facingRight)
 				Flip ();
 			else if (moveToward.x < currentPosition.x && facingRight)
 				Flip ();
-		}
 
-		if (moving) {
 			Vector3 target = moveDirection * maxSpeed + currentPosition;
 			transform.position = Vector3.Lerp (currentPosition, target, Time.deltaTime);
 			//Debug.Log ("currentPosition.x = " + currentPosition.x + ", moveLocationX = " + moveLocationX);
-			if (currentPosition.x < moveLocationX + 0.1f && currentPosition.x > moveLocationX - 0.1f) {
+			if (currentPosition.x < moveLocationX + 0.1f && currentPosition.x > moveLocationX - 0.1f &&
+			    currentPosition.y < moveLocationY + 0.1f && currentPosition.y > moveLocationY - 0.1f) {
 				moving = false;
 			}
 		}

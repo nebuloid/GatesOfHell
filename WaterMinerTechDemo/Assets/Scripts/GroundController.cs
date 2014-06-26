@@ -99,6 +99,6 @@ public class GroundController : MonoBehaviour {
 				timer.Start();
 
 			touched = true;
-		}
+		} 		
 	}
 }
