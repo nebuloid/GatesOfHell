@@ -41,6 +41,9 @@ public class TooBeeController : MonoBehaviour {
 	private int stance = 1;
 	private int numStances = 2;
 	private bool mouseOver;
+
+	private bool flipOk = false;
+	private bool mFirstTouch = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -69,8 +72,11 @@ public class TooBeeController : MonoBehaviour {
 		
 		if (! mouseOver ) {
 			float move = Input.GetAxis ("Horizontal");
-
-			anim.SetFloat ("Speed", Mathf.Abs (move));
+ 			if (mTargetPoint != null && mFirstTouch == true) {
+				Debug.Log (Mathf.Abs (mTargetPoint.x - transform.position.x));
+				anim.SetFloat ("Speed", Mathf.Abs (mTargetPoint.x - transform.position.x));
+				//Debug.Log("move: " + move);
+			}
 			rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 
 			if (move > 0 && !facingRight)
@@ -123,13 +129,15 @@ public class TooBeeController : MonoBehaviour {
 	public void setTargetPoint(Vector3 point) {
 		mTargetPoint = point;
 		moving = true;
+		flipOk = true;
+		mFirstTouch = true;
 	}
 
 	private void MoveMe(){
 		Vector3 currentPosition = transform.position;
 		if (moving) {
 			Vector3 moveToward = mTargetPoint;
-			Debug.Log (mTargetPoint);
+			//Debug.Log (mTargetPoint);
 			moveDirection = moveToward - currentPosition;
 			moveDirection.z = 0; 
 			moveLocationX = moveToward.x;
@@ -152,10 +160,14 @@ public class TooBeeController : MonoBehaviour {
 	}
 
 	void Flip(){
+		if (!flipOk)
+			return;
+
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+		flipOk = false;
 	}
 
 	public Vector2 Direction

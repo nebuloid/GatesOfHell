@@ -82,8 +82,8 @@ public class GroundController : MonoBehaviour {
 
 	void OnMouseDown(){
 		//UnityEngine.Debug.Log("player = "+ player.transform.position);
-		UnityEngine.Debug.Log(Vector2.Distance(player.transform.position, transform.position));
-		UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x * 2);
+		//UnityEngine.Debug.Log(Vector2.Distance(player.transform.position, transform.position));
+		//UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x * 2);
 
 		bool dead = gameController.GameOverBool;
 		
