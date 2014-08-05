@@ -54,7 +54,7 @@ public class GameController : MonoBehaviour {
 		}
 	}
 	
-	void Victory() {
+	public void Victory() {
 		winText.text = winString;
 		won = true;
 	}
