@@ -64,43 +64,41 @@ public class TooBeeController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+		anim.SetBool ("Ground", grounded);
 		
-			grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-			anim.SetBool ("Ground", grounded);
-			
-			anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
-		
-		if (! mouseOver ) {
-			float move = Input.GetAxis ("Horizontal");
- 			if (mTargetPoint != null && mFirstTouch == true) {
-				Debug.Log (Mathf.Abs (mTargetPoint.x - transform.position.x));
-				anim.SetFloat ("Speed", Mathf.Abs (mTargetPoint.x - transform.position.x));
-				//Debug.Log("move: " + move);
-			}
-			rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+	
 
-			if (move > 0 && !facingRight)
-					Flip ();
-			else if (move < 0 && facingRight)
-					Flip ();
+		float move = Input.GetAxis ("Horizontal");
+		if (mTargetPoint != null && mFirstTouch == true) {
+			//Debug.Log (Mathf.Abs (mTargetPoint.x - transform.position.x));
+			anim.SetFloat ("Speed", Mathf.Abs (mTargetPoint.x - transform.position.x));
+			//Debug.Log("move: " + move);
+		}
+		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 
-			//shoot and move
+		if (move > 0 && !facingRight)
+				Flip ();
+		else if (move < 0 && facingRight)
+				Flip ();
 
-			switch (stance) {
-				case MOVE_STANCE:
-				//moving
-					MoveMe ();
-					break;
-				case SHOOT_STANCE:
-				//toobee
-					Shoot ();
-					break;
-				default:
-				//moving
-					MoveMe ();
-					break;
-			}
-		} 
+		//shoot and move
+
+		switch (stance) {
+			case MOVE_STANCE:
+			//moving
+				MoveMe ();
+				break;
+			case SHOOT_STANCE:
+			//toobee
+				Shoot ();
+				break;
+			default:
+			//moving
+				MoveMe ();
+				break;
+		}
 	}
 
 	void Update(){
@@ -117,9 +115,12 @@ public class TooBeeController : MonoBehaviour {
 
 			direction = new Vector2 (mousePosition.x - transform.position.x, mousePosition.y - transform.position.y).normalized;
 			nextFire = Time.time + fireRate;
-			Vector3 spotPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, 0.0f);
+			Vector3 startPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, 0.0f);
+			Vector3 targPosition = new Vector3 (mousePosition.x, mousePosition.y, 0.0f);
 			anim.Play("ThrowToobee");
-			Instantiate(shot, spotPosition, shotSpawn.rotation);
+			GameObject clone = (GameObject) Instantiate(shot, startPosition, shotSpawn.rotation);
+
+			clone.rigidbody2D.AddForce (direction * 1000.0f);
 			audio.clip = shotSound;
 			audio.Play();
 			

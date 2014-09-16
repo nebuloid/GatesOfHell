@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\GroundController.cs" />
      <Compile Include="Assets\Scripts\LoadingScreen.cs" />
      <Compile Include="Assets\Scripts\StartButton.cs" />
+     <Compile Include="Assets\Scripts\ThrowController.cs" />
      <Compile Include="Assets\Scripts\ToadSpawner.cs" />
      <Compile Include="Assets\Scripts\TooBeeController.cs" />
      <Compile Include="Assets\Scripts\WaterController.cs" />

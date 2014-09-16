@@ -22,11 +22,12 @@ public class DestroyByContact : MonoBehaviour {
 		
 		if (other.tag == "Player") { 
 			//player dies
-			gameController.GameOver ();
+			if (gameController != null)
+				gameController.GameOver ();
 			
 		}else{
-		
-			gameController.AddScore(scoreValue);
+			if (gameController != null)
+				gameController.AddScore(scoreValue);
 		
 			//destroy toad
 			Destroy (gameObject);
