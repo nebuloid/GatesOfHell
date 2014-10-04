@@ -25,15 +25,18 @@ public class DestroyByContact : MonoBehaviour {
 			if (gameController != null)
 				gameController.GameOver ();
 			
-		}else{
+		} else if (other.tag == "Toad") {
 			if (gameController != null)
 				gameController.AddScore(scoreValue);
 		
 			//destroy toad
 			Destroy (gameObject);
-		}
+		
 
-		//destroy whatever hit toad
-		Destroy (other.gameObject);
+			//destroy whatever hit toad
+			Destroy (other.gameObject);
+		} else {
+			gameObject.transform.rigidbody2D.velocity = new Vector2(0,0);
+		}
 	}
 }
