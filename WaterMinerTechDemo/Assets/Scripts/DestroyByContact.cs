@@ -5,10 +5,11 @@ public class DestroyByContact : MonoBehaviour {
 	
 	//public GameObject player;
 	public int scoreValue;
+	public bool won = false;
 
 	private GameController gameController;
 
-	void Start (){
+	void Start () {
 		GameObject gameControlObject = GameObject.FindWithTag ("GameController");
 		if (gameControlObject != null) {
 			gameController = gameControlObject.GetComponent <GameController>(); //get this instance's own game controller connection
@@ -19,7 +20,8 @@ public class DestroyByContact : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		
+		if (won)
+			return;
 		if (other.tag == "Player") { 
 			//player dies
 			if (gameController != null)
@@ -38,5 +40,6 @@ public class DestroyByContact : MonoBehaviour {
 		} else {
 			gameObject.transform.rigidbody2D.velocity = new Vector2(0,0);
 		}
+		won = true;
 	}
 }

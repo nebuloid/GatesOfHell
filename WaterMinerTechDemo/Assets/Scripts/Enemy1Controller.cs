@@ -4,22 +4,22 @@ using System.Diagnostics;
 
 public class Enemy1Controller : MonoBehaviour {
 
-	public float maxSpeed = 10f;
+	public float maxSpeedX = 10f;
+	public float maxSpeedY = 10f;
 	bool facingRight = false;
+	bool facingUp = false;
 	public GameObject playerObject;
-	public float flipTimer;
-	public float stopDistance;
+	public float flipTimerX = 10f;
+	public float flipTimerY = 10f;
 
 	Animator anim;
 	
 	public Transform groundCheck;
 	public LayerMask whatIsGround;
-	public float jumpForce = 700f;
-
 	private Stopwatch timer;
 	private Animator playerAnimator;
-	private float move = 1;
-	//private TooBeeController playerController;
+	private float moveX = 1;
+	private float moveY = 1;
 	private GameController gameController;
 
 	// Use this for initialization
@@ -40,51 +40,16 @@ public class Enemy1Controller : MonoBehaviour {
 		timer = new Stopwatch ();
 		timer.Start();
 
-		InvokeRepeating("FlipToad", flipTimer, flipTimer);
+		InvokeRepeating("FlipToadX", flipTimerX, flipTimerX);
+		InvokeRepeating("FlipToadY", flipTimerY, flipTimerY);
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 		bool dead = gameController.GameOverBool;
 		if(! dead){
-			//move TOWARDS player
-			/*
-			if (player.transform.position.x < transform.position.x) {
-				move = -1;
-			} else {
-				move = 1;
-			}
-	
-			if (Mathf.Abs (player.transform.position.x - transform.position.x) > 2 && grounded) {
-				anim.SetFloat ("Speed", Mathf.Abs (move));
-				rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
-			} else {
-				anim.SetFloat ("Speed", 0);
-				rigidbody2D.velocity = new Vector2 (0, rigidbody2D.velocity.y);
-			}
-			*/
-
-
-			if (Mathf.Abs (playerObject.transform.position.x - transform.position.x) > stopDistance) {
-	
-				anim.SetFloat ("Speed", 1);
-				rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
-			} else {
-				//player is close so stop moving and face player
-				if (playerObject.transform.position.x < transform.position.x) {
-					move = -1;
-				} else {
-					move = 1;
-				}
-	
-				if (move < 0 && !facingRight)
-					Flip ();
-				else if (move > 0 && facingRight)
-					Flip ();
-	
-				anim.SetFloat ("Speed", 0);
-				rigidbody2D.velocity = new Vector2 (0, rigidbody2D.velocity.y);
-			}
+			anim.SetFloat ("Speed", 1);
+			rigidbody2D.velocity = new Vector2 (moveX * maxSpeedX, moveY * maxSpeedY);
 		}
 	}
 
@@ -105,17 +70,21 @@ public class Enemy1Controller : MonoBehaviour {
 		}
 	}
 
-	void FlipToad ()
+	void FlipToadX ()
 	{
-		move = -move;
-
-		if (move < 0 && !facingRight)
-			Flip ();
-		else if (move > 0 && facingRight)
-			Flip ();
+		moveX = -moveX;
+		if (moveX < 0 && !facingRight)
+			FlipX ();
+		else if (moveX > 0 && facingRight)
+			FlipX ();
 	}
 
-	void Flip()
+	void FlipToadY ()
+	{
+		moveY = -moveY;
+	}
+
+	void FlipX()
 	{
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
