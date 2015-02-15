@@ -7,6 +7,9 @@ public class DestroyByContact : MonoBehaviour {
 	public int scoreValue;
 	public bool won = false;
 
+	public GUIText livesText;
+	public int lives;
+
 	private GameController gameController;
 
 	void Start () {
@@ -24,9 +27,17 @@ public class DestroyByContact : MonoBehaviour {
 			return;
 		if (other.tag == "Player") { 
 			//player dies
+			lives--;
+			if(lives==0){
+				Debug.Log("Lost all lives");
+			} else if (lives > 0) {
+				Debug.Log("Lost one life, # of lives left: " + lives);
+				livesText.text = "Lives:  " + lives;
+			}
+
 			if (gameController != null)
 				gameController.GameOver ();
-			
+
 		} else if (other.tag == "Toad") {
 			if (gameController != null)
 				gameController.AddScore(scoreValue);
