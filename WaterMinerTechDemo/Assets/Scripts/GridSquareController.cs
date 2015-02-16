@@ -2,14 +2,8 @@
 using System.Collections;
 
 public class GridSquareController : MonoBehaviour {
-	private Animator playerAnimator;
 	public Sprite[] sprites;
 	public float framesPerSecond;
-	
-	private SpriteRenderer spriteRenderer;
-	private bool touched = false;
-	private bool grounded = false;
-	//private float groundRadius = 0.2f;
 	private GameObject player; // player object for moving 
 	private TooBeeController playerController;
 	private GameController gameController;
@@ -27,9 +21,7 @@ public class GridSquareController : MonoBehaviour {
 		if (player != null) {
 			playerController = player.GetComponent <TooBeeController>(); //get this instance's own game controller connection
 		}
-		
-		playerAnimator = player.GetComponent<Animator>();
-		spriteRenderer = renderer as SpriteRenderer;
+
 		//UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x);
 		BoxCollider2D box = (BoxCollider2D) player.GetComponent("BoxCollider2D");
 		CircleCollider2D circle = (CircleCollider2D) player.GetComponent("CircleCollider2D");
@@ -49,8 +41,7 @@ public class GridSquareController : MonoBehaviour {
 			return;
 		
 		int stance = playerController.Stance;
-		if (stance == 1){
-			touched = true;
+		if (stance == 1) {
 			playerController.setTargetPoint(transform.position);
 		}
 	}

@@ -7,7 +7,7 @@ public class Enemy1Controller : MonoBehaviour {
 	public float maxSpeedX = 10f;
 	public float maxSpeedY = 10f;
 	bool facingRight = false;
-	bool facingUp = false;
+    
 	public GameObject playerObject;
 	public float flipTimerX = 10f;
 	public float flipTimerY = 10f;

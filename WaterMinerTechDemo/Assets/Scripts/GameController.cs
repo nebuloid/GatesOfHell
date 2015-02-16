@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
 	private bool gameOver;
 	private bool won;
 	private int score;
+	//private int lives;
 	private TooBeeController playerController;
 
 	void Start ()
@@ -73,6 +74,11 @@ public class GameController : MonoBehaviour {
 		get { return gameOver; }
 		set { gameOver = value; }
 	}
+
+	//public void DecrementLives
+	//{
+
+	//}
 
 	public void GameOver (){
 		gameOver = true;

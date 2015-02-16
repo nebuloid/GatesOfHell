@@ -16,7 +16,6 @@ public class StartButton : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Store where we were placed in the editor
-		var InitialPosition = transform.position;
 	}
 	
 	// Update is called once per frame

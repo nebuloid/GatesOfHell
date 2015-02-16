@@ -8,15 +8,7 @@ public class TooBeeController : MonoBehaviour {
 	bool facingRight = true;
 
 	Animator anim;
-
-	public bool grounded = false;
-	public Transform groundCheck;
-	public LayerMask whatIsGround;
-	//public float jumpForce = 0f;
-	
-	private float groundRadius = 0.2f;
 	private bool dead = false;
-	//private SpriteRenderer spriteRenderer;
 
 	//constants
 	private const int MOVE_STANCE = 1;
@@ -40,17 +32,13 @@ public class TooBeeController : MonoBehaviour {
 	//change stance
 	private int stance = 1;
 	private int numStances = 2;
-	private bool mouseOver;
 
 	private bool flipOk = false;
 	private bool mFirstTouch = false;
 	
 	// Use this for initialization
 	void Start () {
-
 		anim = GetComponent<Animator> ();
-		//spriteRenderer = renderer as SpriteRenderer;
-		mouseOver = false;
 
 		//move with click
 		moveDirection = Vector3.right;
@@ -64,24 +52,21 @@ public class TooBeeController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-		anim.SetBool ("Ground", grounded);
-		
 		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
 	
-
 		float move = Input.GetAxis ("Horizontal");
-		if (mTargetPoint != null && mFirstTouch == true) {
+		if (mTargetPoint != default(Vector3) && mFirstTouch == true) {
 			//Debug.Log (Mathf.Abs (mTargetPoint.x - transform.position.x));
 			anim.SetFloat ("Speed", Mathf.Abs (mTargetPoint.x - transform.position.x));
 			//Debug.Log("move: " + move);
 		}
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 
-		if (move > 0 && !facingRight)
-				Flip ();
-		else if (move < 0 && facingRight)
-				Flip ();
+		if (move > 0 && !facingRight) {
+            Flip ();
+        } else if (move < 0 && facingRight) {
+            Flip ();
+        }
 
 		//shoot and move
 
@@ -101,13 +86,6 @@ public class TooBeeController : MonoBehaviour {
 		}
 	}
 
-	void Update(){
-		//if (grounded && Input.GetKeyDown (KeyCode.Space)) {
-		//	anim.SetBool ("Ground",false);
-		//	rigidbody2D.AddForce(new Vector2(0, jumpForce));
-		//}
-	}
-
 	void Shoot(){
 		if (Input.GetButton ("Fire1") && Time.time > nextFire) {
 			Vector3 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
@@ -116,14 +94,12 @@ public class TooBeeController : MonoBehaviour {
 			direction = new Vector2 (mousePosition.x - transform.position.x, mousePosition.y - transform.position.y).normalized;
 			nextFire = Time.time + fireRate;
 			Vector3 startPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, 0.0f);
-			Vector3 targPosition = new Vector3 (mousePosition.x, mousePosition.y, 0.0f);
 			anim.Play("ThrowToobee");
 			GameObject clone = (GameObject) Instantiate(shot, startPosition, shotSpawn.rotation);
 
 			clone.rigidbody2D.AddForce (direction * 1000.0f);
 			audio.clip = shotSound;
 			audio.Play();
-			
 		}
 	}
 
@@ -145,10 +121,11 @@ public class TooBeeController : MonoBehaviour {
 			moveLocationY = moveToward.y;
 			moveDirection.Normalize ();
 
-			if (moveToward.x > currentPosition.x && !facingRight)
+			if (moveToward.x > currentPosition.x && !facingRight) {
 				Flip ();
-			else if (moveToward.x < currentPosition.x && facingRight)
+			} else if (moveToward.x < currentPosition.x && facingRight) {
 				Flip ();
+            }
 
 			Vector3 target = moveDirection * maxSpeed + currentPosition;
 			transform.position = Vector3.Lerp (currentPosition, target, Time.deltaTime);
@@ -161,8 +138,9 @@ public class TooBeeController : MonoBehaviour {
 	}
 
 	void Flip(){
-		if (!flipOk)
-			return;
+		if (!flipOk) {
+            return;
+        }
 
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
@@ -183,14 +161,6 @@ public class TooBeeController : MonoBehaviour {
 		set { stance = value; }
 	}
 
-	void OnMouseOver() {
-		mouseOver = true;
-	}	
-
-	void OnMouseExit() {
-		mouseOver = false;
-	}
-
 	void OnMouseDown(){	
 		//change stance
 		if(stance == numStances){
@@ -208,6 +178,5 @@ public class TooBeeController : MonoBehaviour {
 
 	public void Die(){
 		dead = true;
-		//Debug.Log("Yoshi Died!!!!!!");
 	}
 }

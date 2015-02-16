@@ -8,7 +8,7 @@ public class DestroyByContact : MonoBehaviour {
 	public bool won = false;
 
 	public GUIText livesText;
-	public int lives;
+	public int lives; // move this code into gameController
 
 	private GameController gameController;
 
@@ -26,17 +26,19 @@ public class DestroyByContact : MonoBehaviour {
 		if (won)
 			return;
 		if (other.tag == "Player") { 
-			//player dies
+			//player dies // (move this following block of code into gameController.DecrementLives (it will be the majority of that function)
 			lives--;
 			if(lives==0){
 				Debug.Log("Lost all lives");
 			} else if (lives > 0) {
 				Debug.Log("Lost one life, # of lives left: " + lives);
 				livesText.text = "Lives:  " + lives;
-			}
+			}// end of the section to be moved 
 
-			if (gameController != null)
-				gameController.GameOver ();
+			if (gameController != null) {
+				//gameController.DecrementLives ();
+				gameController.GameOver ();// move this into decrement lives (if lives == 0) game over
+			}
 
 		} else if (other.tag == "Toad") {
 			if (gameController != null)
