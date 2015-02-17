@@ -23,7 +23,7 @@ public class DestroyByContact : MonoBehaviour {
 			return;
 		if (other.tag == "Player") { 
 			if (gameController != null) {
-				gameController.DecrementLives ();
+				gameController.DecrementLives (); // this runs when one collider is a toad and one is the player
 			}
 		} else if (other.tag == "Toad") {
 			if (gameController != null)

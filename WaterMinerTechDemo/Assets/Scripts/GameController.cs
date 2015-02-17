@@ -53,7 +53,7 @@ public class GameController : MonoBehaviour {
 		}
 		
 		if (Input.GetButton ("Fire1") && (won || gameOver)) {
-			Application.LoadLevel (level);
+			Application.LoadLevel (level); // loads a new level (right now it is set to load the same over and over
 		}
 	}
 	
@@ -86,10 +86,9 @@ public class GameController : MonoBehaviour {
         } else if (lives > 0) {
             Debug.Log("Lost one life, # of lives left: " + lives);
             livesText.text = "Lives:  " + lives;
-           
             audio.clip = deathSound;
             audio.Play();
-            playerController.Die();
+            playerController.Die(); // moves player to starting point
         }
 	}
 
@@ -97,7 +96,7 @@ public class GameController : MonoBehaviour {
 		gameOver = true;
 		audio.clip = deathSound;
 		audio.Play();
-		level = Application.loadedLevelName;
+		level = Application.loadedLevelName; // prepares the level that will be loaded when player clicks
 		gameOverText.text = "Game Over Man!";
 	}
 
