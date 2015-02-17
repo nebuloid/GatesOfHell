@@ -2,13 +2,14 @@
 using System.Collections;
 
 public class TooBeeController : MonoBehaviour {
+    private Vector2 mStartingPosition;
+    public Vector2 getStartingPoint() { return mStartingPosition; }
 
 	public float maxSpeed = 10f;
 
 	bool facingRight = true;
 
 	Animator anim;
-	private bool dead = false;
 
 	//constants
 	private const int MOVE_STANCE = 1;
@@ -47,7 +48,7 @@ public class TooBeeController : MonoBehaviour {
 
 		//toobee shots
 		direction = new Vector2 (0.0f, 0.0f);
-
+        mStartingPosition = new Vector2 (transform.position.x, transform.position.y);
 	}
 	
 	// Update is called once per frame
@@ -170,13 +171,7 @@ public class TooBeeController : MonoBehaviour {
 		}
 	}
 
-	public bool Dead
-	{
-		get { return dead; }
-		set { dead = value; }
-	}
-
 	public void Die(){
-		dead = true;
+        transform.position = new Vector3 (mStartingPosition.x, mStartingPosition.y, transform.position.z);
 	}
 }
