@@ -6,8 +6,6 @@ public class GameController : MonoBehaviour {
 	public GUIText scoreText;
 	public GUIText winText;
 	public GUIText gameOverText;
-    public GUIText livesText;
-
 	public AudioClip deathSound;
 
 	public GameObject player;
@@ -18,8 +16,8 @@ public class GameController : MonoBehaviour {
 	private bool gameOver;
 	private bool won;
 	private int score;
-    public int lives;
-    private TooBeeController playerController;
+	//private int lives;
+	private TooBeeController playerController;
 
 	void Start ()
 	{
@@ -77,26 +75,16 @@ public class GameController : MonoBehaviour {
 		set { gameOver = value; }
 	}
 
-	public void DecrementLives ()
-	{
-        lives--;
-        if(lives==0){
-            GameOver ();
-            Debug.Log("Lost all lives");
-        } else if (lives > 0) {
-            Debug.Log("Lost one life, # of lives left: " + lives);
-            livesText.text = "Lives:  " + lives;
-           
-            audio.clip = deathSound;
-            audio.Play();
-            playerController.Die();
-        }
-	}
+	//public void DecrementLives
+	//{
 
-	private void GameOver (){
+	//}
+
+	public void GameOver (){
 		gameOver = true;
 		audio.clip = deathSound;
 		audio.Play();
+		playerController.Die();
 		level = Application.loadedLevelName;
 		gameOverText.text = "Game Over Man!";
 	}
