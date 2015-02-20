@@ -6,9 +6,13 @@ public class GameController : MonoBehaviour {
 	public GUIText scoreText;
 	public GUIText winText;
 	public GUIText gameOverText;
-    public GUIText livesText;
-
+   //public GUIText livesText;
 	public AudioClip deathSound;
+
+	//the three head game objects indicating player lives
+	public GameObject lifeHead1;
+	public GameObject lifeHead2;
+	public GameObject lifeHead3;
 
 	public GameObject player;
 	public float winDepth;
@@ -53,7 +57,7 @@ public class GameController : MonoBehaviour {
 		}
 		
 		if (Input.GetButton ("Fire1") && (won || gameOver)) {
-			Application.LoadLevel (level);
+			Application.LoadLevel (level); // loads a new level (right now it is set to load the same over and over
 		}
 	}
 	
@@ -82,14 +86,13 @@ public class GameController : MonoBehaviour {
         lives--;
         if(lives==0){
             GameOver ();
-            Debug.Log("Lost all lives");
+			removeHeads (lives);
         } else if (lives > 0) {
-            Debug.Log("Lost one life, # of lives left: " + lives);
-            livesText.text = "Lives:  " + lives;
-           
+
+			removeHeads (lives); 
             audio.clip = deathSound;
             audio.Play();
-            playerController.Die();
+            playerController.Die(); // moves player to starting point
         }
 	}
 
@@ -97,8 +100,29 @@ public class GameController : MonoBehaviour {
 		gameOver = true;
 		audio.clip = deathSound;
 		audio.Play();
-		level = Application.loadedLevelName;
+		level = Application.loadedLevelName; // prepares the level that will be loaded when player clicks
 		gameOverText.text = "Game Over Man!";
+	}
+
+
+	/*
+	 * Called in decrementLives()
+	 * this method takes in how many lives the
+	 * user currently has and then removes the 
+	 * TooBee head from the screen to match it.
+	 */
+	private void removeHeads(int lives) {
+		switch (lives) {
+			case 2:
+				Destroy (lifeHead3);
+				break;
+			case 1:
+				Destroy (lifeHead2);
+				break;
+			case 0:
+				Destroy (lifeHead1);
+				break;
+		}
 	}
 
 }
