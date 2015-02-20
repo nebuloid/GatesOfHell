@@ -88,8 +88,13 @@ public class GameController : MonoBehaviour {
             GameOver ();
 			removeHeads (lives);
         } else if (lives > 0) {
+<<<<<<< HEAD
 
 			removeHeads (lives); 
+=======
+            Debug.Log("Lost one life, # of lives left: " + lives);
+            livesText.text = "Lives:  " + lives;
+>>>>>>> FETCH_HEAD
             audio.clip = deathSound;
             audio.Play();
             playerController.Die(); // moves player to starting point
