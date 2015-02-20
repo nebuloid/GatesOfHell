@@ -88,6 +88,7 @@ public class GameController : MonoBehaviour {
             GameOver ();
 			removeHeads (lives);
         } else if (lives > 0) {
+
 			removeHeads (lives); 
             audio.clip = deathSound;
             audio.Play();
