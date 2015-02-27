@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
 
-	public GUIText scoreText;
+	//public GUIText scoreText;
 	public GUIText winText;
 	public GUIText gameOverText;
    //public GUIText livesText;
@@ -50,16 +50,16 @@ public class GameController : MonoBehaviour {
 		}	
 	}
 	
-	void FixedUpdate () {
-		
-		if (player.transform.position.y < winDepth && ! won && ! gameOver) {
-			Victory ();
-		}
-		
-		if (Input.GetButton ("Fire1") && (won || gameOver)) {
-			Application.LoadLevel (level); // loads a new level (right now it is set to load the same over and over
-		}
-	}
+    void FixedUpdate () {
+        
+        if (player.transform.position.y < winDepth && ! won && ! gameOver) {
+            Victory ();
+        }
+        
+        if (Input.GetButton ("Fire1") && (won || gameOver)) {
+            Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
+        }
+    }
 	
 	public void Victory() {
 		winText.text = winString;
@@ -67,7 +67,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	void UpdateScore (){
-		scoreText.text = "Score: " + score;
+		//scoreText.text = "Score: " + score;
 	}
 
 	public void AddScore (int newScoreValue){
@@ -96,13 +96,15 @@ public class GameController : MonoBehaviour {
         }
 	}
 
-	private void GameOver (){
-		gameOver = true;
-		audio.clip = deathSound;
-		audio.Play();
-		level = Application.loadedLevelName; // prepares the level that will be loaded when player clicks
-		gameOverText.text = "Game Over Man!";
-	}
+    private void GameOver (){
+        gameOver = true;
+        audio.clip = deathSound;
+        audio.Play();
+        // this line below here
+        Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
+        ; // prepares the level that will be loaded when player clicks
+        //gameOverText.text = "Game Over Man!";
+    }
 
 
 	/*
