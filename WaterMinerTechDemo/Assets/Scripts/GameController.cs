@@ -4,33 +4,32 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 
 	//public GUIText scoreText;
-	public GUIText winText;
-	public GUIText gameOverText;
+	public GUIText _winText;
+	public GUIText _gameOverText;
    //public GUIText livesText;
-	public AudioClip deathSound;
+	public AudioClip _deathSound;
 
 	//the three head game objects indicating player lives
-	public GameObject lifeHead1;
-	public GameObject lifeHead2;
-	public GameObject lifeHead3;
-
-	public GameObject player;
-	public float winDepth;
-	public string winString;
-	public string level;
+	public GameObject _lifeHead1;
+	public GameObject _lifeHead2;
+	public GameObject _lifeHead3;
+    public int _lives;
+  
+	public string _winString;
+	public string _level;
 
 	private bool gameOver;
 	private bool won;
 	private int score;
-    public int lives;
+
     private TooBeeController playerController;
 
 	void Start ()
 	{
 		gameOver = false;
 		won = false;
-		winText.text = "";
-		gameOverText.text = "";
+		_winText.text = "";
+		_gameOverText.text = "";
 		score = 0;
 
 		GameObject playerObject = GameObject.FindWithTag ("Player");
@@ -51,18 +50,17 @@ public class GameController : MonoBehaviour {
 	}
 	
     void FixedUpdate () {
-        
-        if (player.transform.position.y < winDepth && ! won && ! gameOver) {
-            Victory ();
-        }
-        
-        if (Input.GetButton ("Fire1") && (won || gameOver)) {
+        if (Input.GetButton ("Fire1") && gameOver) {
             Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
+        }
+
+        if (Input.GetButton ("Fire1") && won) {
+            Application.LoadLevel (_level); // loads a new level (right now it is set to load the same over and over
         }
     }
 	
 	public void Victory() {
-		winText.text = winString;
+		_winText.text = _winString;
 		won = true;
 	}
 
@@ -77,20 +75,20 @@ public class GameController : MonoBehaviour {
 
 	public bool GameOverBool
 	{
-		get { return gameOver; }
+        get { return gameOver; }
 		set { gameOver = value; }
 	}
 
 	public void DecrementLives ()
 	{
-        lives--;
-        if(lives==0){
+        _lives--;
+        if(_lives==0){
             GameOver ();
-			removeHeads (lives);
-        } else if (lives > 0) {
+			removeHeads (_lives);
+        } else if (_lives > 0) {
 
-			removeHeads (lives); 
-            audio.clip = deathSound;
+			removeHeads (_lives); 
+            audio.clip = _deathSound;
             audio.Play();
             playerController.Die(); // moves player to starting point
         }
@@ -98,7 +96,7 @@ public class GameController : MonoBehaviour {
 
     private void GameOver (){
         gameOver = true;
-        audio.clip = deathSound;
+        audio.clip = _deathSound;
         audio.Play();
         // this line below here
         Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
@@ -116,13 +114,13 @@ public class GameController : MonoBehaviour {
 	private void removeHeads(int lives) {
 		switch (lives) {
 			case 2:
-				Destroy (lifeHead3);
+				Destroy (_lifeHead3);
 				break;
 			case 1:
-				Destroy (lifeHead2);
+				Destroy (_lifeHead2);
 				break;
 			case 0:
-				Destroy (lifeHead1);
+				Destroy (_lifeHead1);
 				break;
 		}
 	}

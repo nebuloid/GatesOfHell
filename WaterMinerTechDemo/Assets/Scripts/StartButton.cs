@@ -2,16 +2,11 @@
 using System.Collections;
 
 public class StartButton : MonoBehaviour {
+    public float _distance = 0.001f;
+    public float _speed = 0.02f;
 
-	public float delay;
-
-	//private bool starting = false;
-	//private float startTime = 0f;
-	private float step = 0f;
-	public float distance;
+	private float step = 0f;	
 	private bool UP = true;
-	public float speed;
-
 
 	// Use this for initialization
 	void Start () {
@@ -39,14 +34,14 @@ public class StartButton : MonoBehaviour {
 		}
 		
 		if(UP){
-			step += speed;
+			step += _speed;
 		}else{
-			step -= speed;
+			step -= _speed;
 		}
 		
 		//Float up and down along the y axis, 
 		//Debug.Log(step);
-		float tempY = Mathf.Sin(step)+distance;
+		float tempY = Mathf.Sin(step)+_distance;
 		transform.position = new Vector3(transform.position.x,tempY ,transform.position.z);
 	}
 

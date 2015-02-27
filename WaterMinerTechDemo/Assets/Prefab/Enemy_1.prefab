@@ -113,15 +113,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27fd974c049a114f8676e4dd614af58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeedX: 3
-  maxSpeedY: 0
-  playerObject: {fileID: 0}
-  flipTimerX: 3
-  flipTimerY: 4
-  groundCheck: {fileID: 400002}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 4294967295
+  _maxSpeedX: 3
+  _maxSpeedY: 0
+  _flipTimerX: 3
+  _flipTimerY: 4
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,10 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab87778af4be5884b81ab8cccce0bf6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
-  won: 0
-  livesText: {fileID: 0}
-  lives: 3
+  _scoreValue: 100
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

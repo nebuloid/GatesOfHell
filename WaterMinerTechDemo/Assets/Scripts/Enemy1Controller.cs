@@ -4,52 +4,49 @@ using System.Diagnostics;
 
 public class Enemy1Controller : MonoBehaviour {
 
-	public float maxSpeedX = 10f;
-	public float maxSpeedY = 10f;
-	bool facingRight = false;
-    
-	public GameObject playerObject;
-	public float flipTimerX = 10f;
-	public float flipTimerY = 10f;
+	public float _maxSpeedX = 10f;
+	public float _maxSpeedY = 10f;
+    public float _flipTimerX = 10f;
+    public float _flipTimerY = 10f;
 
-	Animator anim;
-	
-	public Transform groundCheck;
-	public LayerMask whatIsGround;
-	private Stopwatch timer;
-	private Animator playerAnimator;
-	private float moveX = 1;
-	private float moveY = 1;
-	private GameController gameController;
+	private bool mFacingRight = false;
+	private GameObject mPlayerObject;
+	private Animator mAnim;
+
+	private Stopwatch mTimer;
+	private Animator mPlayerAnimator;
+	private float mMoveX = 1;
+	private float mMoveY = 1;
+	private GameController mGameController;
 
 	// Use this for initialization
 	void Start () {
 
-		anim = GetComponent<Animator> ();
-		playerObject = GameObject.FindWithTag ("Player");
+		mAnim = GetComponent<Animator> ();
+		mPlayerObject = GameObject.FindWithTag ("Player");
 		GameObject gameControlObject = GameObject.FindWithTag ("GameController");
 		if (gameControlObject != null) {
-			gameController = gameControlObject.GetComponent <GameController>(); //get this instance's own game controller connection
+			mGameController = gameControlObject.GetComponent <GameController>(); //get this instance's own game controller connection
 		}
-		if (gameController == null) {
+		if (mGameController == null) {
 			UnityEngine.Debug.Log("Cannot find 'GameController' script"); //logging in case unable to find gamecontroller
 		}
 
-		playerAnimator = playerObject.GetComponent<Animator>();
+		mPlayerAnimator = mPlayerObject.GetComponent<Animator>();
 
-		timer = new Stopwatch ();
-		timer.Start();
+		mTimer = new Stopwatch ();
+		mTimer.Start();
 
-		InvokeRepeating("FlipToadX", flipTimerX, flipTimerX);
-		InvokeRepeating("FlipToadY", flipTimerY, flipTimerY);
+		InvokeRepeating("FlipToadX", _flipTimerX, _flipTimerX);
+		InvokeRepeating("FlipToadY", _flipTimerY, _flipTimerY);
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		bool dead = gameController.GameOverBool;
+		bool dead = mGameController.GameOverBool;
 		if(! dead){
-			anim.SetFloat ("Speed", 1);
-			rigidbody2D.velocity = new Vector2 (moveX * maxSpeedX, moveY * maxSpeedY);
+			mAnim.SetFloat ("Speed", 1);
+			rigidbody2D.velocity = new Vector2 (mMoveX * _maxSpeedX, mMoveY * _maxSpeedY);
 		}
 	}
 
@@ -60,33 +57,33 @@ public class Enemy1Controller : MonoBehaviour {
 
 	void OnMouseDown()
 	{	
-		if (playerObject == null)
+		if (mPlayerObject == null)
 			return;
 		//UnityEngine.Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition).x - player.rigidbody2D.transform.position.x);
-		if (Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - playerObject.rigidbody2D.transform.position.x) < 2 &&
-		    Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - playerObject.rigidbody2D.transform.position.y) < 2) {
-			if (playerAnimator != null)
-				playerAnimator.Play("Swing");
+		if (Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - mPlayerObject.rigidbody2D.transform.position.x) < 2 &&
+		    Mathf.Abs (Camera.main.ScreenToWorldPoint(Input.mousePosition).y - mPlayerObject.rigidbody2D.transform.position.y) < 2) {
+			if (mPlayerAnimator != null)
+				mPlayerAnimator.Play("Swing");
 		}
 	}
 
 	void FlipToadX ()
 	{
-		moveX = -moveX;
-		if (moveX < 0 && !facingRight)
+		mMoveX = -mMoveX;
+		if (mMoveX < 0 && !mFacingRight)
 			FlipX ();
-		else if (moveX > 0 && facingRight)
+		else if (mMoveX > 0 && mFacingRight)
 			FlipX ();
 	}
 
 	void FlipToadY ()
 	{
-		moveY = -moveY;
+		mMoveY = -mMoveY;
 	}
 
 	void FlipX()
 	{
-		facingRight = !facingRight;
+		mFacingRight = !mFacingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;

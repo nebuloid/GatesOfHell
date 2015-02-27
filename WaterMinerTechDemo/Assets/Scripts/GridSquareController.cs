@@ -2,29 +2,27 @@
 using System.Collections;
 
 public class GridSquareController : MonoBehaviour {
-	public Sprite[] sprites;
-	public float framesPerSecond;
-	private GameObject player; // player object for moving 
-	private TooBeeController playerController;
-	private GameController gameController;
+	private GameObject mPlayer; // player object for moving 
+	private TooBeeController mPlayerController;
+	private GameController mGameController;
 	// Use this for initialization
 	void Start () {
 		GameObject gameControlObject = GameObject.FindWithTag ("GameController");
 		if (gameControlObject != null) {
-			gameController = gameControlObject.GetComponent <GameController>(); //get this instance's own game controller connection
+			mGameController = gameControlObject.GetComponent <GameController>(); //get this instance's own game controller connection
 		}
-		if (gameController == null) {
+		if (mGameController == null) {
 			UnityEngine.Debug.Log("Cannot find 'GameController' script"); //logging in case unable to find gamecontroller
 		}
 		
-		player = GameObject.FindWithTag ("Player");
-		if (player != null) {
-			playerController = player.GetComponent <TooBeeController>(); //get this instance's own game controller connection
+		mPlayer = GameObject.FindWithTag ("Player");
+		if (mPlayer != null) {
+			mPlayerController = mPlayer.GetComponent <TooBeeController>(); //get this instance's own game controller connection
 		}
 
 		//UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x);
-		BoxCollider2D box = (BoxCollider2D) player.GetComponent("BoxCollider2D");
-		CircleCollider2D circle = (CircleCollider2D) player.GetComponent("CircleCollider2D");
+		BoxCollider2D box = (BoxCollider2D) mPlayer.GetComponent("BoxCollider2D");
+		CircleCollider2D circle = (CircleCollider2D) mPlayer.GetComponent("CircleCollider2D");
 
 		Physics2D.IgnoreCollision(box, transform.collider2D);
 		Physics2D.IgnoreCollision(circle, transform.collider2D);
@@ -35,14 +33,14 @@ public class GridSquareController : MonoBehaviour {
 		//UnityEngine.Debug.Log(Vector2.Distance(player.transform.position, transform.position));
 		//UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x * 2);
 		
-		bool dead = gameController.GameOverBool;
+		bool dead = mGameController.GameOverBool;
 		
-		if (player == null || dead)
+		if (mPlayer == null || dead)
 			return;
 		
-		int stance = playerController.Stance;
+		int stance = mPlayerController.Stance;
 		if (stance == 1) {
-			playerController.setTargetPoint(transform.position);
+			mPlayerController.setTargetPoint(transform.position);
 		}
 	}
 }

@@ -3,10 +3,10 @@ using System.Collections;
 using System.Diagnostics;
 
 public class GroundController : MonoBehaviour {
-	private Animator playerAnimator;
-	public Sprite[] sprites;
-	public float framesPerSecond;
+	public Sprite[] _sprites;
+	public float _framesPerSecond;
 
+    private Animator playerAnimator;
 	private SpriteRenderer spriteRenderer;
 	private bool touched = false;
 	private bool grounded = false;
@@ -55,10 +55,10 @@ public class GroundController : MonoBehaviour {
 				if (touched) {
 					int index = (int)(0.01f * timer.ElapsedMilliseconds);
 					//UnityEngine.Debug.Log(boxCol);
-					if(index == sprites.Length){
+					if(index == _sprites.Length){
 						Destroy(gameObject);
-					}else if(index < sprites.Length){
-						spriteRenderer.sprite = sprites [index];
+					}else if(index < _sprites.Length){
+						spriteRenderer.sprite = _sprites [index];
 					}
 				}
 			}else{
@@ -66,7 +66,7 @@ public class GroundController : MonoBehaviour {
 				if(timer.IsRunning){
 					timer.Stop();
 					timer.Reset();
-					spriteRenderer.sprite = sprites [0];
+					spriteRenderer.sprite = _sprites [0];
 				}
 			}
 		}

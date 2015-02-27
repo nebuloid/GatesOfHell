@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class GameConditions : MonoBehaviour {
-
-	public float winDepth;
+	/*public float winDepth;
 	public GUIText winGuiText;
 	public GUIText restartGuiText;
 	public string winText;
@@ -37,5 +36,5 @@ public class GameConditions : MonoBehaviour {
 		winGuiText.text = winText;
 		restartGuiText.text = restartText;
 		won = true;
-	}
+	}*/
 }

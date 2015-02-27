@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class ToadSpawner : MonoBehaviour {
-
+    /*
 	public GameObject toad;
 	private GameController gameController;
 	
@@ -17,5 +17,5 @@ public class ToadSpawner : MonoBehaviour {
 		}
 		Instantiate(toad, transform.position, transform.rotation);
 		audio.Play();
-	}
+	}*/
 }

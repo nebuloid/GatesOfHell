@@ -4,30 +4,30 @@ using System.Collections;
 public class DestroyByContact : MonoBehaviour {
 	
 	//public GameObject player;
-	public int scoreValue;
-	public bool won = false;
-    private GameController gameController;
+	public int _scoreValue;
+	private bool mWon = false;
+    private GameController mGameController;
 
 	void Start () {
 		GameObject gameControlObject = GameObject.FindWithTag ("GameController");
 		if (gameControlObject != null) {
-			gameController = gameControlObject.GetComponent <GameController>(); //get this instance's own game controller connection
+			mGameController = gameControlObject.GetComponent <GameController>(); //get this instance's own game controller connection
 		}
-		if (gameController == null) {
+		if (mGameController == null) {
 			Debug.Log("Cannot find 'GameController' script"); //logging in case unable to find gamecontroller
 		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (won)
+		if (mWon)
 			return;
 		if (other.tag == "Player") { 
-			if (gameController != null) {
-				gameController.DecrementLives (); // this runs when one collider is a toad and one is the player
+			if (mGameController != null) {
+				mGameController.DecrementLives (); // this runs when one collider is a toad and one is the player
 			}
 		} else if (other.tag == "Toad") {
-			if (gameController != null)
-				gameController.AddScore(scoreValue);
+			if (mGameController != null)
+				mGameController.AddScore(_scoreValue);
 		
 			//destroy toad
 			Destroy (gameObject);
