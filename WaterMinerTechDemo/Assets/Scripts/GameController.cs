@@ -16,7 +16,8 @@ public class GameController : MonoBehaviour {
 	public GameObject _lifeHead2;
 	public GameObject _lifeHead3;
     public int _lives;
-	private float _score;
+	private float _scoreFloat;
+	private int _scoreInt;
 	//public string _winString;
 	public string _level;
 
@@ -31,8 +32,8 @@ public class GameController : MonoBehaviour {
 		gameOver = false;
 		won = false;
 
-		_score = 1000;
-		scoreText.text = "Score: " + _score;
+		_scoreFloat = 1000;
+		scoreText.text = "Score: " + _scoreFloat;
 
 		/*scoreTimer = new Timer(1000);
 		scoreTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
@@ -74,11 +75,11 @@ public class GameController : MonoBehaviour {
 	}
 
 	void UpdateScore (){
-		//scoreText.text = "Score: " + score;
+		scoreText.text = "Score: " + _scoreInt;
 	}
 
 	public void AddScore (int newScoreValue){
-		_score += newScoreValue;
+		_scoreInt += newScoreValue;
 		UpdateScore();
 	}
 
@@ -109,11 +110,12 @@ public class GameController : MonoBehaviour {
 	 * like a good speed to decrement at.
 	 */
 	public void DecrementScore() {
-		_score -= Time.deltaTime * 6;
-		if (_score < 0) {
-			_score = 0;
+		_scoreFloat -= Time.deltaTime * 6;
+		_scoreInt = (int) _scoreFloat;
+		if (_scoreFloat < 0) {
+			_scoreFloat = 0;
 		}
-		scoreText.text = "Score: " + _score;
+		scoreText.text = "Score: " + _scoreInt;
 	}
 
     private void GameOver (){
