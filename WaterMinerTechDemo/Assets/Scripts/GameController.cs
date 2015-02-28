@@ -103,15 +103,17 @@ public class GameController : MonoBehaviour {
         }
 	}
 
+	/*
+	 * This is the method that is called in Update();
+	 * I use Time.deltaTime * 6 just beacuse it seems 
+	 * like a good speed to decrement at.
+	 */
 	public void DecrementScore() {
 		_score -= Time.deltaTime * 6;
-		Debug.Log (Time.deltaTime);
-		//_score -= 17;
 		if (_score < 0) {
 			_score = 0;
 		}
 		scoreText.text = "Score: " + _score;
-		Debug.Log ("this code ran Score:" + _score);
 	}
 
     private void GameOver (){
