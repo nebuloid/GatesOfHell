@@ -1,16 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TooBeeController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
     <Files>
-      <File FileName="Assets\Scripts\LoadingScreen.cs" Line="13" Column="24" />
-      <File FileName="Assets\Scripts\GroundController.cs" Line="10" Column="40" />
-      <File FileName="Assets\Scripts\StartButton.cs" Line="11" Column="32" />
-      <File FileName="Assets\Scripts\ToadSpawner.cs" Line="13" Column="124" />
-      <File FileName="Assets\Scripts\TooBeeController.cs" Line="10" Column="26" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="108" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Scrand\Documents\WaterMiner\WaterMinerTechDemo\Assets\Scripts\CameraScaler.cs" line="19" />
+      <Breakpoint file="C:\Users\Scrand\Documents\WaterMiner\WaterMinerTechDemo\Assets\Scripts\CameraScaler.cs" line="25" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -1,26 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using System.Timers;
 
 public class GameController : MonoBehaviour {
 
-	//public GUIText scoreText;
-	public GUIText _winText;
-	public GUIText _gameOverText;
-   //public GUIText livesText;
 	public AudioClip _deathSound;
+	public AudioClip deathSound;
+
+	public Text scoreText;
+	//public static Timer scoreTimer;
 
 	//the three head game objects indicating player lives
 	public GameObject _lifeHead1;
 	public GameObject _lifeHead2;
 	public GameObject _lifeHead3;
     public int _lives;
-  
-	public string _winString;
+	private float _score;
+	//public string _winString;
 	public string _level;
 
 	private bool gameOver;
 	private bool won;
-	private int score;
+
 
     private TooBeeController playerController;
 
@@ -28,10 +30,14 @@ public class GameController : MonoBehaviour {
 	{
 		gameOver = false;
 		won = false;
-		_winText.text = "";
-		_gameOverText.text = "";
-		score = 0;
 
+		_score = 1000;
+		scoreText.text = "Score: " + _score;
+
+		/*scoreTimer = new Timer(1000);
+		scoreTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+		scoreTimer.Enabled = true;*/
+			
 		GameObject playerObject = GameObject.FindWithTag ("Player");
 		if (playerObject != null) {
 			playerController = playerObject.GetComponent <TooBeeController>(); //get this instance's own game controller connection
@@ -41,15 +47,19 @@ public class GameController : MonoBehaviour {
 		}
 
 		UpdateScore();
+
 	}
 
 	void Update (){
+
+		DecrementScore();
 		if(gameOver && audio.loop){
 			audio.loop = false;
-		}	
+		}
 	}
 	
     void FixedUpdate () {
+
         if (Input.GetButton ("Fire1") && gameOver) {
             Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
         }
@@ -60,7 +70,6 @@ public class GameController : MonoBehaviour {
     }
 	
 	public void Victory() {
-		_winText.text = _winString;
 		won = true;
 	}
 
@@ -69,7 +78,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void AddScore (int newScoreValue){
-		score += newScoreValue;
+		_score += newScoreValue;
 		UpdateScore();
 	}
 
@@ -92,6 +101,17 @@ public class GameController : MonoBehaviour {
             audio.Play();
             playerController.Die(); // moves player to starting point
         }
+	}
+
+	public void DecrementScore() {
+		_score -= Time.deltaTime * 6;
+		Debug.Log (Time.deltaTime);
+		//_score -= 17;
+		if (_score < 0) {
+			_score = 0;
+		}
+		scoreText.text = "Score: " + _score;
+		Debug.Log ("this code ran Score:" + _score);
 	}
 
     private void GameOver (){
@@ -124,5 +144,9 @@ public class GameController : MonoBehaviour {
 				break;
 		}
 	}
+	/*
+	public void OnTimedEvent(object scource, ElapsedEventArgs e) {
+		DecrementScore();
+	}*/
 
 }
