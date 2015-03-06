@@ -79,7 +79,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void AddScore (int newScoreValue){
-		_scoreInt += newScoreValue;
+		_scoreFloat += newScoreValue;
 		UpdateScore();
 	}
 
