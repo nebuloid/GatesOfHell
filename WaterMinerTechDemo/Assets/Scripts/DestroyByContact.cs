@@ -27,8 +27,8 @@ public class DestroyByContact : MonoBehaviour {
 			}
 		} else if (other.tag == "Toad") {
 			if (mGameController != null)
-				mGameController.AddScore(_scoreValue);
-				Debug.Log("Toad Killed: " + _scoreValue + "points gained");
+				mGameController.AddScore(other.GetComponent<DestroyByContact>()._scoreValue);
+                Debug.Log("Toad Killed: " + other.GetComponent<DestroyByContact>()._scoreValue + "points gained");
 			//destroy toad
 			Destroy (gameObject);
 			//destroy whatever hit toad
