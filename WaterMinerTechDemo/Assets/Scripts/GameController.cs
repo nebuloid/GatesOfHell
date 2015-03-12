@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.Timers;
+using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameController : MonoBehaviour {
 
@@ -18,12 +21,15 @@ public class GameController : MonoBehaviour {
     public int _lives;
 	private float _scoreFloat;
 	private int _scoreInt;
+	private int mHighScore;
 	//public string _winString;
 	public string _level;
 
 	private bool gameOver;
 	private bool won;
-
+	//this is turned to true when the level is completed
+	private bool isWindowShown;
+	public Rect windowRect = new Rect(Screen.width/2, Screen.height/2, 120, 90);
 
     private TooBeeController playerController;
 
@@ -31,13 +37,10 @@ public class GameController : MonoBehaviour {
 	{
 		gameOver = false;
 		won = false;
-
+		isWindowShown = false;
+		Load ();
 		_scoreFloat = 1000;
 		scoreText.text = "Score: " + _scoreFloat;
-
-		/*scoreTimer = new Timer(1000);
-		scoreTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
-		scoreTimer.Enabled = true;*/
 			
 		GameObject playerObject = GameObject.FindWithTag ("Player");
 		if (playerObject != null) {
@@ -53,7 +56,10 @@ public class GameController : MonoBehaviour {
 
 	void Update (){
 
-		DecrementScore();
+		//if the level isn't finished then decrement the score
+		if (!isWindowShown) {
+			DecrementScore();
+		}
 		if(gameOver && audio.loop){
 			audio.loop = false;
 		}
@@ -71,7 +77,14 @@ public class GameController : MonoBehaviour {
     }
 	
 	public void Victory() {
-		won = true;
+		Save ();
+		isWindowShown = true;
+		/* 
+		 * won equals true is now called 
+		 * if the user clicks the 'next level'
+		 * button in the gui text box
+		 */
+		//won = true;
 	}
 
 	void UpdateScore (){
@@ -148,9 +161,77 @@ public class GameController : MonoBehaviour {
 				break;
 		}
 	}
-	/*
-	public void OnTimedEvent(object scource, ElapsedEventArgs e) {
-		DecrementScore();
-	}*/
 
+	/*
+	 *This function controls the pop up window that displays when
+	 *the level has been beaten.
+	 */
+	private void OnGUI() {
+		if(isWindowShown){
+			windowRect = GUI.Window(0, windowRect, DoMyWindow, "Level Complete");
+		}
+
+	}
+
+	/*
+	 * This function adds two text fields and a button to the pop up window.
+	 * If the button is clicked it sends the user to the next level.
+	 */ 
+	private void DoMyWindow(int windowID) {
+		GUI.TextField(new Rect(10,40,100,20),"Score: " + _scoreInt);
+		GUI.TextField(new Rect(10, 60, 100,20), "High Score: " + mHighScore);
+		if (GUI.Button(new Rect(10, 20, 100, 20), "Next Level")) {
+			won = true;
+			//print("next level, Score: " + _scoreInt);
+		}
+	}
+
+	/*
+	 * This funciton will run when the level is beaten.
+	 * It saves the highScore if the current score is 
+	 * higher than it.
+	 */
+	public void Save() {
+		BinaryFormatter bf = new BinaryFormatter();
+		FileStream file = File.Create(Application.persistentDataPath + "/highScore.dat");
+
+		HighScoreData highScoreData = new HighScoreData();
+
+		if (mHighScore < _scoreInt) {
+			Debug.Log("new High Score!" + _scoreInt);
+			mHighScore = _scoreInt;
+			highScoreData.highScore = _scoreInt;
+			
+		} else {
+			Debug.Log("no new highScore");
+		}
+
+		bf.Serialize(file,highScoreData);
+		file.Close();
+	}
+
+	/*
+	 * This is ran in the on Start function
+	 * it loads the highscore from a file
+	 */
+	public void Load() {
+		if (File.Exists(Application.persistentDataPath + "/highScore.dat")) {
+			BinaryFormatter bf = new BinaryFormatter();
+			FileStream file = File.Open(Application.persistentDataPath + "/highScore.dat",FileMode.Open);
+			HighScoreData data = (HighScoreData)bf.Deserialize(file);
+			file.Close ();
+			mHighScore = data.highScore;
+			Debug.Log("highscore"  + mHighScore);
+		}
+	}
+
+}
+
+/*
+ * private class that implments seralizable
+ * it stores the highScore.
+ */
+	[Serializable]
+class HighScoreData {
+	public int highScore;
 }
