@@ -11,6 +11,9 @@ TagManager:
   - LifeHead3
   - LifeHead2
   - LifeHead1
+  - Lifehead1
+  - Enemy
+  - Invulnerability
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
