@@ -3928,7 +3928,7 @@ GameObject:
   - 212: {fileID: 339086308}
   - 58: {fileID: 339086307}
   - 114: {fileID: 339086310}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CoinSprite
   m_TagString: Invulnerability
   m_Icon: {fileID: 0}
@@ -4803,7 +4803,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 182810, guid: 1d6c5f1ca0d3f427ea6dcc26f8e014a4, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5889098, guid: 1d6c5f1ca0d3f427ea6dcc26f8e014a4, type: 2}
       propertyPath: m_IsTrigger
