@@ -75,65 +75,6 @@ NavMeshSettings:
     heightInaccuracy: 10
     tileSizeHint: 0
   m_NavMesh: {fileID: 0}
---- !u!1 &3496086
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 111998, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 3496087}
-  m_Layer: 10
-  m_Name: Bone Head
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3496087
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 411998, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 3496086}
-  m_LocalRotation: {x: 0, y: -.70550257, z: -0, w: .708707452}
-  m_LocalPosition: {x: -.320570946, y: 0, z: -.0106279133}
-  m_LocalScale: {x: .999999881, y: 1, z: .999999881}
-  m_Children:
-  - {fileID: 1294315041}
-  - {fileID: 110773128}
-  - {fileID: 1191226677}
-  - {fileID: 2124058873}
-  m_Father: {fileID: 206076548}
-  m_RootOrder: 0
---- !u!1 &4542950
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112000, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 4542951}
-  m_Layer: 10
-  m_Name: Bone Leg 03 Calf R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4542951
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412000, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 4542950}
-  m_LocalRotation: {x: .601986527, y: 9.03250766e-05, z: 7.24158526e-05, w: .79850626}
-  m_LocalPosition: {x: -1.19209291e-08, y: 3.57627883e-08, z: .199377641}
-  m_LocalScale: {x: 1, y: 1, z: 1.00000012}
-  m_Children:
-  - {fileID: 1821335032}
-  m_Father: {fileID: 1856751666}
-  m_RootOrder: 0
 --- !u!1 &8500749
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,33 +575,32 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &70321007
+--- !u!1 &72694531
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112002, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
+  m_PrefabParentObject: {fileID: 112036, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 70321008}
+  - 4: {fileID: 72694532}
   m_Layer: 10
-  m_Name: Bone Leg 01 Thigh L
+  m_Name: Bone Antennae R Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &70321008
+--- !u!4 &72694532
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412002, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 70321007}
-  m_LocalRotation: {x: -.751343906, y: .015750451, z: -.0194033496, w: .659437478}
-  m_LocalPosition: {x: -0, y: .00248939986, z: .109712534}
-  m_LocalScale: {x: .999999821, y: .99999994, z: .99999994}
-  m_Children:
-  - {fileID: 110459486}
-  m_Father: {fileID: 2082213548}
+  m_PrefabParentObject: {fileID: 412036, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 72694531}
+  m_LocalRotation: {x: .439275652, y: .225753531, z: .397452861, w: .773371518}
+  m_LocalPosition: {x: -9.53674331e-08, y: -1.1920929e-07, z: .290271729}
+  m_LocalScale: {x: .99999994, y: .99999994, z: 1}
+  m_Children: []
+  m_Father: {fileID: 194767466}
   m_RootOrder: 0
 --- !u!1 &80490332
 GameObject:
@@ -867,62 +807,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &110459485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112004, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 110459486}
-  m_Layer: 10
-  m_Name: Bone Leg 01 Calf L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &110459486
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412004, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 110459485}
-  m_LocalRotation: {x: .59538722, y: .000141269644, z: .000115556453, w: .803438902}
-  m_LocalPosition: {x: 1.63912777e-08, y: 5.96046448e-08, z: .199377611}
-  m_LocalScale: {x: 1, y: .999999881, z: .999999881}
-  m_Children:
-  - {fileID: 2139004181}
-  m_Father: {fileID: 70321008}
-  m_RootOrder: 0
---- !u!1 &110773127
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112006, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 110773128}
-  m_Layer: 10
-  m_Name: Bone Antennae R Root
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &110773128
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412006, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 110773127}
-  m_LocalRotation: {x: .646324933, y: -.626120687, z: -.425638676, w: .0952295288}
-  m_LocalPosition: {x: .0396417156, y: -.0817366093, z: .220992357}
-  m_LocalScale: {x: -.999999821, y: -1.00000048, z: -1.00000024}
-  m_Children:
-  - {fileID: 1178078671}
-  m_Father: {fileID: 3496087}
-  m_RootOrder: 1
 --- !u!1 &111021832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,6 +973,62 @@ Prefab:
   m_RootGameObject: {fileID: 378594054}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &113133861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112020, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 113133862}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Root L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &113133862
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412020, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 113133861}
+  m_LocalRotation: {x: -.00767603982, y: .980633855, z: .190144286, w: .0462976992}
+  m_LocalPosition: {x: .0694330707, y: .0423286222, z: -.0504712835}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1.00000012}
+  m_Children:
+  - {fileID: 1662539137}
+  m_Father: {fileID: 1181910871}
+  m_RootOrder: 3
+--- !u!1 &115343080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112014, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 115343081}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Calf R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &115343081
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412014, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 115343080}
+  m_LocalRotation: {x: .595349371, y: .000116860392, z: 9.53635099e-05, w: .803466916}
+  m_LocalPosition: {x: -0, y: 4.76837165e-08, z: .199377641}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1990557469}
+  m_Father: {fileID: 465237157}
+  m_RootOrder: 0
 --- !u!1001 &117827721
 Prefab:
   m_ObjectHideFlags: 0
@@ -1221,7 +1161,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
 --- !u!1 &124157774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,6 +1398,64 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &136800066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112038, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 136800067}
+  m_Layer: 10
+  m_Name: Bone Claw L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &136800067
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412038, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 136800066}
+  m_LocalRotation: {x: .285850495, y: -.342257559, z: -.604899228, w: .659731925}
+  m_LocalPosition: {x: -.0374030843, y: .0554422326, z: .258215457}
+  m_LocalScale: {x: 1, y: 1, z: .999999821}
+  m_Children: []
+  m_Father: {fileID: 137526515}
+  m_RootOrder: 2
+--- !u!1 &137526514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 111998, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 137526515}
+  m_Layer: 10
+  m_Name: Bone Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &137526515
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 411998, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 137526514}
+  m_LocalRotation: {x: 0, y: -.70550257, z: -0, w: .708707452}
+  m_LocalPosition: {x: -.320570946, y: 0, z: -.0106279133}
+  m_LocalScale: {x: .999999881, y: 1, z: .999999881}
+  m_Children:
+  - {fileID: 1535705667}
+  - {fileID: 194767466}
+  - {fileID: 136800067}
+  - {fileID: 163237120}
+  m_Father: {fileID: 1181910871}
+  m_RootOrder: 0
 --- !u!1 &140973534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,6 +1506,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300024, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &147129957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112038, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 147129958}
+  m_Layer: 10
+  m_Name: Bone Claw L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147129958
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412038, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 147129957}
+  m_LocalRotation: {x: .285850495, y: -.342257559, z: -.604899228, w: .659731925}
+  m_LocalPosition: {x: -.0374030843, y: .0554422326, z: .258215457}
+  m_LocalScale: {x: 1, y: 1, z: .999999821}
+  m_Children: []
+  m_Father: {fileID: 866483274}
+  m_RootOrder: 2
 --- !u!1 &147374464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,7 +1858,7 @@ Transform:
   m_LocalScale: {x: 4.96320343, y: 4.96335602, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!1 &158098037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,6 +1955,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &163237119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112064, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 163237120}
+  m_Layer: 10
+  m_Name: Bone Claw R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163237120
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412064, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 163237119}
+  m_LocalRotation: {x: -.604899228, y: .659731865, z: -.285850525, w: .342257619}
+  m_LocalPosition: {x: -.0374030136, y: -.0554422326, z: .258215398}
+  m_LocalScale: {x: -.999999762, y: -.999999821, z: -.999999881}
+  m_Children: []
+  m_Father: {fileID: 137526515}
+  m_RootOrder: 3
 --- !u!1 &173335873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,6 +2410,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &194767465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112006, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 194767466}
+  m_Layer: 10
+  m_Name: Bone Antennae R Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194767466
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412006, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 194767465}
+  m_LocalRotation: {x: .646324933, y: -.626120687, z: -.425638676, w: .0952295288}
+  m_LocalPosition: {x: .0396417156, y: -.0817366093, z: .220992357}
+  m_LocalScale: {x: -.999999821, y: -1.00000048, z: -1.00000024}
+  m_Children:
+  - {fileID: 72694532}
+  m_Father: {fileID: 137526515}
+  m_RootOrder: 1
 --- !u!1 &194878642
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,6 +2515,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &200213653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112040, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 200213654}
+  m_Layer: 10
+  m_Name: Bone Antennae L Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &200213654
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412040, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 200213653}
+  m_LocalRotation: {x: -.425638616, y: .0952294916, z: -.646324992, w: .626120687}
+  m_LocalPosition: {x: .0396417156, y: .0817366093, z: .220992357}
+  m_LocalScale: {x: .999999821, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1528687118}
+  m_Father: {fileID: 866483274}
+  m_RootOrder: 0
 --- !u!1 &202733555
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,7 +2581,7 @@ Transform:
   - {fileID: 151193422}
   - {fileID: 934018454}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &205474129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,107 +2755,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &206076547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112008, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 206076548}
-  - 137: {fileID: 206076549}
-  m_Layer: 10
-  m_Name: Body
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &206076548
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412008, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 206076547}
-  m_LocalRotation: {x: -.705801606, y: .0429428779, z: -.0429428779, w: .705801606}
-  m_LocalPosition: {x: -.0206872914, y: .344696075, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3496087}
-  - {fileID: 2082213548}
-  - {fileID: 443514026}
-  - {fileID: 501171960}
-  - {fileID: 380880419}
-  - {fileID: 462135076}
-  - {fileID: 1035548143}
-  - {fileID: 1839564843}
-  m_Father: {fileID: 1339652901}
-  m_RootOrder: 0
---- !u!137 &206076549
-SkinnedMeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13711998, guid: a579e253790305741b425f9c9926f574,
-    type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 206076547}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 10e69029df38c1b45b315bfaea738007, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_Mesh: {fileID: 4300068, guid: e575c20faaded72479567a37b9538473, type: 3}
-  m_Bones:
-  - {fileID: 206076548}
-  - {fileID: 3496087}
-  - {fileID: 1839564843}
-  - {fileID: 1191226677}
-  - {fileID: 2124058873}
-  - {fileID: 2082213548}
-  - {fileID: 443514026}
-  - {fileID: 501171960}
-  - {fileID: 816533461}
-  - {fileID: 380880419}
-  - {fileID: 1007487298}
-  - {fileID: 462135076}
-  - {fileID: 1713475586}
-  - {fileID: 1035548143}
-  - {fileID: 1856751666}
-  - {fileID: 1294315041}
-  - {fileID: 2061509328}
-  - {fileID: 70321008}
-  - {fileID: 110459486}
-  - {fileID: 2139004181}
-  - {fileID: 816671771}
-  - {fileID: 1490757593}
-  - {fileID: 2111863278}
-  - {fileID: 1727480114}
-  - {fileID: 110773128}
-  - {fileID: 1178078671}
-  - {fileID: 1146450877}
-  - {fileID: 931779476}
-  - {fileID: 977033153}
-  - {fileID: 451956928}
-  - {fileID: 1920470628}
-  - {fileID: 4542951}
-  - {fileID: 1821335032}
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 0}
-  m_AABB:
-    m_Center: {x: -.0042501688, y: -.0142711401, z: -.0013384223}
-    m_Extent: {x: 1.03007162, y: .781019986, z: .701797128}
-  m_DirtyAABB: 0
 --- !u!1 &208584915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3068,62 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &237289157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112026, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 237289158}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Calf R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &237289158
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412026, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 237289157}
+  m_LocalRotation: {x: .595387042, y: .000141305936, z: .00011553942, w: .803439021}
+  m_LocalPosition: {x: -1.49011612e-08, y: 3.57627883e-08, z: .199377641}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 1656187181}
+  m_Father: {fileID: 604285808}
+  m_RootOrder: 0
+--- !u!1 &239894664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112026, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 239894665}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Calf R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &239894665
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412026, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 239894664}
+  m_LocalRotation: {x: .595387042, y: .000141305936, z: .00011553942, w: .803439021}
+  m_LocalPosition: {x: -1.49011612e-08, y: 3.57627883e-08, z: .199377641}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 1405671941}
+  m_Father: {fileID: 690456580}
+  m_RootOrder: 0
 --- !u!1 &240421270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3239,6 +3302,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &249978719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112048, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 249978720}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Toe L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &249978720
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412048, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 249978719}
+  m_LocalRotation: {x: -.332062632, y: -.0162382722, z: .00571740419, w: .943100274}
+  m_LocalPosition: {x: 1.19209291e-08, y: -.00580506353, z: .397543639}
+  m_LocalScale: {x: .999999881, y: 1, z: 1.00000024}
+  m_Children: []
+  m_Father: {fileID: 1882305224}
+  m_RootOrder: 0
 --- !u!1 &256882031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3412,6 +3502,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &268055430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112016, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 268055431}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Root L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268055431
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412016, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 268055430}
+  m_LocalRotation: {x: .375170082, y: .896879673, z: .204363853, w: .11441005}
+  m_LocalPosition: {x: .229401618, y: .0497867838, z: -.0309330709}
+  m_LocalScale: {x: .99999994, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2119971601}
+  m_Father: {fileID: 535648312}
+  m_RootOrder: 5
 --- !u!1 &276442301
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,6 +3607,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &277286567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112012, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 277286568}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Root R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &277286568
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412012, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 277286567}
+  m_LocalRotation: {x: -.15395236, y: .0245026462, z: -.386167467, w: .909160614}
+  m_LocalPosition: {x: -.0817157552, y: -.0626096651, z: -.0554884933}
+  m_LocalScale: {x: -.999999881, y: -1.00000012, z: -.999999881}
+  m_Children:
+  - {fileID: 604285808}
+  m_Father: {fileID: 535648312}
+  m_RootOrder: 2
 --- !u!1 &288585592
 GameObject:
   m_ObjectHideFlags: 0
@@ -4112,6 +4258,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &332537452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112066, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 332537453}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Toe L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &332537453
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412066, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 332537452}
+  m_LocalRotation: {x: -.332062513, y: -.0162383039, z: .00571740745, w: .943100274}
+  m_LocalPosition: {x: 7.4505806e-09, y: -.00580511102, z: .39754352}
+  m_LocalScale: {x: .999999881, y: 1.00000012, z: 1.00000012}
+  m_Children: []
+  m_Father: {fileID: 1848236697}
+  m_RootOrder: 0
 --- !u!1 &336846080
 GameObject:
   m_ObjectHideFlags: 0
@@ -4161,7 +4334,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1 &354915842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,34 +4630,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
---- !u!1 &380880418
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112010, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 380880419}
-  m_Layer: 10
-  m_Name: Bone Leg 02 Root R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &380880419
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412010, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 380880418}
-  m_LocalRotation: {x: -.19014436, y: -.0462984629, z: -.00767663261, w: .980633795}
-  m_LocalPosition: {x: .0694330558, y: -.0423286222, z: -.0504712835}
-  m_LocalScale: {x: -.999999881, y: -.99999994, z: -.99999994}
-  m_Children:
-  - {fileID: 1007487298}
-  m_Father: {fileID: 206076548}
-  m_RootOrder: 4
 --- !u!1 &391002000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4731,6 +4876,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &417082113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112022, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 417082114}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Thigh L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417082114
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412022, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 417082113}
+  m_LocalRotation: {x: -.753709495, y: .0158024728, z: -.0193677638, w: .656732202}
+  m_LocalPosition: {x: 2.98023228e-09, y: .00248945947, z: .0949883461}
+  m_LocalScale: {x: .99999994, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1299994374}
+  m_Father: {fileID: 474894188}
+  m_RootOrder: 0
 --- !u!1 &418537352
 GameObject:
   m_ObjectHideFlags: 0
@@ -5027,34 +5200,6 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &443514025
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112012, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 443514026}
-  m_Layer: 10
-  m_Name: Bone Leg 01 Root R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &443514026
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412012, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 443514025}
-  m_LocalRotation: {x: -.15395236, y: .0245026462, z: -.386167467, w: .909160614}
-  m_LocalPosition: {x: -.0817157552, y: -.0626096651, z: -.0554884933}
-  m_LocalScale: {x: -.999999881, y: -1.00000012, z: -.999999881}
-  m_Children:
-  - {fileID: 1146450877}
-  m_Father: {fileID: 206076548}
-  m_RootOrder: 2
 --- !u!1 &446048813
 GameObject:
   m_ObjectHideFlags: 0
@@ -5181,34 +5326,6 @@ Prefab:
   m_RootGameObject: {fileID: 2120284003}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &451956927
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112014, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 451956928}
-  m_Layer: 10
-  m_Name: Bone Leg 02 Calf R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &451956928
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412014, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 451956927}
-  m_LocalRotation: {x: .595349371, y: .000116860392, z: 9.53635099e-05, w: .803466916}
-  m_LocalPosition: {x: -0, y: 4.76837165e-08, z: .199377641}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1920470628}
-  m_Father: {fileID: 1007487298}
-  m_RootOrder: 0
 --- !u!1 &460425183
 GameObject:
   m_ObjectHideFlags: 0
@@ -5241,34 +5358,34 @@ Transform:
   - {fileID: 635472983}
   m_Father: {fileID: 1598298847}
   m_RootOrder: 4
---- !u!1 &462135075
+--- !u!1 &465237156
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112016, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
+  m_PrefabParentObject: {fileID: 112030, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 462135076}
+  - 4: {fileID: 465237157}
   m_Layer: 10
-  m_Name: Bone Leg 03 Root L
+  m_Name: Bone Leg 02 Thigh R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &462135076
+--- !u!4 &465237157
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412016, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 462135075}
-  m_LocalRotation: {x: .375170082, y: .896879673, z: .204363853, w: .11441005}
-  m_LocalPosition: {x: .229401618, y: .0497867838, z: -.0309330709}
-  m_LocalScale: {x: .99999994, y: 1, z: 1}
+  m_PrefabParentObject: {fileID: 412030, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 465237156}
+  m_LocalRotation: {x: -.753709495, y: .0158024691, z: -.0193677638, w: .656732202}
+  m_LocalPosition: {x: -0, y: .00248945947, z: .0949883983}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1}
   m_Children:
-  - {fileID: 1713475586}
-  m_Father: {fileID: 206076548}
-  m_RootOrder: 5
+  - {fileID: 115343081}
+  m_Father: {fileID: 1178219857}
+  m_RootOrder: 0
 --- !u!1 &465585176
 GameObject:
   m_ObjectHideFlags: 0
@@ -5433,6 +5550,62 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &474894187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112020, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 474894188}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Root L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &474894188
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412020, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 474894187}
+  m_LocalRotation: {x: -.00767603982, y: .980633855, z: .190144286, w: .0462976992}
+  m_LocalPosition: {x: .0694330707, y: .0423286222, z: -.0504712835}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1.00000012}
+  m_Children:
+  - {fileID: 417082114}
+  m_Father: {fileID: 535648312}
+  m_RootOrder: 3
+--- !u!1 &475658459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112000, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 475658460}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Calf R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &475658460
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412000, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 475658459}
+  m_LocalRotation: {x: .601986527, y: 9.03250766e-05, z: 7.24158526e-05, w: .79850626}
+  m_LocalPosition: {x: -1.19209291e-08, y: 3.57627883e-08, z: .199377641}
+  m_LocalScale: {x: 1, y: 1, z: 1.00000012}
+  m_Children:
+  - {fileID: 1450076550}
+  m_Father: {fileID: 1877658467}
+  m_RootOrder: 0
 --- !u!1 &477157913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5515,34 +5688,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &479180218
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112018, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 479180219}
-  m_Layer: 0
-  m_Name: Ant Enemy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &479180219
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 479180218}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -6.9000001, y: 3.75999999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1339652901}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
 --- !u!1 &480412327
 GameObject:
   m_ObjectHideFlags: 0
@@ -5752,34 +5897,6 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &501171959
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112020, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 501171960}
-  m_Layer: 10
-  m_Name: Bone Leg 02 Root L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &501171960
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412020, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 501171959}
-  m_LocalRotation: {x: -.00767603982, y: .980633855, z: .190144286, w: .0462976992}
-  m_LocalPosition: {x: .0694330707, y: .0423286222, z: -.0504712835}
-  m_LocalScale: {x: .999999881, y: .99999994, z: 1.00000012}
-  m_Children:
-  - {fileID: 816533461}
-  m_Father: {fileID: 206076548}
-  m_RootOrder: 3
 --- !u!1 &512540894
 GameObject:
   m_ObjectHideFlags: 0
@@ -6236,6 +6353,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &526713542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112058, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 526713543}
+  m_Layer: 10
+  m_Name: Bone Antennae L Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &526713543
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412058, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 526713542}
+  m_LocalRotation: {x: .439275712, y: .225753501, z: .397452861, w: .773371458}
+  m_LocalPosition: {x: -1.43051153e-07, y: -2.38418583e-08, z: .290271759}
+  m_LocalScale: {x: .99999994, y: .999999881, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1535705667}
+  m_RootOrder: 0
 --- !u!1 &529847469
 GameObject:
   m_ObjectHideFlags: 0
@@ -6318,6 +6462,107 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &535648311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112008, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 535648312}
+  - 137: {fileID: 535648313}
+  m_Layer: 10
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &535648312
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412008, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 535648311}
+  m_LocalRotation: {x: -.705801606, y: .0429428779, z: -.0429428779, w: .705801606}
+  m_LocalPosition: {x: -.0206872914, y: .344696075, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 866483274}
+  - {fileID: 941984983}
+  - {fileID: 277286568}
+  - {fileID: 474894188}
+  - {fileID: 819188384}
+  - {fileID: 268055431}
+  - {fileID: 948937884}
+  - {fileID: 900519144}
+  m_Father: {fileID: 578587257}
+  m_RootOrder: 0
+--- !u!137 &535648313
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13711998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 535648311}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 10e69029df38c1b45b315bfaea738007, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300068, guid: e575c20faaded72479567a37b9538473, type: 3}
+  m_Bones:
+  - {fileID: 535648312}
+  - {fileID: 866483274}
+  - {fileID: 900519144}
+  - {fileID: 147129958}
+  - {fileID: 770945328}
+  - {fileID: 941984983}
+  - {fileID: 277286568}
+  - {fileID: 474894188}
+  - {fileID: 417082114}
+  - {fileID: 819188384}
+  - {fileID: 644166004}
+  - {fileID: 268055431}
+  - {fileID: 2119971601}
+  - {fileID: 948937884}
+  - {fileID: 1877658467}
+  - {fileID: 200213654}
+  - {fileID: 1528687118}
+  - {fileID: 1180976713}
+  - {fileID: 1280404048}
+  - {fileID: 1117587825}
+  - {fileID: 1299994374}
+  - {fileID: 554912274}
+  - {fileID: 1882305224}
+  - {fileID: 249978720}
+  - {fileID: 1194328591}
+  - {fileID: 1635936196}
+  - {fileID: 604285808}
+  - {fileID: 237289158}
+  - {fileID: 1656187181}
+  - {fileID: 1123844280}
+  - {fileID: 677588750}
+  - {fileID: 475658460}
+  - {fileID: 1450076550}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: -.0042501688, y: -.0142711401, z: -.0013384223}
+    m_Extent: {x: 1.03007162, y: .781019986, z: .701797128}
+  m_DirtyAABB: 0
 --- !u!1 &538894884
 GameObject:
   m_ObjectHideFlags: 0
@@ -6491,6 +6736,33 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &554912273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112044, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 554912274}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Toe L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &554912274
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412044, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 554912273}
+  m_LocalRotation: {x: -.332062542, y: -.0162383467, z: .00571744144, w: .943100274}
+  m_LocalPosition: {x: -1.78813941e-08, y: -.00580508728, z: .39754352}
+  m_LocalScale: {x: 1, y: 1, z: 1.00000024}
+  m_Children: []
+  m_Father: {fileID: 1299994374}
+  m_RootOrder: 0
 --- !u!1 &565642402
 GameObject:
   m_ObjectHideFlags: 0
@@ -6758,6 +7030,112 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &578587256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112042, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 578587257}
+  - 95: {fileID: 578587262}
+  - 50: {fileID: 578587261}
+  - 114: {fileID: 578587260}
+  - 114: {fileID: 578587259}
+  - 61: {fileID: 578587258}
+  m_Layer: 10
+  m_Name: Fire Ant FBX
+  m_TagString: Toad
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &578587257
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412042, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 578587256}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: 0, y: .540000021, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 535648312}
+  m_Father: {fileID: 2099038265}
+  m_RootOrder: 0
+--- !u!61 &578587258
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6111998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 578587256}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
+--- !u!114 &578587259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11411998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 578587256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab87778af4be5884b81ab8cccce0bf6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreValue: 200
+--- !u!114 &578587260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11412000, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 578587256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d27fd974c049a114f8676e4dd614af58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxSpeedX: 3
+  _maxSpeedY: 0
+  _flipTimerX: 3
+  _flipTimerY: 4
+--- !u!50 &578587261
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5011998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 578587256}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!95 &578587262
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9511998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 578587256}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e575c20faaded72479567a37b9538473, type: 3}
+  m_Controller: {fileID: 9100000, guid: afb77dd11f93d4241a4b929af431f327, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &582031197
 GameObject:
   m_ObjectHideFlags: 0
@@ -6922,6 +7300,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &604285807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112034, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 604285808}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Thigh R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &604285808
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412034, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 604285807}
+  m_LocalRotation: {x: -.751343727, y: .015750492, z: -.0194033757, w: .659437656}
+  m_LocalPosition: {x: 1.49011612e-08, y: .00248942384, z: .109712504}
+  m_LocalScale: {x: .999999881, y: .999999881, z: .999999881}
+  m_Children:
+  - {fileID: 237289158}
+  m_Father: {fileID: 277286568}
+  m_RootOrder: 0
 --- !u!1 &608309933
 GameObject:
   m_ObjectHideFlags: 0
@@ -7041,7 +7447,7 @@ Transform:
   - {fileID: 1292025529}
   - {fileID: 1523495911}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &611922341
 GameObject:
   m_ObjectHideFlags: 0
@@ -7650,6 +8056,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &644166003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112030, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 644166004}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Thigh R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &644166004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412030, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 644166003}
+  m_LocalRotation: {x: -.753709495, y: .0158024691, z: -.0193677638, w: .656732202}
+  m_LocalPosition: {x: -0, y: .00248945947, z: .0949883983}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 1123844280}
+  m_Father: {fileID: 819188384}
+  m_RootOrder: 0
 --- !u!1 &661005151
 GameObject:
   m_ObjectHideFlags: 0
@@ -7783,6 +8217,60 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300014, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &676239707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112048, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 676239708}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Toe L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &676239708
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412048, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 676239707}
+  m_LocalRotation: {x: -.332062632, y: -.0162382722, z: .00571740419, w: .943100274}
+  m_LocalPosition: {x: 1.19209291e-08, y: -.00580506353, z: .397543639}
+  m_LocalScale: {x: .999999881, y: 1, z: 1.00000024}
+  m_Children: []
+  m_Father: {fileID: 1413429209}
+  m_RootOrder: 0
+--- !u!1 &677588749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112056, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 677588750}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Toe R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &677588750
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412056, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 677588749}
+  m_LocalRotation: {x: -.332062572, y: -.0162383411, z: .00571742188, w: .943100274}
+  m_LocalPosition: {x: -1.78813941e-08, y: -.00580506353, z: .397543579}
+  m_LocalScale: {x: 1, y: .99999994, z: 1.00000012}
+  m_Children: []
+  m_Father: {fileID: 1123844280}
+  m_RootOrder: 0
 --- !u!1 &677982054
 GameObject:
   m_ObjectHideFlags: 0
@@ -7865,6 +8353,62 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &679121348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112016, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 679121349}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Root L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &679121349
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412016, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 679121348}
+  m_LocalRotation: {x: .375170082, y: .896879673, z: .204363853, w: .11441005}
+  m_LocalPosition: {x: .229401618, y: .0497867838, z: -.0309330709}
+  m_LocalScale: {x: .99999994, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1677421140}
+  m_Father: {fileID: 1181910871}
+  m_RootOrder: 5
+--- !u!1 &690456579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112034, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 690456580}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Thigh R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &690456580
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412034, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 690456579}
+  m_LocalRotation: {x: -.751343727, y: .015750492, z: -.0194033757, w: .659437656}
+  m_LocalPosition: {x: 1.49011612e-08, y: .00248942384, z: .109712504}
+  m_LocalScale: {x: .999999881, y: .999999881, z: .999999881}
+  m_Children:
+  - {fileID: 239894665}
+  m_Father: {fileID: 1515249930}
+  m_RootOrder: 0
 --- !u!1 &698363688
 GameObject:
   m_ObjectHideFlags: 0
@@ -8907,7 +9451,7 @@ Transform:
   - {fileID: 1495311762}
   - {fileID: 1404160847}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1 &753847259
 GameObject:
   m_ObjectHideFlags: 0
@@ -9026,6 +9570,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &770945327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112064, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 770945328}
+  m_Layer: 10
+  m_Name: Bone Claw R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &770945328
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412064, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 770945327}
+  m_LocalRotation: {x: -.604899228, y: .659731865, z: -.285850525, w: .342257619}
+  m_LocalPosition: {x: -.0374030136, y: -.0554422326, z: .258215398}
+  m_LocalScale: {x: -.999999762, y: -.999999821, z: -.999999881}
+  m_Children: []
+  m_Father: {fileID: 866483274}
+  m_RootOrder: 3
 --- !u!1 &772470219
 GameObject:
   m_ObjectHideFlags: 0
@@ -9102,7 +9673,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!1 &775214138
 GameObject:
   m_ObjectHideFlags: 0
@@ -9257,6 +9828,33 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &784247436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112052, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 784247437}
+  m_Layer: 10
+  m_Name: Bone Tail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &784247437
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412052, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 784247436}
+  m_LocalRotation: {x: 0, y: .690741181, z: -0, w: .723102093}
+  m_LocalPosition: {x: .338536829, y: 4.66950201e-10, z: -.0348784216}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1181910871}
+  m_RootOrder: 7
 --- !u!1 &787436340
 GameObject:
   m_ObjectHideFlags: 0
@@ -9334,6 +9932,50 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &809231435
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.65230227
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.59039927
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_RootGameObject: {fileID: 2099038264}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &814379971
 GameObject:
   m_ObjectHideFlags: 0
@@ -9416,62 +10058,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &816533460
+--- !u!1 &819188383
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112022, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
+  m_PrefabParentObject: {fileID: 112010, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 816533461}
+  - 4: {fileID: 819188384}
   m_Layer: 10
-  m_Name: Bone Leg 02 Thigh L
+  m_Name: Bone Leg 02 Root R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &816533461
+--- !u!4 &819188384
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412022, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 816533460}
-  m_LocalRotation: {x: -.753709495, y: .0158024728, z: -.0193677638, w: .656732202}
-  m_LocalPosition: {x: 2.98023228e-09, y: .00248945947, z: .0949883461}
-  m_LocalScale: {x: .99999994, y: 1, z: 1}
+  m_PrefabParentObject: {fileID: 412010, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 819188383}
+  m_LocalRotation: {x: -.19014436, y: -.0462984629, z: -.00767663261, w: .980633795}
+  m_LocalPosition: {x: .0694330558, y: -.0423286222, z: -.0504712835}
+  m_LocalScale: {x: -.999999881, y: -.99999994, z: -.99999994}
   m_Children:
-  - {fileID: 816671771}
-  m_Father: {fileID: 501171960}
-  m_RootOrder: 0
---- !u!1 &816671770
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112024, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 816671771}
-  m_Layer: 10
-  m_Name: Bone Leg 02 Calf L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &816671771
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412024, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 816671770}
-  m_LocalRotation: {x: .595349312, y: .000116858871, z: 9.53643685e-05, w: .803466976}
-  m_LocalPosition: {x: -0, y: 3.57627883e-08, z: .199377641}
-  m_LocalScale: {x: .99999994, y: .999999881, z: .999999821}
-  m_Children:
-  - {fileID: 1490757593}
-  m_Father: {fileID: 816533461}
-  m_RootOrder: 0
+  - {fileID: 644166004}
+  m_Father: {fileID: 535648312}
+  m_RootOrder: 4
 --- !u!1 &821426581
 GameObject:
   m_ObjectHideFlags: 0
@@ -9897,6 +10511,33 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &849487651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112044, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 849487652}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Toe L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &849487652
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412044, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 849487651}
+  m_LocalRotation: {x: -.332062542, y: -.0162383467, z: .00571744144, w: .943100274}
+  m_LocalPosition: {x: -1.78813941e-08, y: -.00580508728, z: .39754352}
+  m_LocalScale: {x: 1, y: 1, z: 1.00000024}
+  m_Children: []
+  m_Father: {fileID: 1422750653}
+  m_RootOrder: 0
 --- !u!1 &850487460
 GameObject:
   m_ObjectHideFlags: 0
@@ -9979,6 +10620,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &854657500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112018, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 854657501}
+  m_Layer: 0
+  m_Name: Enemy Ant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &854657501
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 854657500}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: -14.4889345, y: 5.33576584, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 970038577}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1 &856696479
 GameObject:
   m_ObjectHideFlags: 0
@@ -10128,6 +10797,37 @@ Transform:
   - {fileID: 1823509067}
   m_Father: {fileID: 202733556}
   m_RootOrder: 2
+--- !u!1 &866483273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 111998, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 866483274}
+  m_Layer: 10
+  m_Name: Bone Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &866483274
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 411998, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 866483273}
+  m_LocalRotation: {x: 0, y: -.70550257, z: -0, w: .708707452}
+  m_LocalPosition: {x: -.320570946, y: 0, z: -.0106279133}
+  m_LocalScale: {x: .999999881, y: 1, z: .999999881}
+  m_Children:
+  - {fileID: 200213654}
+  - {fileID: 1194328591}
+  - {fileID: 147129958}
+  - {fileID: 770945328}
+  m_Father: {fileID: 535648312}
+  m_RootOrder: 0
 --- !u!1 &872467741
 GameObject:
   m_ObjectHideFlags: 0
@@ -10260,6 +10960,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300026, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &900519143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112052, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 900519144}
+  m_Layer: 10
+  m_Name: Bone Tail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &900519144
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412052, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 900519143}
+  m_LocalRotation: {x: 0, y: .690741181, z: -0, w: .723102093}
+  m_LocalPosition: {x: .338536829, y: 4.66950201e-10, z: -.0348784216}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 535648312}
+  m_RootOrder: 7
 --- !u!1 &900625054
 GameObject:
   m_ObjectHideFlags: 0
@@ -10519,7 +11246,7 @@ Transform:
   m_LocalScale: {x: 4.80999994, y: 3.5999999, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
 --- !u!1 &916005175
 GameObject:
   m_ObjectHideFlags: 0
@@ -10706,34 +11433,6 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &931779475
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112026, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 931779476}
-  m_Layer: 10
-  m_Name: Bone Leg 01 Calf R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &931779476
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412026, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 931779475}
-  m_LocalRotation: {x: .595387042, y: .000141305936, z: .00011553942, w: .803439021}
-  m_LocalPosition: {x: -1.49011612e-08, y: 3.57627883e-08, z: .199377641}
-  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
-  m_Children:
-  - {fileID: 977033153}
-  m_Father: {fileID: 1146450877}
-  m_RootOrder: 0
 --- !u!1 &934018453
 GameObject:
   m_ObjectHideFlags: 0
@@ -11016,6 +11715,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &941984982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112060, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 941984983}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Root L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &941984983
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412060, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 941984982}
+  m_LocalRotation: {x: -.386355609, y: .909071326, z: .154040545, w: -.0242952537}
+  m_LocalPosition: {x: -.0817157552, y: .0626096651, z: -.0554884449}
+  m_LocalScale: {x: .999999881, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1180976713}
+  m_Father: {fileID: 535648312}
+  m_RootOrder: 1
 --- !u!1 &945318490
 GameObject:
   m_ObjectHideFlags: 0
@@ -11175,6 +11902,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &948937883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112032, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 948937884}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Root R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &948937884
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412032, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 948937883}
+  m_LocalRotation: {x: -.209669799, y: -.116287448, z: .374356747, w: .895752668}
+  m_LocalPosition: {x: .229401618, y: -.0497867838, z: -.0309330709}
+  m_LocalScale: {x: -.999999881, y: -.999999821, z: -1.00000036}
+  m_Children:
+  - {fileID: 1877658467}
+  m_Father: {fileID: 535648312}
+  m_RootOrder: 6
 --- !u!1 &949015581
 GameObject:
   m_ObjectHideFlags: 0
@@ -11488,6 +12243,112 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &970038576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112042, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 970038577}
+  - 95: {fileID: 970038582}
+  - 50: {fileID: 970038581}
+  - 114: {fileID: 970038580}
+  - 114: {fileID: 970038579}
+  - 61: {fileID: 970038578}
+  m_Layer: 10
+  m_Name: Fire Ant FBX
+  m_TagString: Toad
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970038577
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412042, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 970038576}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: 0, y: .540000021, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1181910871}
+  m_Father: {fileID: 854657501}
+  m_RootOrder: 0
+--- !u!61 &970038578
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6111998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 970038576}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
+--- !u!114 &970038579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11411998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 970038576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab87778af4be5884b81ab8cccce0bf6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreValue: 200
+--- !u!114 &970038580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11412000, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 970038576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d27fd974c049a114f8676e4dd614af58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxSpeedX: 3
+  _maxSpeedY: 0
+  _flipTimerX: 3
+  _flipTimerY: 4
+--- !u!50 &970038581
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5011998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 970038576}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!95 &970038582
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9511998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 970038576}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e575c20faaded72479567a37b9538473, type: 3}
+  m_Controller: {fileID: 9100000, guid: afb77dd11f93d4241a4b929af431f327, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &974060700
 GameObject:
   m_ObjectHideFlags: 0
@@ -11624,7 +12485,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!82 &974193979
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11759,33 +12620,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 975263783}
---- !u!1 &977033152
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112028, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 977033153}
-  m_Layer: 10
-  m_Name: Bone Leg 01 Toe R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &977033153
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412028, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 977033152}
-  m_LocalRotation: {x: -.332062572, y: -.0162383802, z: .00571742933, w: .943100274}
-  m_LocalPosition: {x: -1.34110456e-08, y: -.00580506353, z: .39754352}
-  m_LocalScale: {x: .99999994, y: .999999821, z: 1.00000012}
-  m_Children: []
-  m_Father: {fileID: 931779476}
-  m_RootOrder: 0
 --- !u!1 &986690251
 GameObject:
   m_ObjectHideFlags: 0
@@ -12036,34 +12870,6 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1007487297
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112030, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1007487298}
-  m_Layer: 10
-  m_Name: Bone Leg 02 Thigh R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1007487298
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412030, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1007487297}
-  m_LocalRotation: {x: -.753709495, y: .0158024691, z: -.0193677638, w: .656732202}
-  m_LocalPosition: {x: -0, y: .00248945947, z: .0949883983}
-  m_LocalScale: {x: 1, y: 1.00000012, z: 1}
-  m_Children:
-  - {fileID: 451956928}
-  m_Father: {fileID: 380880419}
-  m_RootOrder: 0
 --- !u!1 &1009825996
 GameObject:
   m_ObjectHideFlags: 0
@@ -12657,34 +13463,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1035548142
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112032, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1035548143}
-  m_Layer: 10
-  m_Name: Bone Leg 03 Root R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1035548143
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412032, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1035548142}
-  m_LocalRotation: {x: -.209669799, y: -.116287448, z: .374356747, w: .895752668}
-  m_LocalPosition: {x: .229401618, y: -.0497867838, z: -.0309330709}
-  m_LocalScale: {x: -.999999881, y: -.999999821, z: -1.00000036}
-  m_Children:
-  - {fileID: 1856751666}
-  m_Father: {fileID: 206076548}
-  m_RootOrder: 6
 --- !u!1 &1049667957
 GameObject:
   m_ObjectHideFlags: 0
@@ -13193,7 +13971,7 @@ Transform:
   - {fileID: 1610497973}
   - {fileID: 1822567896}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
 --- !u!1 &1069140080
 GameObject:
   m_ObjectHideFlags: 0
@@ -13776,7 +14554,7 @@ Transform:
   m_Children:
   - {fileID: 916005176}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
 --- !u!1 &1098590608
 GameObject:
   m_ObjectHideFlags: 0
@@ -14032,6 +14810,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1117587824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112066, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1117587825}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Toe L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1117587825
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412066, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1117587824}
+  m_LocalRotation: {x: -.332062513, y: -.0162383039, z: .00571740745, w: .943100274}
+  m_LocalPosition: {x: 7.4505806e-09, y: -.00580511102, z: .39754352}
+  m_LocalScale: {x: .999999881, y: 1.00000012, z: 1.00000012}
+  m_Children: []
+  m_Father: {fileID: 1280404048}
+  m_RootOrder: 0
 --- !u!1 &1117943532
 GameObject:
   m_ObjectHideFlags: 0
@@ -14252,6 +15057,34 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1122468046}
+--- !u!1 &1123844279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112014, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1123844280}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Calf R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1123844280
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412014, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1123844279}
+  m_LocalRotation: {x: .595349371, y: .000116860392, z: 9.53635099e-05, w: .803466916}
+  m_LocalPosition: {x: -0, y: 4.76837165e-08, z: .199377641}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 677588750}
+  m_Father: {fileID: 644166004}
+  m_RootOrder: 0
 --- !u!1 &1129428480
 GameObject:
   m_ObjectHideFlags: 0
@@ -14698,34 +15531,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 020d73dbb1d6c434da38e8e91fcf8d8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1146450876
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112034, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1146450877}
-  m_Layer: 10
-  m_Name: Bone Leg 01 Thigh R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1146450877
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412034, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1146450876}
-  m_LocalRotation: {x: -.751343727, y: .015750492, z: -.0194033757, w: .659437656}
-  m_LocalPosition: {x: 1.49011612e-08, y: .00248942384, z: .109712504}
-  m_LocalScale: {x: .999999881, y: .999999881, z: .999999881}
-  m_Children:
-  - {fileID: 931779476}
-  m_Father: {fileID: 443514026}
-  m_RootOrder: 0
 --- !u!1 &1147366930
 GameObject:
   m_ObjectHideFlags: 0
@@ -15233,33 +16038,163 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1178078670
+--- !u!1 &1178219856
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112036, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
+  m_PrefabParentObject: {fileID: 112010, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1178078671}
+  - 4: {fileID: 1178219857}
   m_Layer: 10
-  m_Name: Bone Antennae R Tip
+  m_Name: Bone Leg 02 Root R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1178078671
+--- !u!4 &1178219857
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412036, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1178078670}
-  m_LocalRotation: {x: .439275652, y: .225753531, z: .397452861, w: .773371518}
-  m_LocalPosition: {x: -9.53674331e-08, y: -1.1920929e-07, z: .290271729}
-  m_LocalScale: {x: .99999994, y: .99999994, z: 1}
-  m_Children: []
-  m_Father: {fileID: 110773128}
+  m_PrefabParentObject: {fileID: 412010, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1178219856}
+  m_LocalRotation: {x: -.19014436, y: -.0462984629, z: -.00767663261, w: .980633795}
+  m_LocalPosition: {x: .0694330558, y: -.0423286222, z: -.0504712835}
+  m_LocalScale: {x: -.999999881, y: -.99999994, z: -.99999994}
+  m_Children:
+  - {fileID: 465237157}
+  m_Father: {fileID: 1181910871}
+  m_RootOrder: 4
+--- !u!1 &1180976712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112002, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1180976713}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Thigh L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1180976713
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412002, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1180976712}
+  m_LocalRotation: {x: -.751343906, y: .015750451, z: -.0194033496, w: .659437478}
+  m_LocalPosition: {x: -0, y: .00248939986, z: .109712534}
+  m_LocalScale: {x: .999999821, y: .99999994, z: .99999994}
+  m_Children:
+  - {fileID: 1280404048}
+  m_Father: {fileID: 941984983}
   m_RootOrder: 0
+--- !u!1 &1181910870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112008, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1181910871}
+  - 137: {fileID: 1181910872}
+  m_Layer: 10
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1181910871
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412008, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1181910870}
+  m_LocalRotation: {x: -.705801606, y: .0429428779, z: -.0429428779, w: .705801606}
+  m_LocalPosition: {x: -.0206872914, y: .344696075, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 137526515}
+  - {fileID: 1466902072}
+  - {fileID: 1515249930}
+  - {fileID: 113133862}
+  - {fileID: 1178219857}
+  - {fileID: 679121349}
+  - {fileID: 2045624994}
+  - {fileID: 784247437}
+  m_Father: {fileID: 970038577}
+  m_RootOrder: 0
+--- !u!137 &1181910872
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13711998, guid: a579e253790305741b425f9c9926f574,
+    type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1181910870}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 10e69029df38c1b45b315bfaea738007, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300068, guid: e575c20faaded72479567a37b9538473, type: 3}
+  m_Bones:
+  - {fileID: 1181910871}
+  - {fileID: 137526515}
+  - {fileID: 784247437}
+  - {fileID: 136800067}
+  - {fileID: 163237120}
+  - {fileID: 1466902072}
+  - {fileID: 1515249930}
+  - {fileID: 113133862}
+  - {fileID: 1662539137}
+  - {fileID: 1178219857}
+  - {fileID: 465237157}
+  - {fileID: 679121349}
+  - {fileID: 1677421140}
+  - {fileID: 2045624994}
+  - {fileID: 1880340788}
+  - {fileID: 1535705667}
+  - {fileID: 526713543}
+  - {fileID: 1937751061}
+  - {fileID: 1848236697}
+  - {fileID: 332537453}
+  - {fileID: 1422750653}
+  - {fileID: 849487652}
+  - {fileID: 1413429209}
+  - {fileID: 676239708}
+  - {fileID: 194767466}
+  - {fileID: 72694532}
+  - {fileID: 690456580}
+  - {fileID: 239894665}
+  - {fileID: 1405671941}
+  - {fileID: 115343081}
+  - {fileID: 1990557469}
+  - {fileID: 1622688854}
+  - {fileID: 1216801124}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: -.0042501688, y: -.0142711401, z: -.0013384223}
+    m_Extent: {x: 1.03007162, y: .781019986, z: .701797128}
+  m_DirtyAABB: 0
 --- !u!1 &1186224412
 GameObject:
   m_ObjectHideFlags: 0
@@ -15337,33 +16272,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1191226676
+--- !u!1 &1194328590
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112038, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
+  m_PrefabParentObject: {fileID: 112006, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1191226677}
+  - 4: {fileID: 1194328591}
   m_Layer: 10
-  m_Name: Bone Claw L
+  m_Name: Bone Antennae R Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1191226677
+--- !u!4 &1194328591
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412038, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1191226676}
-  m_LocalRotation: {x: .285850495, y: -.342257559, z: -.604899228, w: .659731925}
-  m_LocalPosition: {x: -.0374030843, y: .0554422326, z: .258215457}
-  m_LocalScale: {x: 1, y: 1, z: .999999821}
-  m_Children: []
-  m_Father: {fileID: 3496087}
-  m_RootOrder: 2
+  m_PrefabParentObject: {fileID: 412006, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1194328590}
+  m_LocalRotation: {x: .646324933, y: -.626120687, z: -.425638676, w: .0952295288}
+  m_LocalPosition: {x: .0396417156, y: -.0817366093, z: .220992357}
+  m_LocalScale: {x: -.999999821, y: -1.00000048, z: -1.00000024}
+  m_Children:
+  - {fileID: 1635936196}
+  m_Father: {fileID: 866483274}
+  m_RootOrder: 1
 --- !u!1 &1199780300
 GameObject:
   m_ObjectHideFlags: 0
@@ -15636,6 +16572,33 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1216801123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112050, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1216801124}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Toe R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216801124
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412050, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1216801123}
+  m_LocalRotation: {x: -.332062542, y: -.016238356, z: .00571743306, w: .943100274}
+  m_LocalPosition: {x: -4.76837165e-08, y: -.00580511102, z: .39754352}
+  m_LocalScale: {x: .999999881, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1622688854}
+  m_RootOrder: 0
 --- !u!1001 &1232575273
 Prefab:
   m_ObjectHideFlags: 0
@@ -16245,6 +17208,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1280404047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112004, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1280404048}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Calf L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1280404048
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412004, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1280404047}
+  m_LocalRotation: {x: .59538722, y: .000141269644, z: .000115556453, w: .803438902}
+  m_LocalPosition: {x: 1.63912777e-08, y: 5.96046448e-08, z: .199377611}
+  m_LocalScale: {x: 1, y: .999999881, z: .999999881}
+  m_Children:
+  - {fileID: 1117587825}
+  m_Father: {fileID: 1180976713}
+  m_RootOrder: 0
 --- !u!1 &1284270451
 GameObject:
   m_ObjectHideFlags: 0
@@ -16510,33 +17501,77 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300014, guid: 649e37dd156ebe94e86085ef710f0fe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1294315040
+--- !u!1001 &1295063075
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -14.4889345
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.33576584
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_RootGameObject: {fileID: 854657500}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1299994373
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112040, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
+  m_PrefabParentObject: {fileID: 112024, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1294315041}
+  - 4: {fileID: 1299994374}
   m_Layer: 10
-  m_Name: Bone Antennae L Root
+  m_Name: Bone Leg 02 Calf L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1294315041
+--- !u!4 &1299994374
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412040, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1294315040}
-  m_LocalRotation: {x: -.425638616, y: .0952294916, z: -.646324992, w: .626120687}
-  m_LocalPosition: {x: .0396417156, y: .0817366093, z: .220992357}
-  m_LocalScale: {x: .999999821, y: 1, z: 1}
+  m_PrefabParentObject: {fileID: 412024, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1299994373}
+  m_LocalRotation: {x: .595349312, y: .000116858871, z: 9.53643685e-05, w: .803466976}
+  m_LocalPosition: {x: -0, y: 3.57627883e-08, z: .199377641}
+  m_LocalScale: {x: .99999994, y: .999999881, z: .999999821}
   m_Children:
-  - {fileID: 2061509328}
-  m_Father: {fileID: 3496087}
+  - {fileID: 554912274}
+  m_Father: {fileID: 417082114}
   m_RootOrder: 0
 --- !u!1 &1306481210
 GameObject:
@@ -16620,54 +17655,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1001 &1310067254
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -6.9000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 3.75999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: .707106829
-      objectReference: {fileID: 0}
-    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .707106829
-      objectReference: {fileID: 0}
-    - target: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 112018, guid: a579e253790305741b425f9c9926f574, type: 2}
-      propertyPath: m_Name
-      value: Ant Enemy
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_RootGameObject: {fileID: 479180218}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1315087527
 GameObject:
   m_ObjectHideFlags: 0
@@ -16969,112 +17956,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1590856907}
   m_RootOrder: 0
---- !u!1 &1339652900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112042, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1339652901}
-  - 95: {fileID: 1339652905}
-  - 50: {fileID: 1339652904}
-  - 114: {fileID: 1339652903}
-  - 114: {fileID: 1339652902}
-  - 61: {fileID: 1339652906}
-  m_Layer: 10
-  m_Name: Fire Ant FBX
-  m_TagString: Toad
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1339652901
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412042, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1339652900}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 0, y: .540000021, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 206076548}
-  m_Father: {fileID: 479180219}
-  m_RootOrder: 0
---- !u!114 &1339652902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11411998, guid: a579e253790305741b425f9c9926f574,
-    type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1339652900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab87778af4be5884b81ab8cccce0bf6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scoreValue: 200
---- !u!114 &1339652903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11412000, guid: a579e253790305741b425f9c9926f574,
-    type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1339652900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d27fd974c049a114f8676e4dd614af58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxSpeedX: 3
-  _maxSpeedY: 0
-  _flipTimerX: 3
-  _flipTimerY: 4
---- !u!50 &1339652904
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5011998, guid: a579e253790305741b425f9c9926f574,
-    type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1339652900}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!95 &1339652905
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9511998, guid: a579e253790305741b425f9c9926f574,
-    type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1339652900}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: e575c20faaded72479567a37b9538473, type: 3}
-  m_Controller: {fileID: 9100000, guid: afb77dd11f93d4241a4b929af431f327, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 1
-  m_ApplyRootMotion: 0
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!61 &1339652906
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6111998, guid: a579e253790305741b425f9c9926f574,
-    type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1339652900}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
 --- !u!1 &1345539061
 GameObject:
   m_ObjectHideFlags: 0
@@ -17724,6 +18605,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1405671940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112028, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1405671941}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Toe R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1405671941
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412028, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1405671940}
+  m_LocalRotation: {x: -.332062572, y: -.0162383802, z: .00571742933, w: .943100274}
+  m_LocalPosition: {x: -1.34110456e-08, y: -.00580506353, z: .39754352}
+  m_LocalScale: {x: .99999994, y: .999999821, z: 1.00000012}
+  m_Children: []
+  m_Father: {fileID: 239894665}
+  m_RootOrder: 0
 --- !u!1 &1408473093
 GameObject:
   m_ObjectHideFlags: 0
@@ -17801,6 +18709,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1413429208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112062, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1413429209}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Calf L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1413429209
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412062, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1413429208}
+  m_LocalRotation: {x: .595349312, y: .000116843752, z: 9.53734416e-05, w: .803466976}
+  m_LocalPosition: {x: 2.38418583e-08, y: 4.76837165e-08, z: .199377686}
+  m_LocalScale: {x: 1, y: 1, z: 1.00000012}
+  m_Children:
+  - {fileID: 676239708}
+  m_Father: {fileID: 1677421140}
+  m_RootOrder: 0
 --- !u!1001 &1418084313
 Prefab:
   m_ObjectHideFlags: 0
@@ -17990,7 +18926,35 @@ Transform:
   m_Children:
   - {fileID: 567153431}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
+--- !u!1 &1422750652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112024, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1422750653}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Calf L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1422750653
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412024, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1422750652}
+  m_LocalRotation: {x: .595349312, y: .000116858871, z: 9.53643685e-05, w: .803466976}
+  m_LocalPosition: {x: -0, y: 3.57627883e-08, z: .199377641}
+  m_LocalScale: {x: .99999994, y: .999999881, z: .999999821}
+  m_Children:
+  - {fileID: 849487652}
+  m_Father: {fileID: 1662539137}
+  m_RootOrder: 0
 --- !u!1 &1424904646
 GameObject:
   m_ObjectHideFlags: 0
@@ -18277,6 +19241,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1450076549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112050, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1450076550}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Toe R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1450076550
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412050, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1450076549}
+  m_LocalRotation: {x: -.332062542, y: -.016238356, z: .00571743306, w: .943100274}
+  m_LocalPosition: {x: -4.76837165e-08, y: -.00580511102, z: .39754352}
+  m_LocalScale: {x: .999999881, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 475658460}
+  m_RootOrder: 0
 --- !u!1 &1458479495
 GameObject:
   m_ObjectHideFlags: 0
@@ -18469,6 +19460,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1466902071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112060, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1466902072}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Root L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1466902072
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412060, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1466902071}
+  m_LocalRotation: {x: -.386355609, y: .909071326, z: .154040545, w: -.0242952537}
+  m_LocalPosition: {x: -.0817157552, y: .0626096651, z: -.0554884449}
+  m_LocalScale: {x: .999999881, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1937751061}
+  m_Father: {fileID: 1181910871}
+  m_RootOrder: 1
 --- !u!1 &1468506084
 GameObject:
   m_ObjectHideFlags: 0
@@ -18754,33 +19773,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1490757592
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112044, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1490757593}
-  m_Layer: 10
-  m_Name: Bone Leg 02 Toe L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1490757593
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412044, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1490757592}
-  m_LocalRotation: {x: -.332062542, y: -.0162383467, z: .00571744144, w: .943100274}
-  m_LocalPosition: {x: -1.78813941e-08, y: -.00580508728, z: .39754352}
-  m_LocalScale: {x: 1, y: 1, z: 1.00000024}
-  m_Children: []
-  m_Father: {fileID: 816671771}
-  m_RootOrder: 0
 --- !u!1 &1490916231
 GameObject:
   m_ObjectHideFlags: 0
@@ -19137,6 +20129,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1515249929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112012, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1515249930}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Root R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1515249930
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412012, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1515249929}
+  m_LocalRotation: {x: -.15395236, y: .0245026462, z: -.386167467, w: .909160614}
+  m_LocalPosition: {x: -.0817157552, y: -.0626096651, z: -.0554884933}
+  m_LocalScale: {x: -.999999881, y: -1.00000012, z: -.999999881}
+  m_Children:
+  - {fileID: 690456580}
+  m_Father: {fileID: 1181910871}
+  m_RootOrder: 2
 --- !u!1 &1515563367
 GameObject:
   m_ObjectHideFlags: 0
@@ -19381,6 +20401,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1528687117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112058, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1528687118}
+  m_Layer: 10
+  m_Name: Bone Antennae L Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1528687118
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412058, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1528687117}
+  m_LocalRotation: {x: .439275712, y: .225753501, z: .397452861, w: .773371458}
+  m_LocalPosition: {x: -1.43051153e-07, y: -2.38418583e-08, z: .290271759}
+  m_LocalScale: {x: .99999994, y: .999999881, z: 1}
+  m_Children: []
+  m_Father: {fileID: 200213654}
+  m_RootOrder: 0
 --- !u!1 &1528895153
 GameObject:
   m_ObjectHideFlags: 0
@@ -19458,6 +20505,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1535705666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112040, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1535705667}
+  m_Layer: 10
+  m_Name: Bone Antennae L Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1535705667
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412040, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1535705666}
+  m_LocalRotation: {x: -.425638616, y: .0952294916, z: -.646324992, w: .626120687}
+  m_LocalPosition: {x: .0396417156, y: .0817366093, z: .220992357}
+  m_LocalScale: {x: .999999821, y: 1, z: 1}
+  m_Children:
+  - {fileID: 526713543}
+  m_Father: {fileID: 137526515}
+  m_RootOrder: 0
 --- !u!1 &1536446128
 GameObject:
   m_ObjectHideFlags: 0
@@ -20251,7 +21326,7 @@ Transform:
   - {fileID: 2114979276}
   - {fileID: 1716826965}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!1 &1609211413
 GameObject:
   m_ObjectHideFlags: 0
@@ -20466,6 +21541,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1622688853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112000, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1622688854}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Calf R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622688854
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412000, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1622688853}
+  m_LocalRotation: {x: .601986527, y: 9.03250766e-05, z: 7.24158526e-05, w: .79850626}
+  m_LocalPosition: {x: -1.19209291e-08, y: 3.57627883e-08, z: .199377641}
+  m_LocalScale: {x: 1, y: 1, z: 1.00000012}
+  m_Children:
+  - {fileID: 1216801124}
+  m_Father: {fileID: 1880340788}
+  m_RootOrder: 0
 --- !u!1 &1630178036
 GameObject:
   m_ObjectHideFlags: 0
@@ -20543,6 +21646,33 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1635936195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112036, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1635936196}
+  m_Layer: 10
+  m_Name: Bone Antennae R Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1635936196
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412036, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1635936195}
+  m_LocalRotation: {x: .439275652, y: .225753531, z: .397452861, w: .773371518}
+  m_LocalPosition: {x: -9.53674331e-08, y: -1.1920929e-07, z: .290271729}
+  m_LocalScale: {x: .99999994, y: .99999994, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1194328591}
+  m_RootOrder: 0
 --- !u!1 &1637410029
 GameObject:
   m_ObjectHideFlags: 0
@@ -20774,6 +21904,61 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1656187180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112028, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1656187181}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Toe R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1656187181
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412028, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1656187180}
+  m_LocalRotation: {x: -.332062572, y: -.0162383802, z: .00571742933, w: .943100274}
+  m_LocalPosition: {x: -1.34110456e-08, y: -.00580506353, z: .39754352}
+  m_LocalScale: {x: .99999994, y: .999999821, z: 1.00000012}
+  m_Children: []
+  m_Father: {fileID: 237289158}
+  m_RootOrder: 0
+--- !u!1 &1662539136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112022, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1662539137}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Thigh L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1662539137
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412022, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1662539136}
+  m_LocalRotation: {x: -.753709495, y: .0158024728, z: -.0193677638, w: .656732202}
+  m_LocalPosition: {x: 2.98023228e-09, y: .00248945947, z: .0949883461}
+  m_LocalScale: {x: .99999994, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1422750653}
+  m_Father: {fileID: 113133862}
+  m_RootOrder: 0
 --- !u!1 &1673872047
 GameObject:
   m_ObjectHideFlags: 0
@@ -20933,6 +22118,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1677421139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112046, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1677421140}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Thigh L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1677421140
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412046, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1677421139}
+  m_LocalRotation: {x: -.753709495, y: .0158024393, z: -.0193677396, w: .656732202}
+  m_LocalPosition: {x: -5.96046457e-09, y: .00248944759, z: .0949883461}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 1413429209}
+  m_Father: {fileID: 679121349}
+  m_RootOrder: 0
 --- !u!1 &1683687982
 GameObject:
   m_ObjectHideFlags: 0
@@ -21061,7 +22274,7 @@ Transform:
   m_LocalScale: {x: 4.10367775, y: 4.10367632, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
 --- !u!114 &1687274323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21438,34 +22651,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1713475585
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112046, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1713475586}
-  m_Layer: 10
-  m_Name: Bone Leg 03 Thigh L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1713475586
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412046, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1713475585}
-  m_LocalRotation: {x: -.753709495, y: .0158024393, z: -.0193677396, w: .656732202}
-  m_LocalPosition: {x: -5.96046457e-09, y: .00248944759, z: .0949883461}
-  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
-  m_Children:
-  - {fileID: 2111863278}
-  m_Father: {fileID: 462135076}
-  m_RootOrder: 0
 --- !u!1 &1716826964
 GameObject:
   m_ObjectHideFlags: 0
@@ -21498,33 +22683,6 @@ Transform:
   - {fileID: 480412328}
   m_Father: {fileID: 1598298847}
   m_RootOrder: 6
---- !u!1 &1727480113
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112048, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1727480114}
-  m_Layer: 10
-  m_Name: Bone Leg 03 Toe L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1727480114
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412048, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1727480113}
-  m_LocalRotation: {x: -.332062632, y: -.0162382722, z: .00571740419, w: .943100274}
-  m_LocalPosition: {x: 1.19209291e-08, y: -.00580506353, z: .397543639}
-  m_LocalScale: {x: .999999881, y: 1, z: 1.00000024}
-  m_Children: []
-  m_Father: {fileID: 2111863278}
-  m_RootOrder: 0
 --- !u!1 &1732574147
 GameObject:
   m_ObjectHideFlags: 0
@@ -21558,7 +22716,7 @@ RectTransform:
   - {fileID: 1122468047}
   - {fileID: 1171459894}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -22474,33 +23632,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1821335031
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112050, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1821335032}
-  m_Layer: 10
-  m_Name: Bone Leg 03 Toe R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1821335032
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412050, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1821335031}
-  m_LocalRotation: {x: -.332062542, y: -.016238356, z: .00571743306, w: .943100274}
-  m_LocalPosition: {x: -4.76837165e-08, y: -.00580511102, z: .39754352}
-  m_LocalScale: {x: .999999881, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4542951}
-  m_RootOrder: 0
 --- !u!1 &1822567895
 GameObject:
   m_ObjectHideFlags: 0
@@ -22979,33 +24110,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1839564842
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112052, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1839564843}
-  m_Layer: 10
-  m_Name: Bone Tail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1839564843
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412052, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1839564842}
-  m_LocalRotation: {x: 0, y: .690741181, z: -0, w: .723102093}
-  m_LocalPosition: {x: .338536829, y: 4.66950201e-10, z: -.0348784216}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 206076548}
-  m_RootOrder: 7
 --- !u!1 &1846908463
 GameObject:
   m_ObjectHideFlags: 0
@@ -23087,33 +24191,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1856751665
+--- !u!1 &1848236696
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112054, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
+  m_PrefabParentObject: {fileID: 112004, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1856751666}
+  - 4: {fileID: 1848236697}
   m_Layer: 10
-  m_Name: Bone Leg 03 Thigh R
+  m_Name: Bone Leg 01 Calf L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1856751666
+--- !u!4 &1848236697
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412054, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1856751665}
-  m_LocalRotation: {x: -.756549716, y: .0158707276, z: -.0193245318, w: .65345788}
-  m_LocalPosition: {x: -0, y: .00248944759, z: .094988361}
-  m_LocalScale: {x: 1, y: .99999994, z: .99999994}
+  m_PrefabParentObject: {fileID: 412004, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1848236696}
+  m_LocalRotation: {x: .59538722, y: .000141269644, z: .000115556453, w: .803438902}
+  m_LocalPosition: {x: 1.63912777e-08, y: 5.96046448e-08, z: .199377611}
+  m_LocalScale: {x: 1, y: .999999881, z: .999999881}
   m_Children:
-  - {fileID: 4542951}
-  m_Father: {fileID: 1035548143}
+  - {fileID: 332537453}
+  m_Father: {fileID: 1937751061}
   m_RootOrder: 0
 --- !u!1 &1866298984
 GameObject:
@@ -23197,6 +24301,90 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1877658466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112054, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1877658467}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Thigh R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1877658467
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412054, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1877658466}
+  m_LocalRotation: {x: -.756549716, y: .0158707276, z: -.0193245318, w: .65345788}
+  m_LocalPosition: {x: -0, y: .00248944759, z: .094988361}
+  m_LocalScale: {x: 1, y: .99999994, z: .99999994}
+  m_Children:
+  - {fileID: 475658460}
+  m_Father: {fileID: 948937884}
+  m_RootOrder: 0
+--- !u!1 &1880340787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112054, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1880340788}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Thigh R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1880340788
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412054, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1880340787}
+  m_LocalRotation: {x: -.756549716, y: .0158707276, z: -.0193245318, w: .65345788}
+  m_LocalPosition: {x: -0, y: .00248944759, z: .094988361}
+  m_LocalScale: {x: 1, y: .99999994, z: .99999994}
+  m_Children:
+  - {fileID: 1622688854}
+  m_Father: {fileID: 2045624994}
+  m_RootOrder: 0
+--- !u!1 &1882305223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112062, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1882305224}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Calf L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1882305224
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412062, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 1882305223}
+  m_LocalRotation: {x: .595349312, y: .000116843752, z: 9.53734416e-05, w: .803466976}
+  m_LocalPosition: {x: 2.38418583e-08, y: 4.76837165e-08, z: .199377686}
+  m_LocalScale: {x: 1, y: 1, z: 1.00000012}
+  m_Children:
+  - {fileID: 249978720}
+  m_Father: {fileID: 2119971601}
+  m_RootOrder: 0
 --- !u!1 &1892708833
 GameObject:
   m_ObjectHideFlags: 0
@@ -23419,7 +24607,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &1901190392
 GameObject:
   m_ObjectHideFlags: 0
@@ -23854,7 +25042,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!114 &1920452820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23871,33 +25059,6 @@ MonoBehaviour:
   _smoothTime: .100000001
   _cameraHeight: 2.5
   _velocity: {x: 0, y: 0}
---- !u!1 &1920470627
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112056, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1920470628}
-  m_Layer: 10
-  m_Name: Bone Leg 02 Toe R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1920470628
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412056, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 1920470627}
-  m_LocalRotation: {x: -.332062572, y: -.0162383411, z: .00571742188, w: .943100274}
-  m_LocalPosition: {x: -1.78813941e-08, y: -.00580506353, z: .397543579}
-  m_LocalScale: {x: 1, y: .99999994, z: 1.00000012}
-  m_Children: []
-  m_Father: {fileID: 451956928}
-  m_RootOrder: 0
 --- !u!1 &1921683827
 GameObject:
   m_ObjectHideFlags: 0
@@ -23980,6 +25141,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1937751060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112002, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1937751061}
+  m_Layer: 10
+  m_Name: Bone Leg 01 Thigh L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1937751061
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412002, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1937751060}
+  m_LocalRotation: {x: -.751343906, y: .015750451, z: -.0194033496, w: .659437478}
+  m_LocalPosition: {x: -0, y: .00248939986, z: .109712534}
+  m_LocalScale: {x: .999999821, y: .99999994, z: .99999994}
+  m_Children:
+  - {fileID: 1848236697}
+  m_Father: {fileID: 1466902072}
+  m_RootOrder: 0
 --- !u!1 &1939484927
 GameObject:
   m_ObjectHideFlags: 0
@@ -24352,7 +25541,7 @@ Transform:
   - {fileID: 1468506085}
   - {fileID: 625397996}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!61 &1958923551
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24700,6 +25889,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1990557468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112056, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1990557469}
+  m_Layer: 10
+  m_Name: Bone Leg 02 Toe R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1990557469
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412056, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 1990557468}
+  m_LocalRotation: {x: -.332062572, y: -.0162383411, z: .00571742188, w: .943100274}
+  m_LocalPosition: {x: -1.78813941e-08, y: -.00580506353, z: .397543579}
+  m_LocalScale: {x: 1, y: .99999994, z: 1.00000012}
+  m_Children: []
+  m_Father: {fileID: 115343081}
+  m_RootOrder: 0
 --- !u!1 &1999378707
 GameObject:
   m_ObjectHideFlags: 0
@@ -25088,6 +26304,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2045624993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112032, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2045624994}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Root R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2045624994
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412032, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 1295063075}
+  m_GameObject: {fileID: 2045624993}
+  m_LocalRotation: {x: -.209669799, y: -.116287448, z: .374356747, w: .895752668}
+  m_LocalPosition: {x: .229401618, y: -.0497867838, z: -.0309330709}
+  m_LocalScale: {x: -.999999881, y: -.999999821, z: -1.00000036}
+  m_Children:
+  - {fileID: 1880340788}
+  m_Father: {fileID: 1181910871}
+  m_RootOrder: 6
 --- !u!1 &2048042321
 GameObject:
   m_ObjectHideFlags: 0
@@ -25512,33 +26756,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26192c4e138511d42ab96503bde0e83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &2061509327
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112058, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2061509328}
-  m_Layer: 10
-  m_Name: Bone Antennae L Tip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2061509328
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412058, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 2061509327}
-  m_LocalRotation: {x: .439275712, y: .225753501, z: .397452861, w: .773371458}
-  m_LocalPosition: {x: -1.43051153e-07, y: -2.38418583e-08, z: .290271759}
-  m_LocalScale: {x: .99999994, y: .999999881, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1294315041}
-  m_RootOrder: 0
 --- !u!1 &2061528634
 GameObject:
   m_ObjectHideFlags: 0
@@ -25803,34 +27020,6 @@ Prefab:
   m_RootGameObject: {fileID: 1716826964}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &2082213547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112060, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2082213548}
-  m_Layer: 10
-  m_Name: Bone Leg 01 Root L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2082213548
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412060, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 2082213547}
-  m_LocalRotation: {x: -.386355609, y: .909071326, z: .154040545, w: -.0242952537}
-  m_LocalPosition: {x: -.0817157552, y: .0626096651, z: -.0554884449}
-  m_LocalScale: {x: .999999881, y: 1, z: 1}
-  m_Children:
-  - {fileID: 70321008}
-  m_Father: {fileID: 206076548}
-  m_RootOrder: 1
 --- !u!1 &2083072391
 GameObject:
   m_ObjectHideFlags: 0
@@ -26245,6 +27434,34 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2099038264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112018, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2099038265}
+  m_Layer: 0
+  m_Name: Enemy Ant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2099038265
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412018, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 2099038264}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: -6.65230227, y: 3.59039927, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 578587257}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &2106849382
 GameObject:
   m_ObjectHideFlags: 0
@@ -26474,34 +27691,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &2111863277
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112062, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2111863278}
-  m_Layer: 10
-  m_Name: Bone Leg 03 Calf L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2111863278
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412062, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 2111863277}
-  m_LocalRotation: {x: .595349312, y: .000116843752, z: 9.53734416e-05, w: .803466976}
-  m_LocalPosition: {x: 2.38418583e-08, y: 4.76837165e-08, z: .199377686}
-  m_LocalScale: {x: 1, y: 1, z: 1.00000012}
-  m_Children:
-  - {fileID: 1727480114}
-  m_Father: {fileID: 1713475586}
-  m_RootOrder: 0
 --- !u!1 &2114979275
 GameObject:
   m_ObjectHideFlags: 0
@@ -26534,6 +27723,34 @@ Transform:
   - {fileID: 158098038}
   m_Father: {fileID: 1598298847}
   m_RootOrder: 5
+--- !u!1 &2119971600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112046, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2119971601}
+  m_Layer: 10
+  m_Name: Bone Leg 03 Thigh L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2119971601
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 412046, guid: a579e253790305741b425f9c9926f574, type: 2}
+  m_PrefabInternal: {fileID: 809231435}
+  m_GameObject: {fileID: 2119971600}
+  m_LocalRotation: {x: -.753709495, y: .0158024393, z: -.0193677396, w: .656732202}
+  m_LocalPosition: {x: -5.96046457e-09, y: .00248944759, z: .0949883461}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 1882305224}
+  m_Father: {fileID: 268055431}
+  m_RootOrder: 0
 --- !u!1 &2120284003
 GameObject:
   m_ObjectHideFlags: 0
@@ -26597,7 +27814,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!1 &2123595585
 GameObject:
   m_ObjectHideFlags: 0
@@ -26675,33 +27892,6 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &2124058872
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112064, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2124058873}
-  m_Layer: 10
-  m_Name: Bone Claw R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2124058873
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412064, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 2124058872}
-  m_LocalRotation: {x: -.604899228, y: .659731865, z: -.285850525, w: .342257619}
-  m_LocalPosition: {x: -.0374030136, y: -.0554422326, z: .258215398}
-  m_LocalScale: {x: -.999999762, y: -.999999821, z: -.999999881}
-  m_Children: []
-  m_Father: {fileID: 3496087}
-  m_RootOrder: 3
 --- !u!1 &2131168642
 GameObject:
   m_ObjectHideFlags: 0
@@ -26856,33 +28046,6 @@ SpriteRenderer:
   m_SortingOrder: -100
   m_Sprite: {fileID: 21300000, guid: cf9b38c9773dcce41b11c2809f59f6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &2139004180
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 112066, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2139004181}
-  m_Layer: 10
-  m_Name: Bone Leg 01 Toe L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2139004181
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 412066, guid: a579e253790305741b425f9c9926f574, type: 2}
-  m_PrefabInternal: {fileID: 1310067254}
-  m_GameObject: {fileID: 2139004180}
-  m_LocalRotation: {x: -.332062513, y: -.0162383039, z: .00571740745, w: .943100274}
-  m_LocalPosition: {x: 7.4505806e-09, y: -.00580511102, z: .39754352}
-  m_LocalScale: {x: .999999881, y: 1.00000012, z: 1.00000012}
-  m_Children: []
-  m_Father: {fileID: 110459486}
-  m_RootOrder: 0
 --- !u!1 &2140335079
 GameObject:
   m_ObjectHideFlags: 0
