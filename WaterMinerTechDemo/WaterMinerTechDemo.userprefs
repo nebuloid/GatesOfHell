@@ -1,14 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyExample1.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Animator Test1\AnimatorTest1\Assets\Scripts\DestroyByContact.cs">
     <Files>
-      <File FileName="Assets\Scripts\EnemyExample1.cs" Line="99" Column="3" />
+      <File FileName="..\..\Animator Test1\AnimatorTest1\Assets\Insects\Fire Ant\Readme.txt" Line="1" Column="1" />
+      <File FileName="..\..\Animator Test1\AnimatorTest1\Assets\Scripts\DestroyByContact.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="C:\Users\Scrand\Documents\WaterMiner\WaterMinerTechDemo\Assets\Scripts\CameraScaler.cs" line="19" />
-      <Breakpoint file="C:\Users\Scrand\Documents\WaterMiner\WaterMinerTechDemo\Assets\Scripts\CameraScaler.cs" line="25" />
+      <Breakpoint file="C:\Users\Scrand\Documents\Animator Test1\AnimatorTest1\Assets\Scripts\DestroyByContact.cs" line="29" />
+      <Breakpoint file="C:\Users\Scrand\Documents\Animator Test1\AnimatorTest1\Assets\Scripts\DestroyByContact.cs" line="22" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

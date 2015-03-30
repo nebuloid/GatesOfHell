@@ -73,6 +73,8 @@ ModelImporter:
     400088: Bone Leg 03 Calf R
     400090: Bone Leg 03 Thigh R
     400092: Bone Leg 03 Root R
+    2300000: Insect Fire Ant
+    3300000: Insect Fire Ant
     4300000: Ant
     4300002: Bone Body
     4300004: Bone Head
@@ -120,6 +122,7 @@ ModelImporter:
     7400020: fireant_attack
     7400022: fireant_gothit
     7400024: fireant_death
+    9500000: //RootNode
     11100000: //RootNode
     13700000: Body
     13700002: Insect Fire Ant
@@ -132,7 +135,7 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -302,8 +305,8 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: Body
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 
