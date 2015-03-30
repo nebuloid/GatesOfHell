@@ -18,10 +18,13 @@ public class GameController : MonoBehaviour {
 	public GameObject _lifeHead1;
 	public GameObject _lifeHead2;
 	public GameObject _lifeHead3;
+
     public int _lives;
 	private float _scoreFloat;
 	private int _scoreInt;
 	private int mHighScore;
+	private float mInvulnerabilityCountDown;
+
 	//public string _winString;
 	public string _level;
 
@@ -29,9 +32,12 @@ public class GameController : MonoBehaviour {
 	private bool won;
 	//this is turned to true when the level is completed
 	private bool isWindowShown;
+	private bool isInvulnerable;
+
 	public Rect windowRect = new Rect(Screen.width/2, Screen.height/2, 120, 90);
 
     private TooBeeController playerController;
+	private InvulnerabilityColision invulnerabilityColision;
 
 	void Start ()
 	{
@@ -40,9 +46,11 @@ public class GameController : MonoBehaviour {
 		isWindowShown = false;
 		Load ();
 		_scoreFloat = 1000;
+		mInvulnerabilityCountDown = 30;
 		scoreText.text = "Score: " + _scoreFloat;
-			
+
 		GameObject playerObject = GameObject.FindWithTag ("Player");
+		GameObject invulnerabilityObject = GameObject.FindWithTag("Invulnerability");
 		if (playerObject != null) {
 			playerController = playerObject.GetComponent <TooBeeController>(); //get this instance's own game controller connection
 		}
@@ -50,18 +58,30 @@ public class GameController : MonoBehaviour {
 			Debug.Log("Cannot find 'GameController' script"); //logging in case unable to find gamecontroller
 		}
 
+		//trying to connect invulnerabilityColision to this class
+		if (invulnerabilityObject != null) {
+			invulnerabilityColision = invulnerabilityObject.GetComponent <InvulnerabilityColision>(); //get this instance's own game controller connection
+
+		}
+		if (invulnerabilityColision == null) {
+			Debug.Log("Cannot find 'invulnerability' script"); //logging in case unable to find gamecontroller
+		}
+
 		UpdateScore();
 
 	}
 
 	void Update (){
-
+		isInvulnerable = invulnerabilityColision.getIsInvulnerable();
 		//if the level isn't finished then decrement the score
 		if (!isWindowShown) {
 			DecrementScore();
 		}
 		if(gameOver && audio.loop){
 			audio.loop = false;
+		}
+		if(isInvulnerable) {
+			InvulnerablilityCountdown();
 		}
 	}
 	
@@ -160,6 +180,17 @@ public class GameController : MonoBehaviour {
 				Destroy (_lifeHead1);
 				break;
 		}
+	}
+
+	private void InvulnerablilityCountdown() {
+		mInvulnerabilityCountDown -= Time.deltaTime;
+		if(mInvulnerabilityCountDown <= 0) {
+			Debug.Log("Invulnerable time is finished");
+			isInvulnerable = false;
+			invulnerabilityColision.setIsInvulnerable(isInvulnerable);
+			mInvulnerabilityCountDown = 30;
+		}
+		Debug.Log ("Time is Ticking away, " + mInvulnerabilityCountDown);
 	}
 
 	/*
