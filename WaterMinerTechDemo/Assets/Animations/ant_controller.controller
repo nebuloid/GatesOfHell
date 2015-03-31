@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ant
+  m_Name: ant_controller
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: Speed
@@ -119,5 +119,5 @@ StateMachine:
       second:
       - {fileID: 110151260}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_AnyStatePosition: {x: 48, y: 24, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
