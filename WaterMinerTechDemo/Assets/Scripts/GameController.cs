@@ -32,7 +32,7 @@ public class GameController : MonoBehaviour {
 	private bool won;
 	//this is turned to true when the level is completed
 	private bool isWindowShown;
-	private bool isInvulnerable;
+	private bool isInvulnerable = false;
 
 	public Rect windowRect = new Rect(Screen.width/2, Screen.height/2, 120, 90);
 
@@ -143,7 +143,11 @@ public class GameController : MonoBehaviour {
 	 * like a good speed to decrement at.
 	 */
 	public void DecrementScore() {
-		_scoreFloat -= Time.deltaTime * 6;
+		if(!isInvulnerable) {
+			_scoreFloat -= Time.deltaTime * 6;
+		} else if (isInvulnerable) {
+			_scoreFloat -= Time.deltaTime * 3;
+		}
 		_scoreInt = (int) _scoreFloat;
 		if (_scoreFloat < 0) {
 			_scoreFloat = 0;
@@ -190,9 +194,12 @@ public class GameController : MonoBehaviour {
 			invulnerabilityColision.setIsInvulnerable(isInvulnerable);
 			mInvulnerabilityCountDown = 30;
 		}
-		Debug.Log ("Time is Ticking away, " + mInvulnerabilityCountDown);
+		//Debug.Log ("Time is Ticking away, " + mInvulnerabilityCountDown);
 	}
 
+	public bool getInvulnerabilityStatus() {
+		return isInvulnerable;
+	}
 	/*
 	 *This function controls the pop up window that displays when
 	 *the level has been beaten.
