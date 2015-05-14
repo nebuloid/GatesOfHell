@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 guid: 7cab7448d5d9c87438b48d2900da974b
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: swing 1_0
+    21300002: swing 1_1
+    21300004: swing 1_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
