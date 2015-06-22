@@ -341,9 +341,10 @@ GameObject:
   - 4: {fileID: 412042}
   - 95: {fileID: 9511998}
   - 50: {fileID: 5011998}
-  - 114: {fileID: 11412000}
   - 114: {fileID: 11411998}
   - 61: {fileID: 6111998}
+  - 114: {fileID: 11467142}
+  - 114: {fileID: 11412000}
   m_Layer: 10
   m_Name: Fire Ant FBX
   m_TagString: Toad
@@ -592,7 +593,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112006}
-  m_LocalRotation: {x: .646324933, y: -.626120687, z: -.425638676, w: .0952295288}
+  m_LocalRotation: {x: .646324992, y: -.626120746, z: -.425638705, w: .0952295363}
   m_LocalPosition: {x: .0396417156, y: -.0817366093, z: .220992357}
   m_LocalScale: {x: -.999999821, y: -1.00000048, z: -1.00000024}
   m_Children:
@@ -651,7 +652,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112014}
-  m_LocalRotation: {x: .595349371, y: .000116860392, z: 9.53635099e-05, w: .803466916}
+  m_LocalRotation: {x: .595349431, y: .000116860399, z: 9.53635172e-05, w: .803466976}
   m_LocalPosition: {x: -0, y: 4.76837165e-08, z: .199377641}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -664,7 +665,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112016}
-  m_LocalRotation: {x: .375170082, y: .896879673, z: .204363853, w: .11441005}
+  m_LocalRotation: {x: .375170112, y: .896879733, z: .204363868, w: .114410058}
   m_LocalPosition: {x: .229401618, y: .0497867838, z: -.0309330709}
   m_LocalScale: {x: .99999994, y: 1, z: 1}
   m_Children:
@@ -780,7 +781,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112034}
-  m_LocalRotation: {x: -.751343727, y: .015750492, z: -.0194033757, w: .659437656}
+  m_LocalRotation: {x: -.751343787, y: .0157504939, z: -.0194033775, w: .659437716}
   m_LocalPosition: {x: 1.49011612e-08, y: .00248942384, z: .109712504}
   m_LocalScale: {x: .999999881, y: .999999881, z: .999999881}
   m_Children:
@@ -1040,13 +1041,28 @@ MonoBehaviour:
   _scoreValue: 200
 --- !u!114 &11412000
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112042}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d27fd974c049a114f8676e4dd614af58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxSpeedX: 3
+  _maxSpeedY: 0
+  _flipTimerX: 3
+  _flipTimerY: 4
+--- !u!114 &11467142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c19d16e9a7e4b75bc23f995ff71433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _maxSpeedX: 3
