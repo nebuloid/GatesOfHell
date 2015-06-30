@@ -54,7 +54,7 @@ public class DestroyByContact : MonoBehaviour {
 				Debug.Log("Enemy Killed Using Invulnerability power-up: " + this.GetComponent<DestroyByContact>()._scoreValue + "points gained");
 			}
 		} else {
-			gameObject.transform.rigidbody2D.velocity = new Vector2(0,0);
+			gameObject.transform.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
 		}
 	}
 }

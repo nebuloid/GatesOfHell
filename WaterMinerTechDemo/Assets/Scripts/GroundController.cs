@@ -34,7 +34,7 @@ public class GroundController : MonoBehaviour {
 
 		playerAnimator = player.GetComponent<Animator>();
 		timer = new Stopwatch ();
-		spriteRenderer = renderer as SpriteRenderer;
+		spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
 		//UnityEngine.Debug.Log(spriteRenderer.bounds.extents.x);
 	}
 	

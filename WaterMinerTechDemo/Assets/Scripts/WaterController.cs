@@ -23,6 +23,6 @@ public class WaterController : MonoBehaviour {
 			gameController.Victory ();
 			
 		}
-		Destroy(transform.collider2D); 
+		Destroy(transform.GetComponent<Collider2D>()); 
 	}
 }

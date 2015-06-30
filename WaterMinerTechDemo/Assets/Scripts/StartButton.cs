@@ -46,7 +46,7 @@ public class StartButton : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		audio.Play();
+		GetComponent<AudioSource>().Play();
 		loadLevel("level_1");
 	}
 }

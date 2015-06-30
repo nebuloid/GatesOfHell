@@ -18,7 +18,7 @@ public class PlayGUI : MonoBehaviour {
 	
 	private void init() {
 		for (int i = 0; i < transforms.Length; i++) {
-			transforms[i].animation["idle"].layer = -1;
+			transforms[i].GetComponent<Animation>()["idle"].layer = -1;
 		}
 	}
 	
@@ -27,7 +27,7 @@ public class PlayGUI : MonoBehaviour {
 		for (int i = 0; i < GUIContents.Length; i++) {
 			if (GUILayout.Button(GUIContents[i])) {
 				for (int j = 0; j < transforms.Length; j++) {
-					transforms[j].animation.Play(GUIContents[i].text);
+					transforms[j].GetComponent<Animation>().Play(GUIContents[i].text);
 				}
 			}
 		}

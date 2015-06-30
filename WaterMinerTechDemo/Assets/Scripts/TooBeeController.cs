@@ -53,7 +53,7 @@ public class TooBeeController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+		anim.SetFloat ("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
 	
 		float move = Input.GetAxis ("Horizontal");
 		if (mTargetPoint != default(Vector3) && mFirstTouch == true) {
@@ -61,7 +61,7 @@ public class TooBeeController : MonoBehaviour {
 			anim.SetFloat ("Speed", Mathf.Abs (mTargetPoint.x - transform.position.x));
 			//Debug.Log("move: " + move);
 		}
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
 		if (move > 0 && !facingRight) {
             Flip ();
@@ -98,9 +98,9 @@ public class TooBeeController : MonoBehaviour {
 			anim.Play("ThrowToobee");
 			GameObject clone = (GameObject) Instantiate(shot, startPosition, shotSpawn.rotation);
 
-			clone.rigidbody2D.AddForce (direction * 1000.0f);
-			audio.clip = shotSound;
-			audio.Play();
+			clone.GetComponent<Rigidbody2D>().AddForce (direction * 1000.0f);
+			GetComponent<AudioSource>().clip = shotSound;
+			GetComponent<AudioSource>().Play();
 		}
 	}
 

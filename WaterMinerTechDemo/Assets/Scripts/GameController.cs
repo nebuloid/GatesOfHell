@@ -77,8 +77,8 @@ public class GameController : MonoBehaviour {
 		if (!isWindowShown) {
 			DecrementScore();
 		}
-		if(gameOver && audio.loop){
-			audio.loop = false;
+		if(gameOver && GetComponent<AudioSource>().loop){
+			GetComponent<AudioSource>().loop = false;
 		}
 		if(isInvulnerable) {
 			InvulnerablilityCountdown();
@@ -131,8 +131,8 @@ public class GameController : MonoBehaviour {
         } else if (_lives > 0) {
 
 			removeHeads (_lives); 
-            audio.clip = _deathSound;
-            audio.Play();
+            GetComponent<AudioSource>().clip = _deathSound;
+            GetComponent<AudioSource>().Play();
             playerController.Die(); // moves player to starting point
         }
 	}
@@ -157,8 +157,8 @@ public class GameController : MonoBehaviour {
 
     private void GameOver (){
         gameOver = true;
-        audio.clip = _deathSound;
-        audio.Play();
+        GetComponent<AudioSource>().clip = _deathSound;
+        GetComponent<AudioSource>().Play();
         // this line below here
         Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
         ; // prepares the level that will be loaded when player clicks
