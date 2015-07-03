@@ -26,3 +26,15 @@ WaterMinerTechDemo/Assembly-CSharp.csproj
 
 WaterMinerTechDemo/WaterMinerTechDemo.userprefs
 WaterMinerTechDemo/WaterMinerTechDemo.userprefs
+
+WaterMinerTechDemo/Assembly-CSharp-vs.csproj
+
+*.csproj
+
+*.unityproj
+
+WaterMinerTechDemo/Assembly-CSharp-vs.csproj
+
+WaterMinerTechDemo/ProjectSettings/EditorBuildSettings.asset
+
+*.userprefs
