@@ -1942,7 +1942,7 @@ Transform:
   m_LocalScale: {x: 4.96320343, y: 4.96335602, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
 --- !u!1 &158098037
 GameObject:
   m_ObjectHideFlags: 0
@@ -7781,7 +7781,6 @@ GameObject:
   - 50: {fileID: 578587261}
   - 114: {fileID: 578587259}
   - 61: {fileID: 578587258}
-  - 114: {fileID: 578587263}
   - 114: {fileID: 578587260}
   m_Layer: 10
   m_Name: Fire Ant FBX
@@ -7831,19 +7830,16 @@ MonoBehaviour:
 --- !u!114 &578587260
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11412000, guid: a579e253790305741b425f9c9926f574,
-    type: 2}
-  m_PrefabInternal: {fileID: 809231435}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 578587256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d27fd974c049a114f8676e4dd614af58, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e941d410c0ae4d98a7bcc69808fd4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxSpeedX: 3
-  _maxSpeedY: 0
-  _flipTimerX: 3
-  _flipTimerY: 4
+  moveSpeed: 3
+  rotationSpeed: 3
 --- !u!50 &578587261
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7876,22 +7872,6 @@ Animator:
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &578587263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11467142, guid: a579e253790305741b425f9c9926f574,
-    type: 2}
-  m_PrefabInternal: {fileID: 809231435}
-  m_GameObject: {fileID: 578587256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17c19d16e9a7e4b75bc23f995ff71433, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxSpeedX: 3
-  _maxSpeedY: 0
-  _flipTimerX: 3
-  _flipTimerY: 4
 --- !u!1 &582031197
 GameObject:
   m_ObjectHideFlags: 0
@@ -8961,11 +8941,7 @@ MonoBehaviour:
   _flipTimerY: 10
   _rotationSpeed: 10
   _dampingLook: 6
-  waypoints:
-  - {fileID: 1122772532}
-  - {fileID: 640688432}
-  - {fileID: 1457289292}
-  - {fileID: 325731094}
+  waypoints: []
 --- !u!61 &650728635
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11036,7 +11012,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11412000, guid: a579e253790305741b425f9c9926f574, type: 2}
+    - {fileID: 11467142, guid: a579e253790305741b425f9c9926f574, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a579e253790305741b425f9c9926f574, type: 2}
   m_RootGameObject: {fileID: 2099038264}
   m_IsPrefabParent: 0
@@ -13668,8 +13646,8 @@ MonoBehaviour:
   _level: level_2
   windowRect:
     serializedVersion: 2
-    x: 549
-    y: 309
+    x: 414
+    y: 233
     width: 120
     height: 90
 --- !u!4 &974193978
@@ -15807,7 +15785,7 @@ Transform:
   m_Children:
   - {fileID: 916005176}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
 --- !u!1 &1098590608
 GameObject:
   m_ObjectHideFlags: 0
@@ -20545,7 +20523,7 @@ Transform:
   m_Children:
   - {fileID: 567153431}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!1 &1421242256
 GameObject:
   m_ObjectHideFlags: 0
