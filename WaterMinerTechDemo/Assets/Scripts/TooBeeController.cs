@@ -31,7 +31,7 @@ public class TooBeeController : MonoBehaviour {
 	public AudioClip shotSound;
 
 	//change stance
-	private int stance = 1;
+	public int stance = 1;
 	private int numStances = 2;
 
 	private bool flipOk = false;
@@ -69,38 +69,16 @@ public class TooBeeController : MonoBehaviour {
             Flip ();
         }
 
-		//shoot and move
-
-		switch (stance) {
-			case MOVE_STANCE:
-			//moving
-				MoveMe ();
-				break;
-			case SHOOT_STANCE:
-			//toobee
-				Shoot ();
-				break;
-			default:
-			//moving
-				MoveMe ();
-				break;
-		}
 	}
 
-	void Shoot(){
-		if (Input.GetButton ("Fire1") && Time.time > nextFire) {
 			Vector3 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			//make sure mouse is not over player...this wont work for touch
 
 			direction = new Vector2 (mousePosition.x - transform.position.x, mousePosition.y - transform.position.y).normalized;
+
 			nextFire = Time.time + fireRate;
 			Vector3 startPosition = new Vector3 (shotSpawn.position.x, shotSpawn.position.y, 0.0f);
-			anim.Play("ThrowToobee");
-			GameObject clone = (GameObject) Instantiate(shot, startPosition, shotSpawn.rotation);
 
-			clone.GetComponent<Rigidbody2D>().AddForce (direction * 1000.0f);
-			GetComponent<AudioSource>().clip = shotSound;
-			GetComponent<AudioSource>().Play();
 		}
 	}
 
@@ -111,7 +89,6 @@ public class TooBeeController : MonoBehaviour {
 		mFirstTouch = true;
 	}
 
-	private void MoveMe(){
 		Vector3 currentPosition = transform.position;
 		if (moving) {
 			Vector3 moveToward = mTargetPoint;

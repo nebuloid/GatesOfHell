@@ -87,12 +87,22 @@ public class GameController : MonoBehaviour {
 	
     void FixedUpdate () {
 
-        if (Input.GetButton ("Fire1") && gameOver) {
-            Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
-        }
+        if (Input.GetButton ("Fire1")) { 
+			if (gameOver) {
+            	Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
+				return;
+			}
 
-        if (Input.GetButton ("Fire1") && won) {
-            Application.LoadLevel (_level); // loads a new level (right now it is set to load the same over and over
+			if (won) {
+				Application.LoadLevel (_level); // loads a new level (right now it is set to load the same over and over
+				return;
+			}
+
+			if (playerController.stance - 1 == 0) {
+				playerController.MoveMe();
+			} else if (playerController.stance - 1 == 1) {
+				playerController.Shoot();
+			}
         }
     }
 	

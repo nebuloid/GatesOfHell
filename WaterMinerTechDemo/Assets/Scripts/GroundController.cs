@@ -93,7 +93,7 @@ public class GroundController : MonoBehaviour {
 		int stance = playerController.Stance;
 		if (grounded && stance == 1){
 			if (playerAnimator != null)
-				playerAnimator.Play("Swing");
+				playerAnimator.SetTrigger("Swing");
 
 			if (timer != null)
 				timer.Start();
