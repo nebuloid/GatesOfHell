@@ -19,6 +19,8 @@ public class GameController : MonoBehaviour {
 	public GameObject _lifeHead2;
 	public GameObject _lifeHead3;
 
+	public Texture nextButton;
+
     public int _lives;
 	private float _scoreFloat;
 	private int _scoreInt;
@@ -34,7 +36,7 @@ public class GameController : MonoBehaviour {
 	private bool isWindowShown;
 	private bool isInvulnerable = false;
 
-	public Rect windowRect = new Rect(Screen.width/2, Screen.height/2, 120, 90);
+	public Rect windowRect = new Rect(Screen.width/2, Screen.height/2, 540, 480);
 
     private TooBeeController playerController;
 	private InvulnerabilityColision invulnerabilityColision;
@@ -216,7 +218,7 @@ public class GameController : MonoBehaviour {
 	 */
 	private void OnGUI() {
 		if(isWindowShown){
-			windowRect = GUI.Window(0, windowRect, DoMyWindow, "Level Complete");
+			windowRect = GUI.Window(0, new Rect(Screen.width/8, Screen.height/8, (float) (Screen.width * 0.75), (float) (Screen.height * 0.75)), DoMyWindow, "Level Complete");
 		}
 
 	}
@@ -226,9 +228,9 @@ public class GameController : MonoBehaviour {
 	 * If the button is clicked it sends the user to the next level.
 	 */ 
 	private void DoMyWindow(int windowID) {
-		GUI.TextField(new Rect(10,40,100,20),"Score: " + _scoreInt);
-		GUI.TextField(new Rect(10, 60, 100,20), "High Score: " + mHighScore);
-		if (GUI.Button(new Rect(10, 20, 100, 20), "Next Level")) {
+		GUI.TextField(new Rect(10,20, (float) (windowRect.width - 20), (float) (windowRect.height / 3.4)),"Score: " + _scoreInt);
+		GUI.TextField(new Rect(10, (float) ((windowRect.height * 0.33) + 12.5), (float) (windowRect.width - 20), (float) (windowRect.height / 3.4)), "High Score: " + mHighScore);
+		if (GUI.Button(new Rect(10, (float) ((windowRect.height * 0.66) + 5), (float) (windowRect.width - 20), (float) (windowRect.height / 3.4)), new GUIContent(nextButton))) {
 			won = true;
 			//print("next level, Score: " + _scoreInt);
 		}
