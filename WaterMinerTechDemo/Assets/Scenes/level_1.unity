@@ -5546,7 +5546,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100100, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
@@ -6669,20 +6669,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 650728631}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32c29a3bee864c7e955fd6e7603d1c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e941d410c0ae4d98a7bcc69808fd4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxSpeedX: 10
-  _maxSpeedY: 10
-  _flipTimerX: 10
-  _flipTimerY: 10
-  _rotationSpeed: 10
-  _dampingLook: 6
-  waypoints:
-  - {fileID: 1122772532}
-  - {fileID: 640688432}
-  - {fileID: 1457289292}
-  - {fileID: 325731094}
+  moveSpeed: 3
+  rotationSpeed: 3
 --- !u!61 &650728635
 BoxCollider2D:
   m_ObjectHideFlags: 0
