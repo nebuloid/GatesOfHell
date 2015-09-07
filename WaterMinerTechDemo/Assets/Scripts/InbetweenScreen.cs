@@ -1,52 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using System.Timers;
+using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class InbetweenScreen : MonoBehaviour
-{/*
-	public Texture2D texture;
-	static LoadingScreen instance;
-	
-	void Awake()
+{
+	public Text levelScoreText;
+	public Text totalScoreText;
+	public Text highScoreText;
+
+	void Start ()
 	{
-		if (instance)
-		{
-			Destroy(gameObject);
-			hide();
-			return;
-		}
-		instance = this;    
-		gameObject.AddComponent<GUITexture>().enabled = false;
-		guiTexture.texture = texture;
-		transform.position = new Vector3(0.5f, 0.5f, 1f);
-		DontDestroyOnLoad(this); 
+
 	}
-	
-	public static void show()
-	{
-		if (!InstanceExists()) 
-		{
-			return;
-		}
-		instance.guiTexture.enabled = true;
-	}
-	
-	public static void hide()
-	{
-		if (!InstanceExists()) 
-		{
-			return;
-		}
-		instance.guiTexture.enabled = false;
-	}
-	
-	static bool InstanceExists()
-	{
-		if (!instance)
-		{
-			return false;
-		}
-		return true;
-		
-	}
-	*/
 }

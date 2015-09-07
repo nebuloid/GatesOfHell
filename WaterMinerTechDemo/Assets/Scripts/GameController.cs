@@ -35,6 +35,7 @@ public class GameController : MonoBehaviour {
 	//this is turned to true when the level is completed
 	private bool isWindowShown;
 	private bool isInvulnerable = false;
+	private int mCurrentLevel;
 
 	public Rect windowRect = new Rect(Screen.width/2, Screen.height/2, 540, 480);
 
@@ -43,6 +44,7 @@ public class GameController : MonoBehaviour {
 
 	void Start ()
 	{
+		mCurrentLevel = PlayerPrefs.GetInt ("currentLevel");
 		gameOver = false;
 		won = false;
 		isWindowShown = false;
@@ -70,6 +72,7 @@ public class GameController : MonoBehaviour {
 		}
 
 		UpdateScore();
+
 
 	}
 
@@ -255,6 +258,11 @@ public class GameController : MonoBehaviour {
 		} else {
 			Debug.Log("no new highScore");
 		}
+
+		if (mCurrentLevel == 0) {
+			mCurrentLevel++;
+		}
+		PlayerPrefs.SetInt("currentLevel", (mCurrentLevel + 1));
 
 		bf.Serialize(file,highScoreData);
 		file.Close();
