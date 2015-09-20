@@ -14,6 +14,8 @@ public class InbetweenScreen : MonoBehaviour
 
 	void Start ()
 	{
-
+		levelScoreText.text = PlayerPrefs.GetInt ("levelScore").ToString ();
+		highScoreText.text = PlayerPrefs.GetInt ("highScore").ToString ();
+		totalScoreText.text = PlayerPrefs.GetInt ("totalScore").ToString ();
 	}
 }

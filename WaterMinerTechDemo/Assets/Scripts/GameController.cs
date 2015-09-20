@@ -31,9 +31,8 @@ public class GameController : MonoBehaviour {
 	public string _level;
 
 	private bool gameOver;
-	private bool won;
 	//this is turned to true when the level is completed
-	private bool isWindowShown;
+	//private bool isWindowShown;
 	private bool isInvulnerable = false;
 	private int mCurrentLevel;
 
@@ -46,8 +45,7 @@ public class GameController : MonoBehaviour {
 	{
 		mCurrentLevel = PlayerPrefs.GetInt ("currentLevel");
 		gameOver = false;
-		won = false;
-		isWindowShown = false;
+		//isWindowShown = false;
 		Load ();
 		_scoreFloat = 1000;
 		mInvulnerabilityCountDown = 30;
@@ -79,9 +77,9 @@ public class GameController : MonoBehaviour {
 	void Update (){
 		isInvulnerable = invulnerabilityColision.getIsInvulnerable();
 		//if the level isn't finished then decrement the score
-		if (!isWindowShown) {
-			DecrementScore();
-		}
+		//if (!isWindowShown) {
+		DecrementScore();
+		//}
 		if(gameOver && GetComponent<AudioSource>().loop){
 			GetComponent<AudioSource>().loop = false;
 		}
@@ -98,11 +96,6 @@ public class GameController : MonoBehaviour {
 				return;
 			}
 
-			if (won) {
-				Application.LoadLevel (_level); // loads a new level (right now it is set to load the same over and over
-				return;
-			}
-
 			if (playerController.stance - 1 == 0) {
 				playerController.MoveMe();
 			} else if (playerController.stance - 1 == 1) {
@@ -113,7 +106,10 @@ public class GameController : MonoBehaviour {
 	
 	public void Victory() {
 		Save ();
-		isWindowShown = true;
+
+		Application.LoadLevel ("inbetween"); // loads a new level (right now it is set to load the same over and over
+		return;
+		//isWindowShown = true;
 		/* 
 		 * won equals true is now called 
 		 * if the user clicks the 'next level'
@@ -128,6 +124,11 @@ public class GameController : MonoBehaviour {
 
 	public void AddScore (int newScoreValue){
 		_scoreFloat += newScoreValue;
+		PlayerPrefs.SetInt ("levelScore", (int) _scoreFloat);
+		PlayerPrefs.SetInt ("totalScore", (int)(PlayerPrefs.GetInt ("totalScore") + _scoreFloat));
+		if (mHighScore > PlayerPrefs.GetInt ("hiScore")) {
+			PlayerPrefs.SetInt("hiScore", mHighScore);
+		}
 		UpdateScore();
 	}
 
@@ -220,16 +221,18 @@ public class GameController : MonoBehaviour {
 	 *the level has been beaten.
 	 */
 	private void OnGUI() {
-		if(isWindowShown){
-			windowRect = GUI.Window(0, new Rect(Screen.width/8, Screen.height/8, (float) (Screen.width * 0.75), (float) (Screen.height * 0.75)), DoMyWindow, "Level Complete");
-		}
+		//if(isWindowShown){
+			//windowRect = GUI.Window(0, new Rect(Screen.width/8, Screen.height/8, (float) (Screen.width * 0.75), (float) (Screen.height * 0.75)), DoMyWindow, "Level Complete");
+		//}
 
 	}
 
 	/*
 	 * This function adds two text fields and a button to the pop up window.
 	 * If the button is clicked it sends the user to the next level.
-	 */ 
+	 */
+
+	/*
 	private void DoMyWindow(int windowID) {
 		GUI.TextField(new Rect(10,20, (float) (windowRect.width - 20), (float) (windowRect.height / 3.4)),"Score: " + _scoreInt);
 		GUI.TextField(new Rect(10, (float) ((windowRect.height * 0.33) + 12.5), (float) (windowRect.width - 20), (float) (windowRect.height / 3.4)), "High Score: " + mHighScore);
@@ -238,7 +241,7 @@ public class GameController : MonoBehaviour {
 			//print("next level, Score: " + _scoreInt);
 		}
 	}
-
+*/
 	/*
 	 * This funciton will run when the level is beaten.
 	 * It saves the highScore if the current score is 
