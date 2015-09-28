@@ -7,7 +7,6 @@ public class NewGameButton : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		PlayerPrefs.SetInt ("totalScore", 0);
 	}
 	
 	// Update is called once per frame

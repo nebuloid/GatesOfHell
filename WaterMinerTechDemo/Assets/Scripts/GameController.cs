@@ -172,6 +172,7 @@ public class GameController : MonoBehaviour {
         GetComponent<AudioSource>().clip = _deathSound;
         GetComponent<AudioSource>().Play();
         // this line below here
+		PlayerPrefs.SetInt ("totalScore", 0);
         Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
         ; // prepares the level that will be loaded when player clicks
         //gameOverText.text = "Game Over Man!";
