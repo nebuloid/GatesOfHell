@@ -124,11 +124,6 @@ public class GameController : MonoBehaviour {
 
 	public void AddScore (int newScoreValue){
 		_scoreFloat += newScoreValue;
-		PlayerPrefs.SetInt ("levelScore", (int) _scoreFloat);
-		PlayerPrefs.SetInt ("totalScore", (int)(PlayerPrefs.GetInt ("totalScore") + _scoreFloat));
-		if (mHighScore > PlayerPrefs.GetInt ("hiScore")) {
-			PlayerPrefs.SetInt("hiScore", mHighScore);
-		}
 		UpdateScore();
 	}
 
@@ -248,16 +243,16 @@ public class GameController : MonoBehaviour {
 	 * higher than it.
 	 */
 	public void Save() {
-		BinaryFormatter bf = new BinaryFormatter();
-		FileStream file = File.Create(Application.persistentDataPath + "/highScore.dat");
+		int totalScore = PlayerPrefs.GetInt ("totalScore");
+		PlayerPrefs.SetInt("levelScore", _scoreInt);
+		PlayerPrefs.SetInt("totalScore", _scoreInt + totalScore);
 
-		HighScoreData highScoreData = new HighScoreData();
+		totalScore = PlayerPrefs.GetInt ("totalScore");
 
-		if (mHighScore < _scoreInt) {
-			Debug.Log("new High Score!" + _scoreInt);
-			mHighScore = _scoreInt;
-			highScoreData.highScore = _scoreInt;
-			
+		if (mHighScore <= PlayerPrefs.GetInt("totalScore")) {
+			mHighScore = totalScore;
+			Debug.Log("new High Score!" + mHighScore);
+			PlayerPrefs.SetInt("highScore", mHighScore);
 		} else {
 			Debug.Log("no new highScore");
 		}
@@ -265,10 +260,9 @@ public class GameController : MonoBehaviour {
 		if (mCurrentLevel == 0) {
 			mCurrentLevel++;
 		}
-		PlayerPrefs.SetInt("currentLevel", (mCurrentLevel + 1));
 
-		bf.Serialize(file,highScoreData);
-		file.Close();
+
+		PlayerPrefs.SetInt("currentLevel", (mCurrentLevel + 1));
 	}
 
 	/*
@@ -276,14 +270,7 @@ public class GameController : MonoBehaviour {
 	 * it loads the highscore from a file
 	 */
 	public void Load() {
-		if (File.Exists(Application.persistentDataPath + "/highScore.dat")) {
-			BinaryFormatter bf = new BinaryFormatter();
-			FileStream file = File.Open(Application.persistentDataPath + "/highScore.dat",FileMode.Open);
-			HighScoreData data = (HighScoreData)bf.Deserialize(file);
-			file.Close ();
-			mHighScore = data.highScore;
-			Debug.Log("highscore"  + mHighScore);
-		}
+		mHighScore = PlayerPrefs.GetInt("highScore");
 	}
 
 }
