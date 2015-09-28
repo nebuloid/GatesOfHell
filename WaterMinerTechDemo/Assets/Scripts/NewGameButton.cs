@@ -7,7 +7,7 @@ public class NewGameButton : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		//Store where we were placed in the editor
+		PlayerPrefs.SetInt ("totalScore", 0);
 	}
 	
 	// Update is called once per frame

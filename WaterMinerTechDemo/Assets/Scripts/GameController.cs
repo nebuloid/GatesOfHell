@@ -43,6 +43,7 @@ public class GameController : MonoBehaviour {
 
 	void Start ()
 	{
+		PlayerPrefs.SetInt ("levelScore", 0);
 		mCurrentLevel = PlayerPrefs.GetInt ("currentLevel");
 		gameOver = false;
 		//isWindowShown = false;
