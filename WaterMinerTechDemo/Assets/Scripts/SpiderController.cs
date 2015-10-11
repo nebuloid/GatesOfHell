@@ -11,7 +11,6 @@ public class SpiderController : MonoBehaviour {
 	public int _rotationSpeed = 10;
 	public float _dampingLook = 6f;
 
-	private SpiderController spider;
 	public Transform[] waypoints;
 
 	// current waypoint id

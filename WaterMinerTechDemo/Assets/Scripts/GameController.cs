@@ -72,7 +72,10 @@ public class GameController : MonoBehaviour {
 
 		UpdateScore();
 
-
+        _lives = PlayerPrefs.GetInt("lives");
+        if (_lives < 3) {
+            removeHeads(_lives);
+        }
 	}
 
 	void Update (){
@@ -138,11 +141,11 @@ public class GameController : MonoBehaviour {
 	{
         _lives--;
         if(_lives==0){
+            removeHeads (_lives);
             GameOver ();
-			removeHeads (_lives);
         } else if (_lives > 0) {
-
-			removeHeads (_lives); 
+			removeHeads (_lives);
+            PlayerPrefs.SetInt("lives", _lives);
             GetComponent<AudioSource>().clip = _deathSound;
             GetComponent<AudioSource>().Play();
             playerController.Die(); // moves player to starting point
@@ -173,8 +176,10 @@ public class GameController : MonoBehaviour {
         GetComponent<AudioSource>().Play();
         // this line below here
 		PlayerPrefs.SetInt ("totalScore", 0);
+        PlayerPrefs.SetInt("currentLevel", 0);
+        PlayerPrefs.SetInt("lives", 3);
         Application.LoadLevel ("menu"); // loads a new level (right now it is set to load the same over and over
-        ; // prepares the level that will be loaded when player clicks
+        // prepares the level that will be loaded when player clicks
         //gameOverText.text = "Game Over Man!";
     }
 
@@ -275,13 +280,4 @@ public class GameController : MonoBehaviour {
 		mHighScore = PlayerPrefs.GetInt("highScore");
 	}
 
-}
-
-/*
- * private class that implments seralizable
- * it stores the highScore.
- */
-	[Serializable]
-class HighScoreData {
-	public int highScore;
 }

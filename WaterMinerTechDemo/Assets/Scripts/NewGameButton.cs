@@ -16,6 +16,7 @@ public class NewGameButton : MonoBehaviour {
 	
 	void OnMouseDown(){
 		PlayerPrefs.DeleteAll ();
+        PlayerPrefs.SetInt("lives", 3);
 		Application.LoadLevel(_sceneID);
 	}
 }
