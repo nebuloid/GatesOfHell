@@ -1,0 +1,122 @@
+fileFormatVersion: 2
+guid: 97e1c70738e157a4aacc9cb372728389
+timeCreated: 1450042752
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sculpture TItles2_0
+    21300002: Sculpture TItles2_1
+    21300004: Sculpture TItles2_2
+    21300006: Sculpture TItles2_3
+    21300008: Sculpture TItles2_4
+    21300010: Sculpture TItles2_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sculpture TItles2_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 692
+        width: 2954
+        height: 281
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sculpture TItles2_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 984
+        width: 3534
+        height: 339
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sculpture TItles2_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1362
+        width: 2619
+        height: 280
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sculpture TItles2_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1665
+        width: 1549
+        height: 316
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sculpture TItles2_4
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1677
+        width: 1853
+        height: 300
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sculpture TItles2_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1965
+        width: 2884
+        height: 334
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
